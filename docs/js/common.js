@@ -92,13 +92,13 @@ function leftmovie(target){
 var imgWid = $(".list").width();
 var wid = $(window).width();
 var leftWid = imgWid-wid;
-$(".gall_next").click(function(){
+$(".gall-next").click(function(){
   $(".list").stop().animate({left:-leftWid},1000);
 });
 
   //$(".list li:first").appendTo(".list");
 
-$(".gall_prev").click(function(){
+$(".gall-prev").click(function(){
   $(".list").stop().animate({left:0},1000);
 });
 

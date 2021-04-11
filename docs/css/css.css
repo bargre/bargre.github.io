@@ -130,7 +130,10 @@ section{padding:150px 0;}
 .gallery li img:hover {transform:scale(1.2); transition:1s;}
 /* 질문 / 이미지 움직일때 마진부분에서 멈춤. 이미지 사이즈에 포함이 안되는건지?
           패딩값으로해도 멈춤..*/
-.button {text-align:center; padding-bottom: 50px;}
+.gallery .gall-button {margin:0 auto 50px; text-align:center;}
+.gallery .gall-button .gall-prev, .gallery .gall-button .gall-next  {display:inline-block; 
+     padding:10px; border-radius:50%; background: #e04a4a; cursor:pointer;}
+/* TODO .gallery .button .gall-prev{} */
 /* about */
 
 .about {background:#f6f6f6; position:relative; padding-top:0; }
