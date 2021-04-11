@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>AUDI KOREA</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript">
+      $(function(){
+        $(".nav .gnb li").mouseover(function(){
+          $(".bar").css({display:"block"});
+        });
+        $(".nav .gnb li").mouseout(function(){
+          $(".bar").css({display:"none"});
+        });
+        $(".nav .gnb li:eq(0)").mouseover(function(){
+          $(".bar").stop().animate({left:91},200).css("width","149px");
+        });
+        $(".nav .gnb li:eq(1)").mouseover(function(){
+          $(".bar").stop().animate({left:240},200).css("width","128px");
+        });
+        $(".nav .gnb li:eq(2)").mouseover(function(){
+          $(".bar").stop().animate({left:368},200).css("width","160px");
+        });
+        $(".nav .gnb li:eq(3)").mouseover(function(){
+          $(".bar").stop().animate({left:528},200).css("width","198px");
+        });
+      });
+        // 첫등장시 왼쪽 burger부분에 겹쳐보임. 식 줄이는 방법?
+      $(function(){
+        var headerMin=$(".nav_bg").height();
+        var headerMax=$(".lnb").height()+headerMin;
+        var speed=200;
+        $(".burger").click(function(){
+          $(".lnb").stop().fadeIn(speed);
+          $(".nav_bg").stop().animate({height:headerMax},speed);
+        });
+        $(".lnb").mouseleave(function(){
+          $(".lnb").stop().fadeOut(speed);
+          $(".nav_bg").stop().animate({height:headerMin},speed);
+        });
+      });
+      // 질문./ $(".lnb").stop().fadeOut();효과를 ".nav_bg"에도 넣고싶습니다.
+      //  네비 펼쳤을때 lnb영역과 흰 바탕모두 효과지속 될수있도록.
+      //    질문/ 클릭 두번하면 네비 닫히게
+      $(function(){
+        $(window).scroll(function(){
+        var pos=$(document).scrollTop();
+        if(pos<200){
+            $(".nav_area").css({position:"relative", top:"94"});
+        }else{
+            $(".nav_area").css({position:"fixed", top:"0"});
+        }
+      });
+      });
+      //오류 : 스크롤 다시 올라오면 네비 없어짐
+    </script>
+
+  </head>
+  <body>
+    <header class="header">
+      <div class="logo_area">
+        <a href="index.html">
+          <img src="images/audi_logo.png" alt="logo">
+        </a>
+      </div>
+      <div class="nav">
+        <div class="nav_bg">
+          <div class="nav_area">
+            <div class="in clear">
+              <div class="gnb_area">
+                  <div class="burger_menu">
+                    <span class="blind">MENU</span>
+                    <a href="#" class="burger"> <img src="images/burger.png" alt="menu"> </a>
+                    <div class="lnb">
+                      <div class="in">
+                      <ul class="lnb_list clear">
+                        <li>
+                          <a href="#">
+                            <img src="images/e-tron.jpg" alt="e-tron">
+                            <p>Audi e-tron</p>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <img src="images/e-tron-gt.jpg" alt="e-tron-gt">
+                            <p>Audi e-tron-gt</p>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <img src="images/a3.jpg" alt="a3">
+                            <p>Audi A3</p>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <img src="images/a4.jpg" alt="a4">
+                            <p>Audi A4</p>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <img src="images/a5.jpg" alt="a5">
+                            <p>Audi A5</p>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <img src="images/a6.jpg" alt="a6">
+                            <p>Audi A6</p>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <img src="images/a7.jpg" alt="a7">
+                            <p>Audi A7</p>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <img src="images/a8.jpg" alt="a8">
+                            <p>Audi A8</p>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <img src="images/q2.jpg" alt="q2">
+                            <p>Audi Q2</p>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <img src="images/q3.jpg" alt="q3">
+                            <p>Audi Q3</p>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <img src="images/q5.jpg" alt="q5">
+                            <p>Audi Q5</p>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <img src="images/q7.jpg" alt="q7">
+                            <p>Audi Q7</p>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <img src="images/q8.jpg" alt="q8">
+                            <p>Audi Q8</p>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <img src="images/r8.jpg" alt="r8">
+                            <p>Audi R8</p>
+                          </a>
+                        </li>
+                    </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <ul class="gnb clear">
+                  <li><a href="#">COMPANY</a></li>
+                  <li><a href="#">SERVICE</a></li>
+                  <li><a href="#">EXPERIENCE</a></li>
+                  <li><a href="#">SUSTAINABILLTY</a></li>
+                </ul>
+                <div class="bar"></div>
+                </div>
+              <div class="search_area">
+                <form action="#">
+                  <fieldset>
+                    <legend class="blind">검색</legend>
+                    <div class="window">
+                    <input type="text" placeholder="Audi Q8">
+                    </div>
+                    <button id="btn_search_area">
+                      <span class="blind">검색</span>
+                      <span class="btn_search"></span>
+                    </button>
+                  </fieldset>
+                </form>
+              </div>
+            </div> <!--in end-->
+        </div>
+      </div> <!--nav_bg end-->
+      </div>
+    </header><!--header end-->
+
+    <main class= "contents">
+       <div class="slider">
+         <div class="in">
+           <div class="slider_text_area">
+              <div class="slider_text">
+                 <h2><span class="weight">The new</span> Audi A7</h2>
+                 <p>당신의 내일을 디자인 하다.</p>
+               </div>
+             </div>
+            <span class="btn_more">
+             <a href="#">  View More </a>
+           </span>
+           </div><!--in-->
+        </div><!--slider-->
+           <div class="button_area clear">
+            <button class="drive">시승신청</button>
+            <button class="find">전시장 찾기</button>
+           </div>
+
+           <div class="model">
+            <div class="in">
+             <h3>MODEL</h3>
+             <ul class="model_list clear">
+               <li>
+                <a href="#">
+                 <div class="model_pic">
+                       <img src="images/model_01.jpg" alt="">
+                   <div class="model_mask">
+                     <div class="model_title">
+                       <strong>Q패밀리의 새로운 얼굴</strong>
+                       <h4>Audi <b>Q8</b></h4>
+                     </div>
+                     <a href="#"><span class="model_btn_more">View More</span></a>
+                     <a href="#"><span class="lnr lnr-heart"></span></a>
+                   </div>
+                 </div>
+                </a>
+               </li>
+               <li>
+                <a href="#">
+                 <div class="model_pic">
+                       <img src="images/model_02.jpg" alt="">
+                   <div class="model_mask">
+                     <div class="model_title">
+                       <strong>다재다능한 럭셔리 SUV</strong>
+                       <h4>Audi <b>Q7</b></h4>
+                     </div>
+                     <a href="#"><span class="model_btn_more">View More</span></a>
+                     <a href="#"><span class="lnr lnr-heart"></span></a>
+                   </div>
+                  </div>
+                </a>
+               </li>
+
+               <li>
+                <a href="#">
+                 <div class="model_pic">
+                       <img src="images/model_03.jpg" alt="">
+                   <div class="model_mask">
+                     <div class="model_title">
+                       <strong>스포츠카, 쿠페, 그리고 SUV.</strong>
+                       <h4>Audi <b>SQ8</b></h4>
+                     </div>
+                     <a href="#"><span class="model_btn_more">View More</span></a>
+                     <a href="#"><span class="lnr lnr-heart"></span></a>
+                   </div>
+                 </div>
+                </a>
+               </li>
+
+             </ul>
+            </div>
+          </div><!--model end-->
+
+        <div class="program">
+          <div class="in">
+            <h3>Audi Accident Care Program</h3>
+            <ul class="program_icon_area clear">
+              <li>
+                <a href="#">
+                <div class="program_icon">
+                  <img src="images/icon_01.png" alt="">
+                </div>
+                <span class="program_text"> 무상 견인 서비스</span>
+                </a>
+              </li>
+
+              <li>
+                <a href="#">
+                <div class="program_icon">
+                  <img src="images/icon_02.png" alt="">
+                </div>
+                <span class="program_text">안전 귀가 서비스</span>
+                </a>
+              </li>
+
+              <li>
+                <a href="#">
+                <div class="program_icon">
+                  <img src="images/icon_03.png" alt="">
+                </div>
+                <span class="program_text">사고 수리 품질 보증</span>
+                </a>
+              </li>
+
+              <li>
+                <a href="#">
+                <div class="program_icon">
+                  <img src="images/icon_04.png" alt="">
+                </div>
+                <span class="program_text">무상 점검 1회</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="sns">
+          <div class="in">
+            <h3>SNS @Audikorea</h3>
+            <ul class="sns_pic_area clear">
+              <li>
+                <div class="sns_pic">
+                  <img src="images/sns_01.jpg" alt="sns">
+                  </div>
+                  <div class="sns_mask">
+                    <div class="sns_text">
+                      <h4>비즈니스와 레저.</h4>
+                      <h4> 무엇도 놓칠 수 없는 당신을 위해 <b>Audi Q8</b></h4>
+                      <p>#아우디 #콰토르 #차스타그램</p>
+                  </div>
+                    <div class="sns_btn_play">
+                      <a href="#"> <img src="images/btn_play.png" alt="plat button"> </a>
+                    </div>
+                  </div>
+
+              </li>
+              <li>
+                <div class="sns_pic">
+                  <img src="images/sns_02.jpg" alt="sns">
+                  <div class="sns_mask">
+                    <div class="sns_text">
+                      <h4>아우디의 첫번째 순수 전기차</h4>
+                      <h4><b>Audi e-tron</b>을 선택한 사람들의 이야기.</h4>
+                      <p>#아우디전기차 #이트론 #electricvehicles</p>
+                    </div>
+                      <div class="sns_btn_play">
+                        <a href="#"> <img src="images/btn_play.png" alt="plat button"> </a>
+                      </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+         </div>
+        </div>
+
+   </main><!--main-->
+    <footer class="footer">
+      <div class="footer_top">
+        <div class="in">
+          <ul class="footer_top_list clear">
+            <li><a href="#">개인정보 처리방침</a></li>
+            <li><a href="#">부정제보</a></li>
+            <li><a href="#">타이어 에너지 소비 효율 등급 정보 조회</a></li>
+            <li><a href="#">스마트키 KC인증 정보조회</a></li>
+            <li><a href="#">AUDI AG의 개인정보처리에 관한 정보</a></li>
+          </ul>
+          <div class="footer_top_btn"><a href="#">서비스센터 바로가기 </a></div>
+        </div>
+      </div>
+          <div class="footer_bottom">
+            <div class="in">
+              <a href="#"> <img src="images/audi_footer_logo.png" alt="logo"> </a>
+              <small> &copy;  2021 Audi Korea. All rights reserved</small>
+              <p>본 웹사이트에서 제공되는 정보는 실제 판매 차량과 다를 수 있습니다.</p>
+            </div>
+         </div>
+    </footer>
+  </body>
+</html>
