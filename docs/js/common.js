@@ -1,5 +1,6 @@
 
 $(function(){
+  //header 
 $(window).scroll(function(){
   var _ht= $(window).scrollTop();
   if(_ht>0){
@@ -9,7 +10,6 @@ $(window).scroll(function(){
   $(".header").removeClass("fixed"),
     $(".header li a").removeClass("active")
   }
-
 });
 
 

@@ -144,9 +144,9 @@ section{padding:150px 0;position: relative;}
 /* about */
 .about {background:#f6f6f6; position:relative; padding-top:0; }
 .about h3{color:#fff;}
-.about .profile-bg {background: url(../images/main.jpg) no-repeat center;
+.about .profile-bg {background: url(../images/about-bg.jpg) no-repeat center;
               background-size: cover; height:350px; padding-top:150px; box-sizing: border-box;}
-.about .profile {width:200px; height:200px; background: #333; border-radius:50%;
+.about .profile {width:200px; height:200px;  border-radius:50%;
                   position:absolute; top:250px; left:50%; transform:translateX(-50%);}
 .about .profile-text {padding-top:160px;}
 .about .profile-text .skills img {width:30px; height:30px; }
