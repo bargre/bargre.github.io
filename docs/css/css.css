@@ -46,7 +46,7 @@ to {opacity: 1;}
 .number {font-size:200px; font-weight: 700; color:rgba(224,224,224,0.4);
         position:absolute; left:0; top:-250px;  }
 h3 {font-size:40px; text-align: center; padding-bottom:40px; }
-section{padding:150px 0;}
+section{padding:150px 0;position: relative;}
 .tab-menu { text-align:center;  padding: 0 20px; position: relative;}
 .tab-menu a { display: inline-block; padding: 0 20px; }
 .tab-menu a:hover::before {content:"";display: block; clear:both; z-index: -10;
@@ -84,7 +84,7 @@ section{padding:150px 0;}
 
 /* project */
 .project {background:#f6f6f6; position: relative;}
-.project .number {left:940px;}
+.project .number, .about .number {left:940px;}
 .project-area{width:1168px;}
 .project-area > li .project-con {float:left; margin-right:42px; width:360px; cursor:pointer;}
 
@@ -99,9 +99,7 @@ section{padding:150px 0;}
 /* project - pop */
 .over-pop {position:fixed;  overflow:auto;  z-index: 1000; display: none;
           left:0; top:0; right:0; bottom:0; background:rgba(0,0,0,0.7);}
-/* .over-pop h4 {text-align: center; padding: 60px 0 60px; font-size:40px; } */
-/* .over-pop .pop-img img{width:100%; } */
-.pop-img img{ display: block; margin:0 auto; width:70%;}
+.pop-img img{ display: block; margin:0 auto; width:60%;}
 .over-pop .close {position:fixed; top:50px; right:50px;}
 .over-pop .close img {width:40px; height:40px; display: block;}
 
@@ -124,18 +122,26 @@ section{padding:150px 0;}
 .gallery-wrap {overflow: hidden;}
 .gallery .gallery-wrap {position: relative; height:360px;}
 .gallery ul {width:2280px; position:absolute; top:0; left:0;}
-.gallery .set li{ float:left; margin-right:20px; cursor:pointer;
-  width:360px; height:360px; overflow: hidden;}
+.gallery .set li{ float:left; margin-right:20px; cursor:pointer; overflow: hidden;
+                  width:360px; height:360px; position:relative; }
+  /*TODO .gallery .set li:first-child{margin-left:20px;}  */
 /* .gallery li img {width:100%; } */
-.gallery li img:hover {transform:scale(1.2); transition:1s;}
+.gallery .gall-list-mask {width:100%; height:100%; background:#000; opacity: 0.6;
+                         color:#fff; font-size: 30px; text-align: center;
+                        position:absolute;left:0;top:0;  line-height:360px;}
+.gallery .gall-list-mask:hover {transition:0.5s;opacity:0;}
+
 /* 질문 / 이미지 움직일때 마진부분에서 멈춤. 이미지 사이즈에 포함이 안되는건지?
           패딩값으로해도 멈춤..*/
-.gallery .gall-button {margin:0 auto 50px; text-align:center;}
-.gallery .gall-button .gall-prev, .gallery .gall-button .gall-next  {display:inline-block; 
-     padding:10px; border-radius:50%; background: #e04a4a; cursor:pointer;}
-/* TODO .gallery .button .gall-prev{} */
-/* about */
+.gallery .gall-button{position:relative; top:40px; text-align: center;}
+.gallery .gall-button span {background:#e04a4a; padding:10px;
+                        display: inline-block;border-radius:50%;width:35px; height:35px; }
+.gallery .gall-button img {width:35px; height:35px;}
+.gallery .over-pop .pop-img {padding:100px 0;}
 
+
+
+/* about */
 .about {background:#f6f6f6; position:relative; padding-top:0; }
 .about h3{color:#fff;}
 .about .profile-bg {background: url(../images/main.jpg) no-repeat center;
@@ -152,7 +158,8 @@ section{padding:150px 0;}
 .about h5 {font-size:24px; }
 .about .line {height:2px; width:100%; background: #e0e0e0; margin:25px 0;}
 .about ol li{padding-bottom:10px;}
-.about #num.active {color:red;}
+.about #num {color:#222; background:transparent; padding:3px;}
+.about #num.active {background:#e04a4a; color:#fff;transition:2s 1s;}
 
 
 .about .skills span { height:30px; background: #222; border-radius: 8px; font-size:14px;
