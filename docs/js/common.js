@@ -13,15 +13,11 @@ $(window).scroll(function(){
 });
 
 
-// 입사지원 이벤트 안됨..
-var st = $(window).scrollTop();
-
-if(st>4000){
-  $("#num").stop().animate({background:"#333"},2000);
-}else{
-    $("#num").stop().animate({background:"#fff"});
-}
-
+// 입사지원 이벤트 
+$(".btn-join a").click(function(){
+ $("#num").addClass("active");
+});
+ 
 
 //타블랫 pc 마우스 이벤트
 
@@ -96,7 +92,17 @@ $(".gall-next").click(function(){
   $(".list").stop().animate({left:-leftWid},1000);
 });
 
-  //$(".list li:first").appendTo(".list");
+//갤러리 팝업
+$(".list li").click(function(){
+  $(this).children(".over-pop").show();
+  $("body").css({overflow:"hidden"});
+});
+
+$(".close").click(function(){
+  $(".over-pop").hide();
+    $("body").css({overflow:"auto"});
+return false;
+});
 
 $(".gall-prev").click(function(){
   $(".list").stop().animate({left:0},1000);
