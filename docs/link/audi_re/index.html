@@ -32,11 +32,11 @@
         var headerMin=$(".nav_bg").height();
         var headerMax=$(".lnb").height()+headerMin;
         var speed=200;
-        $(".burger").click(function(){
+        $(".burger").mouseenter(function(){
           $(".lnb").stop().fadeIn(speed);
           $(".nav_bg").stop().animate({height:headerMax},speed);
         });
-        $(".lnb").mouseleave(function(){
+        $(".burger").mouseleave(function(){
           $(".lnb").stop().fadeOut(speed);
           $(".nav_bg").stop().animate({height:headerMin},speed);
         });
@@ -44,17 +44,8 @@
       // 질문./ $(".lnb").stop().fadeOut();효과를 ".nav_bg"에도 넣고싶습니다.
       //  네비 펼쳤을때 lnb영역과 흰 바탕모두 효과지속 될수있도록.
       //    질문/ 클릭 두번하면 네비 닫히게
-      $(function(){
-        $(window).scroll(function(){
-        var pos=$(document).scrollTop();
-        if(pos<200){
-            $(".nav_area").css({position:"relative", top:"94"});
-        }else{
-            $(".nav_area").css({position:"fixed", top:"0"});
-        }
-      });
-      });
-      //오류 : 스크롤 다시 올라오면 네비 없어짐
+
+ 
     </script>
 
   </head>
