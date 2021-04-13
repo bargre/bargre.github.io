@@ -9,9 +9,22 @@ $(window).scroll(function(){
   }else{
   $(".header").removeClass("fixed"),
     $(".header li a").removeClass("active")
+  }  
+});
+  // 넘버 fadeInTop 이벤트
+  $(window).scroll(function(){
+    var _h= $(window).scrollTop();
+    console.log(_h);
+if((_h>=0)&&(_h<1500)){
+  $(".num_left01").stop().animate({top:-250, opacity:1},500);
+  }else if((_h>=1500)&&(_h<2500)){
+    $(".num_right02").stop().animate({top:-250, opacity:1},500);
+  }else if((_h>=2500)&&(_h<3300)){
+    $(".num_left03").stop().animate({top:-250, opacity:1},500);
+  }else{
+    $(".num_right04").stop().animate({top:-250, opacity:1},500);
   }
 });
-
 
 // 입사지원 이벤트 
 $(".btn-join a").click(function(){
