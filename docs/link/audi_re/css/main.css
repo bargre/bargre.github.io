@@ -26,6 +26,7 @@ body {color:#343434; font-size:18px; font-family:'dadum','NotoSansKR', sans-seri
    border-top: 1px solid #d3d3d3;  border-bottom: 1px solid #d3d3d3; width:100%;}
 .nav_bg{width:100%; background:#fff; position:absolute; top:0; left:0; z-index:10; height:155px;}
 .burger_menu {float:left; padding:15px 30px; border-left:1px solid #d3d3d3;}
+.burger {cursor: pointer; display:block;}
 .nav .gnb li {float:left; border-right:1px solid #d3d3d3;}
 .nav .gnb li:first-child{border-left:1px solid #d3d3d3; padding-top:2px;}
 .nav .gnb li a{display: block; padding:0 30px; line-height:58px; }
