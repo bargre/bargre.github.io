@@ -11,6 +11,23 @@ $(window).scroll(function(){
     $(".header li a").removeClass("active")
   }  
 });
+
+//gnb logo스크롤 애니메이션
+$(".gnb a, .logo a").click(function(){
+  var target= $(this).attr("href");
+  var targetPos=$(target).offset().top;
+  $("html,body").stop().animate({scrollTop:targetPos-100},1000);
+  return false;
+ });
+
+ //web 스크롤 애니메이션
+$(".tab-menu a").click(function(){
+  var target= $(this).attr("href");
+  var targetPos=$(target).offset().top;
+  $("html,body").stop().animate({scrollTop:targetPos-100},1000);
+  return false;
+ });
+
   // 넘버 fadeInTop 이벤트
   $(window).scroll(function(){
     var _h= $(window).scrollTop();
@@ -97,13 +114,34 @@ function leftmovie(target){
  $(target).stop().animate({left:tl});
 }
 
-//갤러리 슬라이드
-var imgWid = $(".list").width();
-var wid = $(window).width();
-var leftWid = imgWid-wid;
-$(".gall-next").click(function(){
-  $(".list").stop().animate({left:-leftWid},1000);
+
+//갤러리 자동 슬라이드
+var x=0;
+var s= -1;
+var move = setInterval(motion,2);
+
+function motion(){
+x=x+s;
+if(x<-2280){x=0;}//2280px이 끝나갈때 x의 left값을 다시 0으로
+if(x>0){x=-2280} //위와 반대 상황
+$(".gallery-area").css({left:x});
+};
+
+$(".gall_next").click(function(){
+  s=-1;
+motion();
 });
+$(".gall_prev").click(function(){
+  s=1;
+  motion();
+});
+
+$(".list li").mouseover(function(){
+ clearInterval(move); //갤러리 마우스 올려놓았을때 멈춤
+});
+$(".list li").mouseout(function(){
+  move=setInterval(motion,2);
+  });
 
 //갤러리 팝업
 $(".list li").click(function(){
