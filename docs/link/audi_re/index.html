@@ -28,38 +28,39 @@
         });
       });
         // 첫등장시 왼쪽 burger부분에 겹쳐보임. 식 줄이는 방법?
-      $(function(){
-        var nav_h=$(".nav_bg").height();
-        var speed=200;
-<<<<<<< HEAD
-        $(".burger").mouseenter(function(){
-=======
+      // $(function(){
+      //   var headerMin=$(".nav_bg").height();
+      //   var headerMax=$(".lnb").height()+headerMin;
+      //   var speed=200;
+      //   $(".burger").click(function(){
+      //     $(".lnb").stop().fadeIn(speed);
+      //     $(".nav_bg").stop().animate({height:headerMax},speed);
+      //     return false;
+      //   });
+      //   $(".lnb").mouseleave(function(){
+      //     $(".lnb").stop().fadeOut(speed);
+      //     $(".nav_bg").stop().animate({height:headerMin},speed);
+      //   });
+        
 
-  
-        $(".burger").mouseover(function(){
->>>>>>> origin/feature/updat-nav
-          $(".lnb").stop().fadeIn(speed);
-          $(".nav_bg").stop().animate({height:nav_h+380},speed);
-        });
-<<<<<<< HEAD
-        $(".burger").mouseleave(function(){
-=======
-        $(".burger").mouseout(function(){
->>>>>>> origin/feature/updat-nav
-          $(".lnb").stop().fadeOut(speed);
-          $(".nav_bg").stop().animate({height:nav_h},speed);
-        });
+
+
+        $(".burger").click(function(){
+    if($(".lnb").hide();==false){
+      $(".lnb").stop().fadeIn();
+    $(".nav_bg").slideDown(200);
+    $(".nav_bg").slideUp(200);
+  }else{
+    $(".lnb").stop().fadeOut();
+    $(".nav_bg").slideDown(200);
+  }
+  });
+
+
+
       });
-<<<<<<< HEAD
-      // 질문./ $(".lnb").stop().fadeOut();효과를 ".nav_bg"에도 넣고싶습니다.
-      //  네비 펼쳤을때 lnb영역과 흰 바탕모두 효과지속 될수있도록.
-      //    질문/ 클릭 두번하면 네비 닫히게
-=======
-    
-      // 질문 / 마우스 오버 말고 클릭 변경
->>>>>>> origin/feature/updat-nav
 
- 
+
     </script>
 
   </head>
@@ -77,7 +78,7 @@
               <div class="gnb_area">
                   <div class="burger_menu">
                     <span class="blind">MENU</span>
-                    <img src="images/burger.png" alt="menu" class="burger">
+                    <a href="#" class="burger"> <img src="images/burger.png" alt="menu"> </a>
                     <div class="lnb">
                       <div class="in">
                       <ul class="lnb_list clear">
