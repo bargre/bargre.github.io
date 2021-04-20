@@ -28,19 +28,19 @@
         });
       });
         // 첫등장시 왼쪽 burger부분에 겹쳐보임. 식 줄이는 방법?
-      // $(function(){
-      //   var headerMin=$(".nav_bg").height();
-      //   var headerMax=$(".lnb").height()+headerMin;
-      //   var speed=200;
-      //   $(".burger").click(function(){
-      //     $(".lnb").stop().fadeIn(speed);
-      //     $(".nav_bg").stop().animate({height:headerMax},speed);
-      //     return false;
-      //   });
-      //   $(".lnb").mouseleave(function(){
-      //     $(".lnb").stop().fadeOut(speed);
-      //     $(".nav_bg").stop().animate({height:headerMin},speed);
-      //   });
+      $(function(){
+        var headerMin=$(".nav_bg").height();
+        var headerMax=$(".lnb").height()+headerMin;
+        var speed=200;
+        $(".burger").click(function(){
+          $(".lnb").stop().fadeIn(speed);
+          $(".nav_bg").stop().animate({height:headerMax},speed);
+          return false;
+        });
+        $(".lnb").mouseleave(function(){
+          $(".lnb").stop().fadeOut(speed);
+          $(".nav_bg").stop().animate({height:headerMin},speed);
+        });
         
 
 
