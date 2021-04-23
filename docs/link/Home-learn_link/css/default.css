@@ -107,7 +107,7 @@ p { letter-spacing: -1px; line-height: 1.5;}
 .review-area li strong {color:#ff7800;}
 
 .learning-box {max-width:544px; overflow: hidden;}
-.learning {background:#e6f6f8;}
+.learning {background:#eaeef1;}
 .learning strong{color:#007e8c;}
 .learning .learning-img li{max-width:544px;}
 
@@ -124,7 +124,7 @@ p { letter-spacing: -1px; line-height: 1.5;}
 
 .swiper-wrapper {margin-bottom:25px;}
 
-.free {background:#ededed; padding-top:50px;}
+.free {background:#eaeef1; padding-top:50px;}
 .free h1 {color:#192d35;}
 .free h1 span {color:#ff7800;}
 table {width:100%; max-width: 500px; margin:0 auto;}
@@ -140,7 +140,7 @@ input[type="radio"] {border:1px solid #ff7800; width:20px; height:20px;
 button { background:#ff7800; color:#fff; font-size: 20px; padding:15px; border:none;
         border-radius:40px; margin-top:30px; width:100%; max-width:300px; }
 
-.footer {background:#00bfd5;}
+.footer {background:#c6cdd3;}
 .footer_in{padding: 0 20px;}
 .footer strong {padding: 50px 0 20px;}
 .footer li {font-size: 12px;line-height:1.5;padding-bottom:5px;}
