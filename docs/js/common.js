@@ -91,7 +91,6 @@ $(".prev").css({opacity:"0.1"});
   $(".next").click(function(){
    target=$(this).parent().prev().find(".illust li");
     ct--;
-
     if(ct<=-5){ct=-5;
               $(this).css({opacity:"0.2"});
               $(".prev").css({opacity:"1"});
