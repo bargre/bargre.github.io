@@ -82,13 +82,17 @@ p { letter-spacing: -1px; line-height: 1.5;}
 .blind {color:transparent;}
 /* 질문 / 블라인드 말고 다른방법 있는지 */
 
-.header {width:100%; padding-top:50px; padding-bottom: 50px;
-         background:#00bfd5; text-align: center; }
+.header {width:100%; background:#fff; text-align: center; position: relative;}
+.header-img {width:100%; display:block; }
+.logo {width:100px; position: absolute; right:20px; top:15px;}
+.header_tit {position:absolute; left:50%; top:15%; transform: translateX(-50%); width:300px;}         
 .tit {padding-bottom:20px;}
-.tit h3{font-size:22px;}
-.tit h1{font-size:50px; padding: 7px 0 15px; font-weight: 700;
-  -webkit-text-stroke: 1px #fff; color:#ff7800;}
-.tit_p {font-size:16px; font-weight: 700; width:250px;  margin:0 auto;}
+.header_tit h3 {padding-bottom:7px;}
+.header_tit h3, .tit h3{font-size:25px;}
+.header_tit h1, .tit h1{font-size:60px; padding: 7px 0 15px; 
+                        font-weight: 700; color:#ff7800;}
+.header_tit h1 span {color:#00bfd5;}                       
+.header_tit p {font-size:16px; font-weight:700; width:250px; margin:0 auto;}
 
 .tit h2 {background:#ff7800; padding:10px 30px; display: inline-block;
           border-radius: 30px; font-size:22px; color:#fff; margin-bottom: 4vw;}
@@ -143,22 +147,25 @@ button { background:#ff7800; color:#fff; font-size: 20px; padding:15px; border:n
 
 /* -------------------------------------------------------*/
 @media screen and (min-width:425px){
+  .header_tit {width:400px;} 
+  .logo { width:150px;}
   .step-area li {border:none; }
 input[type="text"], input[type="tel"] {height:40px; margin-bottom:15px;}
 .check div {width:50%; float:left;}
 .age {vertical-align: middle;}
+
 }
 /* -------------------------------------------------------*/
 /* tablet */
 @media screen and (min-width:768px){
   .in {padding: 0 50px;}
   .bottom {padding-bottom: 80px;}
-  .header {padding-top:80px; padding-bottom: 80px;}
-
+  .logo {right:50px;}
   .tit {padding-bottom:28px;}
-  .tit h3{font-size:2.143rem;}
-  .tit h1{font-size:70px; padding: 15px 0 30px;}
-  .tit_p { font-size:24px; width: 400px; line-height: 34px; }
+  .header_tit {text-align: left; width:500px; transform: translateX(0); left:50px;}
+  .header_tit h3, .tit h3{font-size:2.143rem;}
+  .header_tit h1, .tit h1{font-size:70px; padding: 15px 0 30px;}
+  .header_tit p { font-size:20px; line-height: 30px; width:400px;}
   .tit h2 {font-size:36px; border-radius: 30px; }
   .tit h4 {font-size:2rem; padding:80px 0 15px;}
   .tit p { font-size: 20px; line-height: 30px;}
@@ -189,6 +196,12 @@ input[type="text"], input[type="tel"] {height:40px; margin-bottom:15px;}
 
 /* -------------------------------------------------------*/
 @media screen and (min-width:1120px){
+
+.header_tit {width:700px;  left:10%; }
+.header_tit h3{font-size:2.8rem;}
+.header_tit h1{font-size:90px;}
+.header_tit p { font-size:20px; line-height: 30px; width:400px; margin:0 0;}  
+.logo {right:10%; width: 200px;}
 .in,.footer_in{max-width: 1120px;}
 .footer_in {margin: 0 auto; padding: 0 0px;}
 .learning-area{position: relative; width:100%; height: 460px;}
