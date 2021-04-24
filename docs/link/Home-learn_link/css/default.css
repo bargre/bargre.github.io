@@ -165,10 +165,10 @@ input[type="text"], input[type="tel"] {height:40px; margin-bottom:15px;}
   .header_tit {text-align: left; width:500px; transform: translateX(0); left:50px;}
   .header_tit h3, .tit h3{font-size:2.143rem;}
   .header_tit h1, .tit h1{font-size:70px; padding: 15px 0 30px;}
-  .header_tit p { font-size:20px; line-height: 30px; width:400px;}
+  .header_tit p { font-size:20px; line-height: 30px; width:400px; margin:0 0;}
   .tit h2 {font-size:36px; border-radius: 30px; }
   .tit h4 {font-size:2rem; padding:80px 0 15px;}
-  .tit p { font-size: 20px; line-height: 30px;}
+  .tit p { font-size: 20px; line-height: 30px; }
 
   .review-area li {height:170px; border:8px solid #e5e5e5; font-size: 1.429rem;}
   .learning .learning-img li{border: 1px solid #d2d2d2; background: #fff; padding:20px;
@@ -200,7 +200,7 @@ input[type="text"], input[type="tel"] {height:40px; margin-bottom:15px;}
 .header_tit {width:700px;  left:10%; }
 .header_tit h3{font-size:2.8rem;}
 .header_tit h1{font-size:90px;}
-.header_tit p { font-size:20px; line-height: 30px; width:400px; margin:0 0;}  
+.header_tit p { font-size:20px; line-height: 30px; width:400px; }  
 .logo {right:10%; width: 200px;}
 .in,.footer_in{max-width: 1120px;}
 .footer_in {margin: 0 auto; padding: 0 0px;}
