@@ -5,7 +5,7 @@
     <title>AUDI KOREA</title>
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script type="text/javascript">
       $(function(){
         $(".nav .gnb li").mouseover(function(){
@@ -26,40 +26,19 @@
         $(".nav .gnb li:eq(3)").mouseover(function(){
           $(".bar").stop().animate({left:528},200).css("width","198px");
         });
-      });
-        // 첫등장시 왼쪽 burger부분에 겹쳐보임. 식 줄이는 방법?
-      $(function(){
-        var headerMin=$(".nav_bg").height();
-        var headerMax=$(".lnb").height()+headerMin;
-        var speed=200;
-        $(".burger").click(function(){
-          $(".lnb").stop().fadeIn(speed);
-          $(".nav_bg").stop().animate({height:headerMax},speed);
-          return false;
-        });
-        $(".lnb").mouseleave(function(){
-          $(".lnb").stop().fadeOut(speed);
-          $(".nav_bg").stop().animate({height:headerMin},speed);
-        });
-        
-
-
-
-  //       $(".burger").click(function(){
-  //   if($(".lnb").hide()==false){
-  //     $(".lnb").stop().fadeIn();
-  //   $(".nav_bg").slideDown(200);
-  //   $(".nav_bg").slideUp(200);
-  // }else{
-  //   $(".lnb").stop().fadeOut();
-  //   $(".nav_bg").slideDown(200);
-  // }
-  // });
-
-
-      });
-
-
+      }); // 네비게이션 바 효과
+         
+      $(function(){      
+            $(".burger_menu").mouseenter(function(){
+              $(".lnb").show();
+              $(".nav_bg").show();
+              return false;
+            });
+            $(".burger_menu").mouseleave(function(){
+              $(".lnb").hide();
+              $(".nav_bg").hide();
+            });
+          });
     </script>
 
   </head>
@@ -70,8 +49,7 @@
           <img src="images/audi_logo.png" alt="logo">
         </a>
       </div>
-      <div class="nav">
-        <div class="nav_bg">
+      <div class="nav">    
           <div class="nav_area">
             <div class="in clear">
               <div class="gnb_area">
@@ -192,9 +170,9 @@
                 </form>
               </div>
             </div> <!--in end-->
-        </div>
-      </div> <!--nav_bg end-->
+        </div>        
       </div>
+      <div class="nav_bg"></div> <!--nav_bg end-->
     </header><!--header end-->
 
     <main class= "contents">
