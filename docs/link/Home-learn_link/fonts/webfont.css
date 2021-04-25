@@ -20,7 +20,7 @@
        local('NotoSansKR Medium'),
        url('./NotoSansKR-Medium.eot') format('embedded-opentype'),
        url('./NotoSansKR-Medium.woff2') format('woff2'),
-       url('./NotoSansKR-Medium.woff)' format('woff'),
+       url('./NotoSansKR-Medium.woff') format('woff'),
        url('./NotoSansKR-Medium.ttf') format('truetype');
 }
 
