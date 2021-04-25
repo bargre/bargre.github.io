@@ -9,9 +9,7 @@ ul{list-style:none;}
 .bar {display:inline-block; width:20px; height: 2px; background:#055344; margin:12px 20px;}
 
 
-body{color:#333; font-size:16px;
-  /*sans-seri계열만 적용해줄것*/
-  font-family:"NanumBarunGothic", arial, sans-serif;}
+body{color:#333; font-size:16px; font-family:"NanumBarunGothic", sans-serif;}
 
   .header {border-bottom:1px solid #055344; padding:40px 0 30px 0; }
   .in {width:1376px; margin-left: auto; margin-right:auto; position: relative; }
@@ -22,11 +20,9 @@ body{color:#333; font-size:16px;
                             color:#333; font-size:18px; position:relative;}
   .header .nav .gnb> li> a:hover {color:#055344; }
 
-   /* 질문 1 / lnb 부분 가로로 펼치기
-    .lnb li 핑크박스부분 중앙 배치가 안됩니다. */
+
   .nav .gnb ul {text-align:center;}
   .nav .gnb .lnb  { position:absolute; top:62px;  left:50px; width:100%;
-                /* transform: translateX(-50%);  width:600px; line-height: 60px; */
                     color:#fff;  display: none;  z-index: 20; transform:translateX(-50%);}
 
   .nav .gnb li:nth-of-type(1) .lnb {width:360px;}
@@ -38,11 +34,8 @@ body{color:#333; font-size:16px;
   .nav .gnb .lnb li {float:left; white-space: nowrap;  margin:0 5px; }
   .nav .gnb .lnb li a {padding: 20px 15px; display:block;  background:#055344;}
   .nav .gnb li:hover .lnb {display: block;}
-  .nav .gnb .lnb li:hover::after {}
 
-/* 질문 2 / lnb_box 초록박스 부분을 gnb li:hover할때 내려올수있게 하고싶습니다. 이 부분 html구조가 헷갈립니다. */
-
-  .lnb_box { opacity:1; background:#055344; position:absolute; top:101px; width:100%; height:60px;z-index: 10;  }
+  .lnb_box { opacity:1; background:#055344; position:absolute; top:101px; width:100%; height:60px;z-index: 10; display: none;}
 
 
   .header .icon {float:right; width:150px; text-indent:-999px;}
@@ -57,31 +50,23 @@ body{color:#333; font-size:16px;
   .header .icon li a {display: block; color:transparent;}
 
 /* header end */
+.visual_slider {position:relative; width:100%; height:500px;}
+.visual_slider .slider_pic img {width:100%;}
+.visual_in {width:1387px;}
+.slider_list .visual_text {width:255px; position: absolute; left:20%; top:5%; z-index: 300;}
+.slider_list .visual_text h2 {font-size:50px; font-family:"NanumMyeongjo"; font-weight:400;
+                    line-height: 1.2; padding-bottom:30px;} */
+.slider_list .visual_text p {font-size:16px; line-height: 1.5; letter-spacing:-0.5px;}
+.visual_slider .slide1 .visual_text{top:100px;} 
+.visual_slider .slide1 .visual_text h2{padding-bottom:50px; }
+.visual_slider .slide2 .visual_text{width:360px; top:100px;}
+.visual_slider .slide2 .visual_text h2{font-family:"NanumBarunGothic";}
+.visual_slider .slide2 .visual_text span {color:#df0025;} 
+.visual_slider .slide3 .visual_text{background: rgba(84,46,10,0.6); padding:30px; color:#fff;}
 
-/* 질문 3 / prev 버튼, next 버튼, 페이지네이션처럼 텍스트를 투명하게 가릴경우
-드래그했을때 남아있는데 없앨수 없을까요?
-구조짤때 span으로 따로 묶어야 하나요?  */
 
-  .visual_slider {position: relative; height:650px;
-                  background:#91a891 url(../images/main_01.jpg) no-repeat center;
-                  background-size:cover; }
-  .visual_slider .visual_text {width:255px; position: absolute; left:190px; top:160px;}
-  .visual_text h2 {font-size:50px; font-family:"NanumMyeongjo"; font-weight:500;
-                    line-height: 1.2; padding-bottom:50px; }
-  .visual_text p {font-size:16px; width:250px; line-height: 1.5; letter-spacing:-0.5px;}
 
-  .btn_arrow span {color:transparent; display:block; cursor:pointer; text-indent:-9999px;
-                  background-repeat:no-repeat; background-position:center;
-                  width:10px; height: 19px;
-                  position:absolute; bottom:25px;}
-  .btn_arrow .prev {background: url(../images/slider_prev.png); left:45%;}
-  .btn_arrow .next {background: url(../images/slider_next.png); right:45%;}
-  .pagination {position: absolute; left:50%; bottom:30px; margin-left:-33px;}
-  .pagination li{color:transparent; float:left; margin:0 6px 0 6px;  text-indent:-9999px;
-                background: #b4b4b4; width:10px; height: 10px; border-radius:6px;}
-  .pagination .active {background: #4a4b4b;}
-
-  /* 질문 4 / .new_list li:hover 했을때 border-box때문에 이미지가 작아지는데 그 현상을 없앨수 있을까요?  */
+  /* new */
   h3 {font-size:35px; color:#055344; font-weight:400; text-align:center; padding-top:120px;
      padding-bottom: 60px;}
   .new_list {position: relative; width:100%;}
@@ -172,6 +157,4 @@ body{color:#333; font-size:16px;
   .fotter_right span:hover {background:#bbbbbb;}
   .fotter_right span:hover a { color:#4e4e4e;}
 
-  /* 질문 5 / 네비:hover 했을때 폰트 weight bold로 했을때 폰트 깨짐이 보입니다. 이유가 궁금합니다.*/
 
-  /* 질문 6 / 전체적인 html 구조가 괜찮은지 궁금합니다. */
