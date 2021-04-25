@@ -22,9 +22,11 @@ body {color:#343434; font-size:18px; font-family:'dadum','NotoSansKR', sans-seri
 .logo_area {text-align: center; padding:20px 0; position:relative; z-index: 100;
   background:linear-gradient(to top left, #00243f,#002f53,#00243f);}
 
-.nav_area { box-sizing: border-box; position:relative; top:94px; z-index: 20; background: #fff;
+.nav {position:relative;}
+.nav_area { box-sizing: border-box; position:relative; top:0; z-index: 20; background: #fff;
    border-top: 1px solid #d3d3d3;  border-bottom: 1px solid #d3d3d3; width:100%;}
-.nav_bg{width:100%; background:#fff; position:absolute; top:0; left:0; z-index:10; height:155px;}
+.nav_bg{width:100%; background:#fff; position:absolute; top:150px; left:0;
+         z-index:10; height:380px; display:none;}
 .burger_menu {float:left; padding:15px 30px; border-left:1px solid #d3d3d3;}
 .burger {cursor: pointer; display:block;}
 .nav .gnb li {float:left; border-right:1px solid #d3d3d3;}
@@ -46,7 +48,7 @@ input {width:310px; height:40px; border:1px solid #d3d3d3; border-radius: 5px; p
 
 /* slider start   */
 /* 질문 / 축소시키면 text 영역 변경 */
-.slider{position:relative; top:60px; height:650px;
+.slider{position:relative; height:650px;
   background: url(../images/audi_main.jpg) no-repeat center; background-size:cover; }
 .slider_text_area {color:#fff; position:absolute; top:60px; left:0px; letter-spacing: -1px;}
 .slider_text h2 {font-size:60px; padding-bottom:10px;}
@@ -85,7 +87,7 @@ input {width:310px; height:40px; border:1px solid #d3d3d3; border-radius: 5px; p
 /* program start */
 
 .program {width:100%; height: 500px; color:#fff; margin-top:120px;
-  background: url(../images/program_bg.jpg) no-repeat center; }
+  background: url(../images/program_bg.jpg) no-repeat center; background-size: cover;}
 .program_icon_area {width:960px; margin:0 auto;}
 .program_icon_area li {float:left; width: 170px;  margin: 0 30px;text-align: center;}
 .program_icon {width: 140px; height:140px; border-radius: 50%; margin:0 auto 20px; background: #fff;}
