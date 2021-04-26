@@ -7,6 +7,12 @@
     <link rel="stylesheet" href="font/nanumbarungothicsubset.css" type="text/css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="js/common.js"></script>
+    <script>
+       function showPopup()
+       { window.open("link/innisfree_re/mobile/index.html", "a", "width=400, height=600, left=200, top=50"); }
+       function showPopup2()
+       { window.open("link/Home-learn_link/index.html", "a", "width=400, height=600, left=200, top=50"); }
+    </script>
   </head>
   <body>
   <header class="header">
@@ -88,7 +94,7 @@
               <p>HTML / CSS / JQuery</p>
               <div class="btn-area">
                 <span class="btn-site"><a href="link/innisfree_re/index.html" target="_blank">PC사이트 바로가기</a></span>
-                <span class="btn-site"><a href="#">Mobile 사이트 바로가기</a></span>
+                <input type="button" class="btn-site" value="Mobile 사이트 바로가기" onclick="showPopup();">
               </div>
             </div>
         </div>
@@ -150,7 +156,7 @@
               <p>HTML / CSS / JQuery</p>
               <div class="btn-area">
                 <span class="btn-site"><a href="link/Home-learn_link/index.html" target="_blank">PC사이트 바로가기</a></span>
-
+                <input type="button" class="btn-site" value="Mobile 사이트 바로가기" onclick="showPopup2();">
               </div>
             </div>
         </div>
@@ -527,8 +533,10 @@
               <span>CSS</span>
               <span>JS</span>
               <span>jQuery</span>
-              <span>ATOM</span>
+              <span>Atom</span>
               <span>EditPlus</span>
+              <span>VScode</span>
+              <span>github</span>
             </div>
           </li>
 

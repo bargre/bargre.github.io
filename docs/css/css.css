@@ -10,6 +10,8 @@ body {font-size:18px; color:#222; line-height:1;
       font-family: 'NanumBarunGothic', sans-serif;}
 .in {position:relative; width:1168px; margin-left:auto; margin-right:auto;}
 :root {--main-color:#e04a4a;}
+input { margin:0; padding:0; border:0; outline:0; cursor: pointer;
+            vertical-align:middle; line-height:1;}
 /* header */
 .header {height:100px; position:fixed; z-index: 999; left:0; top:0; width:100%;}
 .header .logo {float:left; padding-top:45px;}
@@ -77,9 +79,10 @@ section{padding:150px 0;position: relative;}
 .web .content-text {position: absolute; right:0; top:0; padding-left:120px; width:400px;}
 .web .content-text h4{font-size:32px; padding:70px 0 35px;}
 .web .content-text p {padding-bottom:15px; }
-.web .btn-area {padding-top:30px; }
-.web .btn-site a {display: inline-block; padding:15px 20px; color:#fff;
-            background: var(--main-color);border-radius: 5px;}
+.web .btn-area, input {padding-top:30px; }
+.web .btn-site a, input {display: inline-block; padding:15px 15px; color:#fff;
+            background: var(--main-color);border-radius: 5px;font-size:18px;}
+
 .web .gray-area{background:#f6f6f6; width:100%;}
 
 /* project */
