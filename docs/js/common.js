@@ -85,35 +85,61 @@ return false;
 });
 
  // pop-스픽나우
-var target;
-var ct=0;
+// var target;
+// var ct=0;
 
-$(".prev").css({opacity:"0.1"});
-  $(".next").click(function(){
-   target=$(this).parent().prev().find(".illust li");
-    ct--;
-    if(ct<=-5){ct=-5;
-              $(this).css({opacity:"0.2"});
-              $(this).prev().css({opacity:"1"});
+// $(".prev").css({opacity:"0.1"});
+//   $(".next").click(function(){
+//    target=$(this).parent().prev().find(".illust li");
+//     ct--;
+//     if(ct<=-5){ct=-5;
+//               $(this).css({opacity:"0.2"});
+//               $(this).prev().css({opacity:"1"});
+//              }
+//     leftmovie(target)
+//   });
+
+//   $(".prev").click(function(){
+//    target=$(this).parent().prev().find(".illust li");
+//     ct++;
+
+//     if(ct>=0){ct=0; 
+//               $(this).css({opacity:"0.2"});
+//                $(this).next().css({opacity:"1"});
+//             }
+//     leftmovie(target)
+//   });
+
+// function leftmovie(target){
+//  var tl= 752*ct;
+//  $(target).stop().animate({left:tl});
+// }
+var current=0;
+var l;
+ var m;
+$(".prev").click(function(){//이전 이미지가 슬라이드된후 마지막 이미지를 갤러리안의 젤 앞으로 배치
+   target=$(this).parent().prev().find(".illust");
+   m=$(target).width()-$(target).find("li").width();
+     l=$(target).position().left;
+     if(l>= 0){
+             $(".illust").css({left:0});
+             return false;
              }
-    leftmovie(target)
-  });
+   $(target).animate({left:"+=752px"},"slow");
+    
+});
 
-  $(".prev").click(function(){
-   target=$(this).parent().prev().find(".illust li");
-    ct++;
+$(".next").click(function(){//다음 이미지가 슬라이드된후 젤앞의 이미지를 갤러리안의 젤 마지막으로 배치
+   target=$(this).parent().prev().find(".illust");
+   m=$(target).width()-$(target).find("li").width();
+     l=$(target).position().left;
+     if(l<= -m){
+             $(target).css({left:-m});
+             return false;
+             }
+   $(target).animate({left:"-=752px"},"slow");
 
-    if(ct>=0){ct=0; 
-              $(this).css({opacity:"0.2"});
-               $(this).next().css({opacity:"1"});
-            }
-    leftmovie(target)
-  });
-
-function leftmovie(target){
- var tl= 752*ct;
- $(target).stop().animate({left:tl});
-}
+});
 
 
 //갤러리 자동 슬라이드

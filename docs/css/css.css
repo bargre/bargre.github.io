@@ -110,8 +110,8 @@ section{padding:150px 0;position: relative;}
 .tablet-area .tablet-img {display: block; width:800px; height: 534px; margin:0 auto;}
 .tablet-area .illust-mask {width:752px; height:464px;  border-radius: 10px; overflow: hidden;
                            position: absolute; left:50%; transform: translateX(-50%); top:27px;}
-.tablet-area .illust {width:4512px;}
-.tablet-area .illust li{ float:left;  position:relative; left:0;}
+.tablet-area .illust {width:4512px; position:relative; left:0;}
+.tablet-area .illust li{ float:left;  }
 .tablet-area .illust li img {width:752px;  height:100%; display: block; }
 .over-pop .button .prev,
 .over-pop .button .next {position:absolute; top:50%;
