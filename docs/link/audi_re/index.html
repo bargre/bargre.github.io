@@ -2,12 +2,15 @@
 <html lang="ko" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1">
     <title>AUDI KOREA</title>
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script type="text/javascript">
       $(function(){
+        var wd=$(window).width();
+        if(500<=wd){
         $(".nav .gnb li").mouseover(function(){
           $(".bar").css({display:"block"});
         });
@@ -26,19 +29,38 @@
         $(".nav .gnb li:eq(3)").mouseover(function(){
           $(".bar").stop().animate({left:528},200).css("width","198px");
         });
+        }else{
+           $(".bar").css({display:"none"});
+          } //모바일 버전에서 바 삭제
+      
       }); // 네비게이션 바 효과
+        
          
+
+      // $(function(){      
+      //       $(".burger_menu").mouseenter(function(){
+      //         $(".lnb").show();
+      //         $(".nav_bg").show();
+      //         return false;
+      //       });
+      //       $(".burger_menu").click(function(){
+      //         $(".lnb").hide();
+      //         $(".nav_bg").hide();
+      //       });            
+      //     });
+
+      
       $(function(){      
-            $(".burger_menu").mouseenter(function(){
-              $(".lnb").show();
-              $(".nav_bg").show();
+            $(".burger_menu").click(function(){
+              $(".nav_bg").slideToggle();
+              $(".lnb").slideToggle();              
               return false;
             });
-            $(".burger_menu").mouseleave(function(){
-              $(".lnb").hide();
-              $(".nav_bg").hide();
-            });
+               
           });
+
+      
+          
     </script>
 
   </head>
@@ -55,7 +77,12 @@
               <div class="gnb_area">
                   <div class="burger_menu">
                     <span class="blind">MENU</span>
-                    <a href="#" class="burger"> <img src="images/burger.png" alt="menu"> </a>
+                      <a href="#" class="burger">
+                        <picture>
+                          <source srcset="images/burger_w.png" media="(max-width:500px)">                      
+                          <img src="images/burger.png" alt="숨긴메뉴 버튼" style="width:100%">
+                        </picture>
+                      </a>
                     <div class="lnb">
                       <div class="in">
                       <ul class="lnb_list clear">
@@ -95,7 +122,7 @@
                             <p>Audi A6</p>
                           </a>
                         </li>
-                        <li>
+                        <li class="m_right">
                           <a href="#">
                             <img src="images/a7.jpg" alt="a7">
                             <p>Audi A7</p>
@@ -137,7 +164,7 @@
                             <p>Audi Q8</p>
                           </a>
                         </li>
-                        <li>
+                        <li class="m_right">
                           <a href="#">
                             <img src="images/r8.jpg" alt="r8">
                             <p>Audi R8</p>

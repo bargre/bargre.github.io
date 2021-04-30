@@ -9,7 +9,7 @@ ul{list-style:none;}
 .bar {display:inline-block; width:20px; height: 2px; background:#055344; margin:12px 20px;}
 
 
-body{color:#333; font-size:16px; font-family:"NanumBarunGothic", sans-serif;}
+body{color:#333; font-size:16px; font-family:"NanumBarunGothic", sans-serif; min-width:1376px;}
 
   .header {border-bottom:1px solid #055344; padding:40px 0 30px 0; }
   .in {width:1376px; margin-left: auto; margin-right:auto; position: relative; }
@@ -50,7 +50,7 @@ body{color:#333; font-size:16px; font-family:"NanumBarunGothic", sans-serif;}
   .header .icon li a {display: block; color:transparent;}
 
 /* header end */
-.visual_slider {position:relative; width:100%; height:500px;}
+.visual_slider {position:relative; width:100%; }
 .visual_slider .slider_pic img {width:100%;}
 .visual_in {width:1387px;}
 .slider_list .visual_text {width:255px; position: absolute; left:20%; top:5%; z-index: 300;}
