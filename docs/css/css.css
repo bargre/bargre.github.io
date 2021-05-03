@@ -183,3 +183,6 @@ section{padding:150px 0;position: relative;}
 /* footer */
 
 footer {background: #222; height:100px; text-align: center; color:#888; padding-top:50px;}
+footer p {line-height:1.5; font-size: 15px; }
+footer .last {padding-bottom: 10px;}
+small {font-size:14px;}
