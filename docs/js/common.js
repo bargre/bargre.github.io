@@ -32,14 +32,22 @@ $(".tab-menu a").click(function(){
   $(window).scroll(function(){
     var _h= $(window).scrollTop();
     console.log(_h);
-if((_h>=0)&&(_h<1500)){
+if((_h>=0)&&(_h<300)){
   $(".num_left01").stop().animate({top:-250, opacity:1},500);
-  }else if((_h>=1500)&&(_h<2500)){
+  }else if((_h>=300)&&(_h<800)){
+    $(".list-text1").addClass("fadeInRight");
+  }else if((_h>=800)&&(_h<1300)){
+    $(".list-text2").addClass("fadeInRight");
+  }else if((_h>=1300)&&(_h<2000)){
+    $(".list-text3").addClass("fadeInRight");
+  }else if((_h>=2000)&&(_h<3000)){
     $(".num_right02").stop().animate({top:-250, opacity:1},500);
-  }else if((_h>=2500)&&(_h<3300)){
+  }else if((_h>=3000)&&(_h<3500)){
     $(".num_left03").stop().animate({top:-250, opacity:1},500);
-  }else{
-    $(".num_right04").stop().animate({top:-250, opacity:1},500);
+  }else if((_h>=3500)&&(_h<4000)){
+    $(".num_right04").stop().animate({top:-250, opacity:1},500); 
+  }else if(_h>=4000) {
+    $(".about li .animated").addClass("fadeIn");
   }
 });
 

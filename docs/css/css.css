@@ -25,8 +25,8 @@ input { margin:0; padding:0; border:0; outline:0; cursor: pointer;
 
 
 /* home */
-.home {background:url(../images/main.jpg) no-repeat center center; background-attachment:fixed;
-      background-size:cover; height:650px; width:100%;}
+.home {background:url(../images/main.jpg) no-repeat center -200px; background-attachment:fixed;
+      background-size:cover; height:600px;}
 .home .home-txt {position: absolute; left: 0; top:280px;}
 .home .home-txt h2 {color:#fff; font-weight:200; font-size:50px; line-height: 1.2;}
 .home .home-txt h2 span {font-weight:400;}
@@ -36,13 +36,26 @@ input { margin:0; padding:0; border:0; outline:0; cursor: pointer;
                 display: inline-block; margin-top:40px;}
 .home .btn-join {animation-delay:0.5s;}
 
-.animated {animation-duration: 3s; animation-fill-mode: both;}
-.fadeIn {animation-name: fadeIn;}
+/* animation effect */
+.animated {animation-duration: 3s; animation-fill-mode: both; opacity: 0;}
+.fadeIn {animation-name: fadeIn;} 
+.fadeInLeft {animation-name: fadeInLeft; animation-delay:0.5s;}
+.fadeInRight {animation-name: fadeInRight;}
+       
 @keyframes fadeIn {
 from {opacity: 0;}
 to {opacity: 1;}
 }
-
+@keyframes fadeInLeft {
+from {opacity: 0;transform: translate3d(-100%, 0, 0);}    
+to {opacity: 1; transform: none;}
+}
+@keyframes fadeInRight {
+from {opacity: 0;transform: translate3d(50%, 0, 0);}
+ to {opacity: 1;transform: none;}
+}
+    
+    
 
 /* 공통 title, text-box*/
 .number {position:absolute; font-size:200px; font-weight: 700; color:rgba(224,224,224,0.4);}
@@ -147,7 +160,7 @@ section{padding:150px 0;position: relative;}
 
 
 /* about */
-.about {background:#f6f6f6; position:relative; padding-top:0; }
+.about {background:#f6f6f6; position:relative; padding-top:0;}
 .about h3{color:#fff;}
 .about .profile-bg {background: url(../images/about-bg.jpg) no-repeat center;
               background-size: cover; height:350px; padding-top:150px; box-sizing: border-box;}
@@ -180,9 +193,11 @@ section{padding:150px 0;position: relative;}
 .about .skills span:nth-child(8) {color:#00b3ff;}
 .about .skills span:nth-child(9) {color:#f1bf26;}
 .about .skills span:nth-child(10) {color:#0184ff;}
+
+
 /* footer */
 
-footer {background: #222; height:100px; text-align: center; color:#888; padding-top:50px;}
+footer {background: #222; height:120px; text-align: center; color:#888; padding-top:30px;}
 footer p {line-height:1.5; font-size: 15px; }
 footer .last {padding-bottom: 10px;}
 small {font-size:14px;}
