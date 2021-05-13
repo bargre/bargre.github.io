@@ -44,9 +44,8 @@ if((_h>=0)&&(_h<300)){
     $(".num_right02").stop().animate({top:-250, opacity:1},500);
   }else if((_h>=3000)&&(_h<3500)){
     $(".num_left03").stop().animate({top:-250, opacity:1},500);
-  }else if((_h>=3500)&&(_h<4000)){
+  }else if(_h>=3500){
     $(".num_right04").stop().animate({top:-250, opacity:1},500); 
-  }else if(_h>=4000) {
     $(".about li .animated").addClass("fadeIn");
   }
 });
@@ -92,36 +91,7 @@ $(".close").click(function(){
 return false;
 });
 
- // pop-스픽나우
-// var target;
-// var ct=0;
-
-// $(".prev").css({opacity:"0.1"});
-//   $(".next").click(function(){
-//    target=$(this).parent().prev().find(".illust li");
-//     ct--;
-//     if(ct<=-5){ct=-5;
-//               $(this).css({opacity:"0.2"});
-//               $(this).prev().css({opacity:"1"});
-//              }
-//     leftmovie(target)
-//   });
-
-//   $(".prev").click(function(){
-//    target=$(this).parent().prev().find(".illust li");
-//     ct++;
-
-//     if(ct>=0){ct=0; 
-//               $(this).css({opacity:"0.2"});
-//                $(this).next().css({opacity:"1"});
-//             }
-//     leftmovie(target)
-//   });
-
-// function leftmovie(target){
-//  var tl= 752*ct;
-//  $(target).stop().animate({left:tl});
-// }
+//스픽나우 태블릿 슬라이드
 var current=0;
 var l;
  var m;
