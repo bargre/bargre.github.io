@@ -1,0 +1,124 @@
+@charset "UTF-8";
+
+/*======== splash ========*/
+.splash-area {position:absolute; top:50%; left:50%; transform: translate(-50%, -50%);}
+.splash-logo { width:90px; }
+
+/*======== sign ========*/
+.sign-bg {background: url(../images/sign-bg.svg); background-size: cover; }
+.logo-area {text-align: center; width: 130px; margin:0 auto; padding-top:100px;}
+.logo { width:130px; }
+.sign-ment {font-family:'Futura', sans-serif; letter-spacing:1px;  font-size:21px; text-align: center; padding:100px 0 50px;}
+.sign-area {padding:0 33px;}
+.sign-area button {margin-bottom:10px;}
+
+.small-list { padding-top:20px;  font-size: 8px; color: #8E8E93;}
+.small-list ins {color:#7ca7fc;}
+.small-list li { padding-bottom:8px;}
+
+/*======== spotify ========*/
+.spotify-area {background:#2C2C2E url(../images/g_bg.jpg) no-repeat center top / 100%; }
+.connect-area {position: relative; top:40%;}
+.connect-logo { display: flex; justify-content: center; align-items: center;}
+.connect-logo img {padding:0px 10px;}
+.connect-text {text-align: center; padding-top:30px;}
+.connect-text h3 {font-family:" Futura", sans-serif; font-size: 28px; line-height: 39px; font-weight: 500;}
+.connect-text p {width: 300px; font-size: 14px; line-height: 19px; margin: 13px auto;}
+/*======== search-like ======= =*/
+.like-area {padding: 14px 24px; box-sizing: border-box; height: calc(100vh - 423px); overflow: auto;}
+.like-area::-webkit-scrollbar {display: none;}
+.like-box {display: inline-block; font-size:13px; margin-bottom:8px; border-radius: 25px; background: rgba(105, 105, 105, 0.3); border:1px solid rgba(105, 105, 105, 0.3); color:#fff; padding:0px 14px; line-height: 30px;}
+.like-box.choose {background: transparent; border:1px solid #7CA7FC; color:#7CA7FC; }
+/*======== animation ========*/
+.email-icon {position:relative; width:46px; animation:emailAction 1s infinite;}
+@keyframes emailAction {
+  0% {top:5px;}
+  100% {top:-5px;}
+}
+/*======== feed ========*/
+.feed-area {width:100%;}
+.feed-area li {padding:16px 16px 14px 14px; box-sizing: border-box; border-bottom:4px solid #252527; }
+.user-area  .user-title {float: left;}
+.user-profile {width:30px; height: 30px; border-radius: 50%; overflow: hidden; float: left; }
+.user-profile img {width:100%;}
+.user-area .user-text {float: left; padding-left:10px;}
+.user-text .user-id {font-size: 16px; line-height: 20px; font-weight: 600;}
+.user-text .user-title-tag {font-size: 12px; color:rgba(255, 255, 255, 0.5);  line-height: 16px;}
+.user-area .user-time {float: right;font-size: 12px; color:rgba(255, 255, 255, 0.5);  line-height: 16px;}
+
+.user-content {padding-left:40px; padding-top:6px;}
+.content-text {line-height: 15px;}
+.user-content-img {margin-top:10px; width:100%; height:120px; border-radius: 10px; overflow: hidden;}
+.user-content-img img {position:relative; top:50%; transform: translateY(-50%); width:100%;}
+.user-content-tag {margin-top:6px;}
+.user-content-tag span{color: #7CA7FC; display: inline-block; padding-right: 3px;}
+
+.user-track-like {margin-top:8px; position: relative;}
+.user-track {background: url(../images/music.svg) no-repeat center left / 11px; padding-left:17px; font-size: 12px; }
+.user-track-time {color: rgba(255, 255, 255, 0.5); padding-left:4px; letter-spacing: 0.03rem;position: relative; font-size: 12px; }
+.user-track-time::before {content:""; display:inline-block; width: 2px; height: 2px; background:rgba(255, 255, 255, 0.5); border-radius: 50%; position:absolute; left:0; top:8px; }
+.user-like {position: absolute; top:0; right:0; background: url(../images/heart.svg) no-repeat center left / 13px; padding-left:17px;}
+.user-like.active {background: url(../images/heart_c.svg) no-repeat center left / 13px; padding-left:17px;}
+
+.user-content-box {background:#252527; border-radius: 8px; margin-top:10px; display: flex;  align-items: center; padding:6px; position:relative;}
+.user-content-box::after {content:""; display: block; width:30px; height:30px; background: url(../images/music_c.svg) no-repeat center ; position:absolute; right:13px; top:15px; }
+.music-cover img {display: block; width:100%;}
+.music-title {padding-left:12px;}
+.music-title h4 {font-size: 15px; font-weight: 400;}
+.music-content-tag {color:#7CA7FC; font-size: 12px;}
+
+/*======== detail ========*/
+.detail-text {font-size: 15px; line-height:18px; padding:9px 4px;}
+
+.btn-play {display:block; width:24px; height:24px; background: url(../images/play.svg) no-repeat center; margin:0px 10px;}
+.btn-download {display:block; width:24px; height:24px; background: url(../images/download.svg) no-repeat center; margin:0px 10px;}
+.btn-view {display:block; width:24px; height:24px; background: url(../images/password_on.svg) no-repeat center; margin-left:10px;}
+.btn-view.off {display:block; width:24px; height:24px; background: url(../images/password_off.svg) no-repeat center; margin-left:10px;}
+
+.min-user-img {width: 24px; height: 24px; border-radius: 50%; overflow: hidden;}
+.min-user-img img {width: 100%;}
+.btn-reply {color:#D563DF; font-size: 12px; font-weight: 600; margin-right:12px;}
+.detail-music-box {background: #252527; border-radius: 8px; padding:6px; box-sizing:border-box; border:1px solid #252527;}
+.detail-music-box.active {border:1px solid #4B73FF;}
+.music-track {width:48px; height:48px; border-radius: 4px; overflow: hidden; background: rgba(105, 105, 105, 0.5);}
+.music-track img {width:100%;}
+.music-track img.btn-add-play {width:24px !important; padding:12px; cursor: pointer;}
+.btn-more {display:block; width:32px;  background: url(../images/menu.svg) no-repeat center / 16px; }
+
+.img-box {border-radius: 10px; overflow: hidden; height:auto; width:100%;}
+.img-box img {width:100%;}
+/*======== detail more ========*/
+.more-list li {font-size: 14px; padding:13px 70px 14px; box-sizing: border-box; cursor: pointer;}
+.more-list {padding-bottom:46px;}
+.more-play {background:url(../images/play.svg) no-repeat 23px center /24px ;}
+.more-like {background:url(../images/heart.svg) no-repeat 26px center /20px ;}
+.more-playlist {background:url(../images/download.svg) no-repeat 23px center /24px ;}
+.more-tracklist {background:url(../images/tracklist.svg) no-repeat 23px center /24px ;}
+.more-share {background:url(../images/share.svg) no-repeat 23px center /24px ;}
+/*======== platlist  ========*/
+.playlist-img-box {width:160px; height:160px; background: #333336; border-radius: 8px; overflow: hidden;}
+.playlist-img-box img {width:100%;}
+.playlist-img-box img.new-camera { width:24px; padding:68px; }
+
+.playlist-name-area {width:142px; margin:0px auto 6px;}
+input[type="text"].playlist-name { font-size:20px; background: transparent; border-bottom: 1px solid #333336;  display: inline-block; letter-spacing: 0.02rem; border-radius:0;}
+input[type="text"].playlist-name::placeholder {font-size:20px; color:rgba(255,255,255,0.5);}
+.playlist-text-area {position: relative; border-bottom: 1px solid #333336;}
+input[type="text"].playlist-text { background: transparent; display: inline-block; letter-spacing: 0.01rem; border-radius:0; width:calc(100% - 30px);}
+.text-limit {font-size: 12px; color:rgba(255,255,255,0.5); position: absolute; top:13px; right:0; }
+/*======== share ========*/
+.pop-share-top {background: #1E1E1E; padding:16px; border-bottom: 1px solid #2C2C2C;}
+.share-close {background: #39393E; padding: 6px; right: 12px; top: 21px; border-radius: 50%; }
+.plasma-box {width:41px; height:41px; border-radius:8px; background: #121212; overflow: hidden;}
+.plasma-box img {width:100%;}
+.plasma-box img.plasma-box-logo {width:20px; padding:12px 10px;}
+
+.share-wrap {padding:21px 17px; box-sizing: border-box; display: flex; overflow-x: auto;}
+.share-wrap::-webkit-scrollbar {display: none;} 
+.share-user-area {position: relative; width: 60px; margin-right:20px;}
+.share-user-pro {width:60px; height:60px; border-radius: 50%; overflow: hidden;}
+.share-user-pro img {width: 100%;}
+.share-form {width:20px; height:20px; overflow: hidden; position: absolute; top:42px; left:42px;}
+.share-form img {width: 100%;}
+.share-user-name {font-size: 11px; width: 60px; margin:0 auto; padding-top:4px; text-align: center;}
+/*========  ========*/
