@@ -113,12 +113,16 @@ input[type="text"].playlist-text { background: transparent; display: inline-bloc
 .plasma-box img {width:100%;}
 .plasma-box img.plasma-box-logo {width:20px; padding:12px 10px;}
 
-.share-wrap {padding:21px 17px; box-sizing: border-box; display: flex; overflow-x: auto;}
-.share-wrap::-webkit-scrollbar {display: none;} 
+.share-wrap {padding:20px 17px 13px; box-sizing: border-box; display: flex; overflow-x: auto;}
+.share-wrap::-webkit-scrollbar {display: none;}
 .share-user-area {position: relative; width: 60px; margin-right:20px;}
 .share-user-pro {width:60px; height:60px; border-radius: 50%; overflow: hidden;}
 .share-user-pro img {width: 100%;}
 .share-form {width:20px; height:20px; overflow: hidden; position: absolute; top:42px; left:42px;}
 .share-form img {width: 100%;}
-.share-user-name {font-size: 11px; width: 60px; margin:0 auto; padding-top:4px; text-align: center;}
+.share-user-name {font-size: 11px; width: 50px; margin:0 auto; padding-top:4px; text-align: center;}
+
+.share-big-form {width:60px; height:60px; overflow: hidden; margin-right:25px;}
+.share-big-form img {width:100%;}
+.share-form-name {font-size: 11px;}
 /*========  ========*/
