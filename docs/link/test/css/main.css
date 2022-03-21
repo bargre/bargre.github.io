@@ -134,14 +134,19 @@ textarea.edit-text-box {width:100%; height:42px; color:#fff; }
 
 .share-wrap {padding:20px 17px 13px; box-sizing: border-box; display: flex; overflow-x: auto;}
 .share-wrap::-webkit-scrollbar {display: none;}
+<<<<<<< HEAD
 .share-user-area {border-bottom:1px solid #2C2C2C;}
 .share-user-area li{position: relative; width: 60px; margin-right:20px;}
+=======
+.share-user-area {position: relative; width: 60px; margin-right:20px;}
+>>>>>>> d7bffdeb404d5b17c7e3a2c90ddbff020b12abaf
 .share-user-pro {width:60px; height:60px; border-radius: 50%; overflow: hidden;}
 .share-user-pro img {width: 100%;}
 .share-form {width:20px; height:20px; overflow: hidden; position: absolute; top:42px; left:42px;}
 .share-form img {width: 100%;}
 .share-user-name {font-size: 11px; width: 50px; margin:0 auto; padding-top:4px; text-align: center;}
 
+<<<<<<< HEAD
 .share-form-area li {margin-right:25px;}
 .share-big-form {width:60px; height:60px; overflow: hidden;}
 .share-big-form img {width:100%;}
@@ -270,3 +275,9 @@ background:#F45656 url(../images/bin.svg) no-repeat center/24px; border-radius:8
 .btn-picture {width: 18px; height: 18px; background: url(../images/picture.svg) no-repeat center / 100%;}
 
 .add-tag-wrap {padding:0 22px 22px;  display: flex; }
+=======
+.share-big-form {width:60px; height:60px; overflow: hidden; margin-right:25px;}
+.share-big-form img {width:100%;}
+.share-form-name {font-size: 11px;}
+/*========  ========*/
+>>>>>>> d7bffdeb404d5b17c7e3a2c90ddbff020b12abaf
