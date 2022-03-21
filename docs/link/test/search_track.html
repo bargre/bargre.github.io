@@ -19,14 +19,17 @@
 </head>
 
 <body>
-   <header class="header">
-      <h2 class="top-title">Feed</h2>
-      <button type="button" class="btn-plus">
-         <img src="images/plus.svg" alt="뒤로버튼">
-      </button>
-   </header>
+  <div class="search-top-area">
+    <div class="search-area">
+      <input type="search" placeholder="Search">
+      <button type="button" class="btn-search"></button>
+    </div>
+    <div class="cancel-area">
+      <button type="button" class="btn-cancel">Cancel</button>
+    </div>
+  </div>
 
-   <div class="menu-wrap">
+   <div class="menu-bottom">
       <ul class="feed-area">
          <li>
             <div class="user-area clear">
@@ -207,19 +210,12 @@
 
    <nav class="nav">
       <ul class="nav-list">
-         <li class="menu-feed active"></li>
-         <li class="menu-search"></li>
+         <li class="menu-feed"></li>
+         <li class="menu-search active"></li>
          <li class="menu-notify"></li>
          <li class="menu-myhome"></li>
       </ul>
    </nav>
-
-   <section class="feed-menu-area">
-     <ul class="feed-menu">
-       <li class="feed-post">Post</li>
-       <li class="feed-playlist">Playlist</li>
-     </ul>
-   </section>
 </body>
 
 </html>

@@ -1,10 +1,11 @@
 $(function(){
 
   //공통 팝업 닫기
-  $(".btn-close, .btn-close-pop").click(function(){
+  $(".btn-close, .btn-close-pop, .btn-done").click(function(){
     $(".pop-bg").css({display:"none"});
     $(".popup").stop().animate({bottom:"-100%"},200);
   });
+
 
 //비밀번호 눈 끄고 켜기.
   $(".btn-password").click(function(){
@@ -17,10 +18,33 @@ $(function(){
   }
   });
 
-//search - like choose
-$(".like-box").click(function(){
+  //feed menu
+  $(".btn-plus").click(function(){
+    $(".feed-menu-area").toggleClass("active");
+  });
+
+  //music box select
+  $(".detail-music-box").click(function(){
+    $(".detail-music-box").removeClass("active");
+    $(this).addClass("active");
+  });
+
+//like choose
+$(".like-box , .btn-detail-like").click(function(){
   $(this).toggleClass("choose");
 });
+
+//ullike
+$(".more-like").click(function(){
+  if(  $(this).hasClass("choose")){
+    $(".alert-pop").css({display:"block"});
+  }else {
+      $(this).addClass("choose");
+  }
+
+
+});
+
 
 //nav메뉴 버튼
 // $(".nav-list li").click(function(){
@@ -38,7 +62,18 @@ $(".btn-message-close").click(function(){
   $(".message, .result").css({display:"none"});
 });
 
+//hashtag 삭제
+$(".remove-hashtag").click(function(){
+  $(this).parent().css({display:"none"});
+});
 
+//트랙 삭제
+$(".btn-edit").click(function(){
+  $(this).parents(".edit-music-box-area").toggleClass("remove");
+});
+$(".btn-bin").click(function(){
+  $(this).parents(".edit-music-box-area").css({display:"none"});
+});
 });//end
 
 
@@ -60,12 +95,16 @@ function popupOpen2(){
 
 //경고 팝업창 열기
 function alertPopupOpen(){
-  $("#alert-pop-bg").css({display:"block"});
-  $(".alert-content-area").css({display:"block"});
+  $(".alert-pop").css({display:"block"});
 };
 
 //경고 팝업창 닫기
 function alertPopupClose(){
-  $(".pop-bg").css({display:"none"});
-  $(".alert-content-area").css({display:"none"});
+  $(".alert-pop").css({display:"none"});
+};
+
+//unLike
+function unLike(){
+    $(".more-like").removeClass("choose");
+    $(".alert-pop").css({display:"none"});
 };
