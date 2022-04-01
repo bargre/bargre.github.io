@@ -42,7 +42,7 @@
 .search-agency-area.on {display: block;}
 .search-list-tit {color:#fff; font-size: 20px; width: 80px; display: inline-block;}
 .search-list select {
-  --webkit-appearance:none;
+  -webkit-appearance:none;
   -moz-appearance:none;
   appearance:none;}
 .search-list select {width:calc(100% - 84px); border:none; color:#fff; background: transparent url(../../images/select.png) no-repeat right; border-bottom: 1px solid #7a7875; font-size: 18px; padding:5px;}
