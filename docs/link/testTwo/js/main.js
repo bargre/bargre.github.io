@@ -9,18 +9,18 @@ $(function() {
       $(".gnb-tit").click(function() {
         $(this).parent(".gnb-list").toggleClass("on");
       });
+    } else if (windowWidth > 1080) {
+
+      $(".gnb-area").mouseenter(function() { //pc mouse hover
+        $(".headerContainer").addClass("on");
+        $(".search-area").addClass("on");
+      });
+
+      $(".gnb-area").mouseleave(function() {
+        $(".headerContainer").removeClass("on");
+        $(".search-area").removeClass("on");
+      });
     }
-
-    $(".gnb-area").mouseenter(function() { //pc mouse hover
-      $(".headerContainer").addClass("on");
-      $(".search-area").addClass("on");
-    });
-
-    $(".gnb-area").mouseleave(function() {
-      $(".headerContainer").removeClass("on");
-      $(".search-area").removeClass("on");
-    });
-
   }).resize(); //resize
 
   //메뉴버튼 열기
