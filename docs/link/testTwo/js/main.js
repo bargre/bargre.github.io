@@ -1,42 +1,30 @@
 $(function() {
 
+
+
 //resize header
   $(window).on('load resize', function() {
 
     const windowWidth = $(window).width();
   // console.log(windowWidth);
-
-    if(windowWidth <= 1080) {
-        MobileGnb();
-    } else if(windowWidth > 1080){
-      gnb();
-
-    }
-
-    function gnb() {
-        //$(".gnb-tit").off("click"); //mobile 이벤트 초기화
-
+  if(windowWidth <= 1080) {
+    $(".gnb-tit").click(function() {
+       $(this).parent(".gnb-list").toggleClass("on");
+    });
+        }
+        
         $(".gnb-area").mouseenter(function() { //pc mouse hover
-          $(".headerContainer").stop().animate({height: "320px"} , 200);
           $(".headerContainer").addClass("on");
           $(".search-area").addClass("on");
         });
+
         $(".gnb-area").mouseleave(function() {
-          $(".headerContainer").stop().animate({height: "88px"} , 200);
           $(".headerContainer").removeClass("on");
             $(".search-area").removeClass("on");
         });
-    }//gnb
 
-    function MobileGnb() {
-    //  $(".gnb-area").off("mouseenter"); //pc 이벤트 초기화
-  //    $(".gnb-area").off("mouseleave"); //pc 이벤트 초기화
 
-        $(".gnb-tit").click(function() { //클릭하면 display block/none
-          // $(".gnb-list").removeClass("on");
-           $(this).parent(".gnb-list").toggleClass("on");
-        });
-    }//MobileGnb
+
   });//resize
 
 //메뉴버튼 열기
