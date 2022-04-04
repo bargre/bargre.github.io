@@ -14,7 +14,7 @@ $(function() {
     }
 
     function gnb() {
-        $(".gnb-tit").off("click"); //mobile 이벤트 초기화
+        //$(".gnb-tit").off("click"); //mobile 이벤트 초기화
 
         $(".gnb-area").mouseenter(function() { //pc mouse hover
           $(".headerContainer").stop().animate({height: "320px"} , 200);
@@ -29,9 +29,9 @@ $(function() {
     }//gnb
 
     function MobileGnb() {
-      $(".gnb-area").off("mouseenter"); //pc 이벤트 초기화
-      $(".gnb-area").off("mouseleave"); //pc 이벤트 초기화
-      
+    //  $(".gnb-area").off("mouseenter"); //pc 이벤트 초기화
+  //    $(".gnb-area").off("mouseleave"); //pc 이벤트 초기화
+
         $(".gnb-tit").click(function() { //클릭하면 display block/none
           // $(".gnb-list").removeClass("on");
            $(this).parent(".gnb-list").toggleClass("on");
