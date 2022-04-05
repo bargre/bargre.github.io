@@ -1,37 +1,39 @@
 $(function() {
 
-  function mediaq(){
-var windowWidth = $( window ).width();
-    if(windowWidth <= 1080) {
+  function mediaq() {
+    var windowWidth = $(window).width();
+    if (windowWidth <= 1080) {
       $(".gnb-tit").click(function() {
         $(this).parent(".gnb-list").toggleClass("on");
+
       });
     } else {
 
-            $(".gnb-area").mouseenter(function() { //pc mouse hover
-              $(".headerContainer").addClass("on");
-              $(".search-area").addClass("on");
-            });
+      $(".gnb-area").mouseenter(function() { //pc mouse hover
+        $(".headerContainer").addClass("on");
+        $(".search-area").addClass("on");
+      });
 
-            $(".gnb-area").mouseleave(function() {
-              $(".headerContainer").removeClass("on");
-              $(".search-area").removeClass("on");
-            });
+      $(".gnb-area").mouseleave(function() {
+        $(".headerContainer").removeClass("on");
+        $(".search-area").removeClass("on");
+      });
+
     }
-}
+  }
 
-//mediaq를 setResponsive에 담는다.
-function setResponsive() {
+  //mediaq를 setResponsive에 담는다.
+  function setResponsive() {
     mediaq();
-}
-//브라우저가 로드될때 실행
-$(window).on('load', function () {
+  }
+  //브라우저가 로드될때 실행
+  $(window).on('load', function() {
     setResponsive();
-});
-//브라우저가 리사이즈될때 실행
-$(window).on('resize', function () {
+  });
+  //브라우저가 리사이즈될때 실행
+  $(window).on('resize', function() {
     setResponsive();
-});
+  });
 
 
 
