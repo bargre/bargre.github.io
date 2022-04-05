@@ -29,37 +29,37 @@
     <section class="wrap-14">
       <div class="post-box-area">
         <div contentEditable="true" class="post-box" placeholder="Talk about the music you want">
-          <p class="pb15">I'm going to go to work today, and I'm going to blow up my boss, so</p>
-<!--이미지 영역-->
+          <p class="post-box-p">I'm going to go to work today, and I'm going to blow up my boss, so</p>
+          <!--이미지 영역-->
           <div class="post-img-box pb10">
             <img src="images/img_2.jpg" alt="" style="width:100%">
           </div>
-<!--//이미지 영역-->
-<!--뮤직박스 영역-->
-          <div class="detail-music-box d-flex-between">
-             <div class="d-flex-center">
-                <div class="music-track">
-                   <div class="small-cover-box">
-                      <img src="images/cover_3.jpg" alt="앨범 커버 이미지">
-                   </div>
-                   <div class="small-cover-box">
-                      <img src="images/cover_4.jpg" alt="앨범 커버 이미지">
-                   </div>
-                   <div class="small-cover-box">
-                      <img src="images/cover_5.jpg" alt="앨범 커버 이미지">
-                   </div>
-                   <div class="small-cover-box">
-                      <img src="images/cover_6.jpg" alt="앨범 커버 이미지">
-                   </div>
+          <!--//이미지 영역-->
+          <!--뮤직박스 영역-->
+          <div class="detail-music-box d-flex-between" contentEditable="false">
+            <div class="d-flex-center">
+              <div class="music-track">
+                <div class="small-cover-box">
+                  <img src="images/cover_3.jpg" alt="앨범 커버 이미지">
                 </div>
-                <div class="pl12">
-                   <h4 class="f15 fw400">#Midnight drive</h4>
-                   <span class="c-blue f12">#sad #midnight #drive</span>
+                <div class="small-cover-box">
+                  <img src="images/cover_4.jpg" alt="앨범 커버 이미지">
                 </div>
-             </div>
-             <button type="button" class="btn-more"></button>
+                <div class="small-cover-box">
+                  <img src="images/cover_5.jpg" alt="앨범 커버 이미지">
+                </div>
+                <div class="small-cover-box">
+                  <img src="images/cover_6.jpg" alt="앨범 커버 이미지">
+                </div>
+              </div>
+              <div class="pl12">
+                <h4 class="f15 fw400">#Midnight drive</h4>
+                <span class="c-blue f12">#sad #midnight #drive</span>
+              </div>
+            </div>
+            <button type="button" class="btn-more"></button>
           </div>
-  <!--//뮤직박스 영역-->
+          <!--//뮤직박스 영역-->
         </div>
       </div>
       <div class="typing">0/120</div>
@@ -69,6 +69,8 @@
       <div class="tag-select-area">
         <div class="tag-start"><img src="images/tag-c.svg" alt="태그추가 영역표시"></div>
         <button type="button" class="btn-add-hashtag" onclick="popupOpen();">+Add hashtags</button>
+        <span class="add-hashtag choose">#after <button type="button" class="remove-hashtag"></button></span>
+        <span class="add-hashtag choose">#afternoon <button type="button" class="remove-hashtag"></button></span>
       </div>
       <div class="picture-box">
         <button type="button" class="btn-picture"></button>
@@ -76,14 +78,29 @@
     </section>
   </div>
 
-  <!--- track more popup ---------------------------------------->
-  <section class="popup" id="popup" style="bottom:0%">
+  <!--- hashtag popup ---------------------------------------->
+  <section class="popup" id="popup">
     <div class="pop-top">
       <p class="pop-top-title-s">Add tags</p>
       <button type="button" class="btn-done" class="c-">Done</button>
     </div>
     <div class="pop-content-small">
+      <div class="pop-wrap pt0">
+        <div class="d-flex">
+          <div class="tag-start"><img src="images/tag-c.svg" alt="태그추가 영역표시"></div>
+          <div class="hashtag-box" contentEditable="true" placeholder="Add a tags...">
+            <span class="add-hashtag choose" contentEditable="false">#after <button type="button" class="remove-hashtag"></button></span>
+            <span class="add-hashtag choose" contentEditable="false">#afternoon <button type="button" class="remove-hashtag"></button></span>
+            <span class="add-hashtag choose" contentEditable="false">#afterward <button type="button" class="remove-hashtag"></button></span>
+            after..
+          </div>
+        </div>
 
+        <div class="d-flex pt20">
+          <span class="add-hashtag">#after</span>
+          <span class="add-hashtag">#afterward</span>
+        </div>
+      </div>
     </div>
   </section>
   <div class="pop-bg" id="popup-bg">

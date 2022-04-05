@@ -1,5 +1,4 @@
 $(function() {
-
   //resize header
   $(window).resize(function() {
 

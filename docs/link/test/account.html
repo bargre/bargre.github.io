@@ -21,7 +21,7 @@
 <body>
    <header class="header">
       <h2 class="top-title">Account</h2>
-      <button type="button" class="btn-setting">
+      <button type="button" class="btn-setting" onclick="popupOpen();">
          <img src="images/setting.svg" alt="추가버튼">
       </button>
    </header>
@@ -51,6 +51,11 @@
       </div>
       <div class="btn-wrap">
          <button type="button" class="btn-edit-profile">Edit Profile</button>
+         <!-- 내 계정을 볼때 보여지는 버튼-->
+         <!-- <div class="pt15 clear">
+            <button type="button" class="btn-edit-profile left" style="width:48%"><span>Edit Profile</span></button>
+            <button type="button" class="btn-detail-addList right"><span>ADD PLAYLIST</span></button>
+         </div> -->
       </div>
 
    </div>
@@ -288,7 +293,7 @@
 
       <div id="Like" class="tabcontent">
          <button type="button" class="btn-detail-all-play mb20"><span>PLAY ALL</span></button>
-         <div class="user-track pb8">41tracks</div>
+         <div class="user-track mb8">41tracks</div>
          <!--track box-->
          <div class="detail-music-box d-flex-between mb8">
             <div class="d-flex-center">
@@ -421,6 +426,28 @@
 
    <!--result  ------------------------------->
 
+   <!--- post  more popup ---------------------------------------->
+   <section class="popup" id="popup">
+      <div class="pop-top">
+        <p class="f15">setting</p>
+         <button type="button" class="btn-close">
+            <img src="images/close.svg" alt="닫기">
+         </button>
+      </div>
+      <div class="pop-content">
+         <div>
+           <ul class="more-list">
+             <li class="more-alarm">Alarm</li>
+             <li class="more-account">Account</li>
+             <li class="more-information">Information</li>
+             <li class="more-help">Help</li>
+             <li class="more-logout">Logout</li>
+           </ul>
+         </div>
+      </div>
+   </section>
+   <div class="pop-bg" id="popup-bg"></div>
+   <!--- //popup ---------------------------------------->
    <script>
       // 상단 탭 스크립트
       function openTab(evt, tabName) {

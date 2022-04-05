@@ -74,6 +74,8 @@ $(".btn-edit").click(function(){
 $(".btn-bin").click(function(){
   $(this).parents(".edit-music-box-area").css({display:"none"});
 });
+
+
 });//end
 
 
@@ -108,3 +110,9 @@ function unLike(){
     $(".more-like").removeClass("choose");
     $(".alert-pop").css({display:"none"});
 };
+
+//loading
+setTimeout(function(){
+testEle = $('#loading');
+testEle.fadeOut();
+}, 2000)
