@@ -1,0 +1,114 @@
+@charset "UTF-8";
+
+@media screen and (max-width:1140px) {
+/* ---------------------common---------------------- */
+.wrap { width: 100%;}
+.content {padding:20px 20px 0px 20px;}
+/*----------------------  header ---------------------- */
+.header {padding-left:20px; padding-right:20px;}
+/*----------------------  main ---------------------- */
+.main-img-area {width: 100%; }
+.main-img-area .left-img {width: 64%; height: 422px; overflow: hidden; }
+.main-img-area .left-img img {height:100%; display: block;}
+.main-img-area .right-img {width:34%; padding-left:1%;}
+.main-img-area .right-top, .main-img-area .right-bottom {width:100%;}
+.main-img-area .right-bottom {padding-left: 47%;}
+/*---------  WEB DESIGN & PUBLISHING  --------------*/
+
+.design-list-area li { width:100%; margin:0px; padding:20px 0px; float:none; border-right:none; border-bottom:1px solid #ddd; cursor: pointer;}
+.design-list-area li:after {content:""; display: block; clear:both;}
+.design-list-area .left-box {width:80px; height:80px;  float: left;}
+.design-list-area .right-text h4 {padding-top:8px; padding-bottom:10px;}
+.design-list-area .right-text .btn-more-area {right: 0px; top:30px; }
+.design-list-area .right-text .btn-more-area .btn-more { border-bottom:none; padding: 20px 36px 20px 0px; text-indent: -99999px;}
+.design-list-area .right-text .btn-more-area .btn-more span {width:20px; height:40px; }
+.design-list-area .right-text .btn-more-area .btn-more span:after {width:25px; height:25px;margin-left: -13px;
+  margin-top: 6px;}
+.design-list-area .right-text .btn-more-area .btn-more:first-child {display: none;}
+
+/*----- ILLUST DESIGN & DIGITAL PAINTING  ---------*/
+.painting-list-area li { width: 24%;margin:10px 0px 10px 1%; padding-right: 1%; border-right:1px solid #ddd; }
+.painting-list-area .top-img {width:100%; height:100%;}
+.painting-list-area .top-img img {width:100%; display: block;}
+.painting-list-area .bottom-text {position: relative; height: 120px; margin-top:20px;;}
+.painting-list-area .bottom-text h4 {padding-bottom:20px;  overflow: hidden;text-overflow: ellipsis;  white-space: nowrap}
+
+}
+/* 1140px end */
+
+@media screen and (max-width:850px) {
+  /*----------------------  main ---------------------- */
+  .main-img-area .left-img img {margin-left: -100px;}
+}/* 850px end */
+
+
+
+@media screen and (max-width:768px) {
+
+/* ---------------------common---------------------- */
+.p-container {padding-bottom:50px;}
+
+
+/*----------------------  main ---------------------- */
+.main-img-area .left-img {width: 100%; height:auto; float: none;}
+.main-img-area .left-img img { width:100%; height: auto; margin-left: 0px;}
+.main-img-area .left-img h2 {font-size: 54px;}
+.main-img-area .right-img {float:none; padding-left:0px; border-left:none; width: 100%;}
+.main-img-area .right-img .btn-more-area  {bottom:20px;}
+.main-img-area .right-top , .main-img-area .right-bottom
+{width: 49%;  height:120px; cursor: pointer;}
+.main-img-area .right-top {float: left; margin-top:10px; padding-right: 140px;}
+.main-img-area .right-bottom {float: right;padding-left:140px;}
+.right-img h3 {padding-bottom:20px;}
+.right-img p {display: none;}
+
+/*---------  WEB DESIGN & PUBLISHING  --------------*/
+
+/*----- ILLUST DESIGN & DIGITAL PAINTING  ---------*/
+.painting-list-area li { margin:0px; padding:20px 0px;  border-right:none; width:48%; cursor: pointer;}
+.painting-list-area li:nth-child(2n) {float: right;}
+.painting-list-area .top-img {width:100%; height:100%; background: #eaeaea;}
+
+.painting-list-area .bottom-text {position: relative; height: 120px; margin-top:20px;}
+.painting-list-area .bottom-text h4 {padding-bottom:20px;}
+.painting-list-area .bottom-text .btn-more-area {width:100%;}
+.painting-list-area .bottom-text .btn-more {width: 100%; display: block; text-align: left;}
+
+/*----------------------footer----------------------*/
+.footer .logo-area {padding-left:20px;}
+}/* 768px end */
+
+@media screen and (max-width:500px) {
+/* ---------------------common---------------------- */
+body {overflow-x:hidden; margin:0;}
+.content {padding:0;}
+h3 {font-size: 20px; }
+h4 {font-size: 16px; }
+p {display: none;}
+.m-container {margin:0 14px;}
+.p-container {padding-bottom:30px;}
+/*----------------------  header ---------------------- */
+.header {padding-left:16px; padding-right:16px; }
+h1.logo-area { font-size: 20px;}
+.logo-img {width:40px; }
+.varsion {font-size: 12px;}
+/*----------------------  main ---------------------- */
+.main-img-area .left-img h2 {width:70vw; font-size: 12vw;  top:24vw; left:50%; transform: translateX(-50%);}
+.main-img-area .right-top , .main-img-area .right-bottom{margin-top: 5px; width: 100%;}
+.main-img-area .right-top {float: none;}
+.main-img-area .right-bottom {float: none; }
+.right-img h3 {padding-bottom:20px;}
+
+/*---------  WEB DESIGN & PUBLISHING  --------------*/
+.design-list-area .right-text h4 {padding-top:18px; line-height: 1.3;}
+
+/*----- ILLUST DESIGN & DIGITAL PAINTING  ---------*/
+.painting-list-area .bottom-text {height: 66px;}
+
+/*----------------------footer----------------------*/
+.footer {padding:14px 0; margin-bottom:0px;}
+.footer .logo-area {padding-left:14px;}
+.footer .rigt-text { border-left:none; padding-left:14px; padding-top:10px;}
+}
+
+/* end */
