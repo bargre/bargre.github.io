@@ -1,0 +1,35 @@
+/* 
+ * Nanum Barun Gothic Web Fonts
+ * https://github.com/hiun/NanumBarunGothic
+ * Copyright (c) 2010, NAVER Corporation (http://www.nhncorp.com) 
+ */
+ 
+
+@font-face {
+  font-family: 'NanumMyeongjo';
+  font-style: normal;
+  font-weight: 400;
+  src: url(./NanumMyeongjo.eot);
+  src: local('NanumMyeongjo'),
+       local('NanumMyeongjo'),
+       url(./NanumMyeongjo.eot) format('embedded-opentype'),
+       url(./NanumMyeongjo.woff2) format('woff2'),
+       url(./NanumMyeongjo.woff) format('woff'),
+       url(./NanumMyeongjo.ttf) format('truetype');
+}
+
+@font-face {
+
+
+  font-family: 'NanumMyeongjo';
+  font-style: normal;
+  font-weight: 700;
+  src: url(./NanumMyeongjo.eot);
+  src: local('NanumMyeongjo-Bold'),
+       local('NanumMyeongjoBold'),
+       url(./NanumMyeongjo-Bold.eot) format('embedded-opentype'),
+       url(./NanumMyeongjo-Bold.woff2) format('woff2'),
+       url(./NanumMyeongjo-Bold.woff) format('woff'),
+       url(./NanumMyeongjo-Bold.ttf) format('truetype');
+}
+

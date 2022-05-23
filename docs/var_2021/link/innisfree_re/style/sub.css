@@ -1,0 +1,142 @@
+@charset "utf-8";
+
+@import url('../fonts/nanumbarungothic.css');
+*{margin:0; padding:0; }
+a{text-decoration:none; color:inherit;}
+ul{list-style:none;}
+.cl::after {content: ""; display: block; clear:both;}
+.blind {width:1px; height: 1px; margin: -1px; position: absolute; overflow: hidden;}
+.bar {display:inline-block; width:20px; height: 2px; background:#055344; margin:12px 20px;}
+
+
+body{color:#333; font-size:16px;
+  font-family:"NanumBarunGothic",arial, sans-serif;}
+
+  .header {border-bottom:1px solid #055344; padding:40px 0 30px 0; }
+  .in {width:1376px; margin-left: auto; margin-right:auto; position: relative; }
+  .header .logo {position:absolute; top:0; left:0; width:164px;}
+  .header .nav {position:absolute; top:0; left:200px; width:655px;}
+  .header .nav .gnb> li {float:left; position:relative; padding:0 10px;}
+  .header .nav .gnb> li> a {display: block;  padding:10px 17px 30px 17px;
+                            color:#333; font-size:18px; position:relative;}
+  .header .nav .gnb> li> a:hover {color:#055344; }
+
+
+  .nav .gnb ul {text-align:center;}
+  .nav .gnb .lnb  { position:absolute; top:62px;  left:50px; width:100%;
+                /* transform: translateX(-50%);  width:600px; line-height: 60px; */
+                    color:#fff;  display: none;  z-index: 20; transform:translateX(-50%);}
+
+  .nav .gnb li:nth-of-type(1) .lnb {width:360px;}
+  .nav .gnb li:nth-of-type(2) .lnb {width:550px;}
+  .nav .gnb li:nth-of-type(3) .lnb {width:380px;left:65px;}
+  .nav .gnb li:nth-of-type(4) .lnb {width:250px; left:100px; }
+  .nav .gnb li:nth-of-type(5) .lnb {width:310px; left:80px;}
+
+  .nav .gnb .lnb li {float:left; white-space: nowrap;  margin:0 5px; }
+  .nav .gnb .lnb li a {padding: 20px 15px; display:block;  background:#055344;}
+  .nav .gnb li:hover .lnb {display: block;}
+  .nav .gnb .lnb li:hover::after {}
+
+
+/*
+  .lnb_box { opacity:1; background:#055344; position:absolute; top:101px; width:100%; height:60px;z-index: 10;  } */
+
+
+  .header .icon {float:right; width:150px; text-indent:-999px;}
+  .header .icon li {float:left; width:22px; height:22px; margin:10px 14px 0 14px;
+                    background-repeat:no-repeat; background-position: center;}
+  .header .icon li:nth-child(1) {background:url(../images/icon_01.png) ;}
+  .header .icon li:nth-child(1):hover {background:url(../images/icon_01_h.png);}
+  .header .icon li:nth-child(2) {background:url(../images/icon_02.png);}
+  .header .icon li:nth-child(2):hover {background:url(../images/icon_02_h.png);}
+  .header .icon li:nth-child(3) {background:url(../images/icon_03.png) ; }
+  .header .icon li:nth-child(3):hover {background:url(../images/icon_03_h.png) ;}
+  .header .icon li a {display: block; color:transparent;}
+
+/* header end */
+
+    .content
+    .top .title {font-size:35px;text-align: center; width:100%; padding-top:77px; font-weight:400; }
+    .top .crumb {padding:30px 0 20px 0;}
+    .top .crumb span  { cursor: pointer;}
+    .top .crumb span:nth-of-type(3) {font-weight:700;}
+    .top {border-bottom:1px solid #4e4e4e;}
+
+    .row_1 img, .img_box img {transition: transform 0.3s; display: block;}
+    .row_1 img:hover, .img_box img:hover {transform:scale(1.1);}
+
+    .product {position:relative;  padding-bottom:120px;}
+    .row_1 { width:1376px; height:700px; margin-top:40px; height:700px; overflow: hidden;}
+    .row_1 img{transition: transform 1s; }
+    .row_1 .text {position:absolute; top:140px; left:100px; color:#4a3c25;}
+    .row_1 .text h4 {font-size:35px; font-family:"NanumMyeongjo"; font-weight:400;}
+    .row_1 .text h3 {font-size:55px; font-family:"NanumMyeongjo"; font-weight:400; padding-bottom:15px;}
+    .row_1 .text p {color:#fff;font-size:18px; background: #90836e; padding: 10px 15px; margin-bottom: 50px;}
+    .row_1 .text .btn_view {display:inline-block;border:1px solid #90836e;
+                                 border-radius:25px; padding:15px 30px; }
+
+    .product_2 {position:relative; width:100%; margin-top:40px;}
+    .product_2 .pro{position: relative; float:left; overflow: hidden; border:1px solid #fff; margin-right:40px; margin-bottom:40px; box-sizing: border-box;}
+    .product_2 .pro_1{width:432px; height:432px;}
+    .product_2 .pro_2{width:668px; height:668px;}
+    .product_2 .pro:last-child{margin-right:0px;}
+    .product_2 .pro:hover {border:1px solid rgba(83, 83, 83, 0.8);}
+    .product_2 .pro:hover img{transform:scale(1.1);}
+    .product_2 .pro .mask {width:100%; height:120px; background:rgba(83, 83, 83, 0.8);
+                                                                  /*속성은 all로 해야 다 적용됨*/
+                        position:absolute; left:0; bottom:-120px; transition:all 0.3s; opacity:0;}
+    .product_2 .pro:hover >.mask {bottom:0; opacity:1}
+    .product_2 .pro .mask .text {color:#fff; text-align: right; position:absolute; right:20px; top:20px; line-height: 1.6;}
+    .product_2 .pro .mask .text h4 {font-size: 20px;font-weight:300;}
+    .product_2 .pro .mask .text p {font-size: 24px;}
+    .product_2 .pro:hover > .icon {background:url(../images/new_heart.png) no-repeat;
+                width:28px; height: 24px; position:absolute; top:20px; right:20px; cursor: pointer;
+               text-indent:-9999px; display: block;}
+    .product_2 .pro:hover > .icon:hover {background:url(../images/best_heart_h.png);}
+    /*
+    .product_2 li {position:absolute; overflow: hidden; border:1px solid #fff;}
+    .product_2 li:nth-child(1) {  width:432px; height:432px; top:0; left:0; position: relative;}
+    .product_2 li:nth-child(2) { width:432px; height:432px; top:0; left:472px;}
+    .product_2 li:nth-child(3) { width:432px; height:432px; top:0; right:0;}
+    .product_2 li:nth-child(4) {  width:668px; height:668px;top:40px; left:0; position: relative;}
+    .product_2 li:nth-child(5) {  width:668px; height:668px;top:472px; right:0;}
+
+    .product_2 li:hover {border:1px solid rgba(83, 83, 83, 0.8);}
+    .product_2 li .mask {width:100%; height:120px; background:rgba(83, 83, 83, 0.8);
+                        position:absolute; left:0; bottom:-120px; transition:opacity 0.3s; opacity:0;}
+    .product_2 li:hover >.mask {bottom:0; opacity:1}
+    .product_2 li .mask .text {color:#fff; text-align: right; position:absolute; right:20px; top:20px; line-height: 1.6;}
+    .product_2 li .mask .text h4 {font-size: 20px;font-weight:300;}
+    .product_2 li .mask .text p {font-size: 24px;}
+    .product_2 li:hover > .icon {background:url(../images/new_heart.png) no-repeat;
+                width:28px; height: 24px; position:absolute; top:20px; right:20px; cursor: pointer;
+               text-indent:-9999px; display: block;}
+    .product_2 li:hover > .icon:hover {background:url(../images/best_heart_h.png);}*/
+
+
+
+    /* content end */
+
+  .service {border-top:1px solid #4e4e4e; position:relative; clear:both;}
+  .service_text li{float:left; margin:20px 0; padding:0 20px; border-right: 1px solid #4e4e4e;
+                  font-size:18px; color:#4e4e4e; font-weight:500;}
+  .service_text li:first-child {padding-left:0;}
+  .social{position:absolute; top:15px; right:0px;}
+  .social li {float:right; width:30px; height:30px;
+    background-repeat:no-repeat; background-position: center; margin-left:20px;vertical-align: middle;}
+  .social li a{color:transparent; display: block;  text-indent:-9999px;}
+  .social li:nth-child(1) {background:url(../images/social_instar.png);}
+  .social li:nth-child(2) {background:url(../images/social_facebook.png);}
+  .social li:nth-child(3) {background:url(../images/social_twitter.png);}
+  .footer{ background: #4e4e4e; color:#bbbbbb; line-height: 1.5; padding-bottom:50px;}
+  .logo_footer {padding:40px 0;}
+  .fotter_left {float:left; padding-bottom:30px;}
+  .fotter_left p {padding-bottom:30px;}
+  .fotter_right{float:right; padding-left:25px; border-left:1px solid #bbbbbb;}
+  .fotter_right p {padding-bottom:20px;}
+  .fotter_right span {padding:10px 20px; border:1px solid #bbbbbb;
+                       text-align: center; line-height: 40px;}
+  .fotter_right span a {color:#bbbbbb; display:inline-block;}
+  .fotter_right span:hover {background:#bbbbbb;}
+  .fotter_right span:hover a { color:#4e4e4e;}
