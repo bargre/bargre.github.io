@@ -3,17 +3,25 @@ $(document).ready(function(){
 //1140 미만일때 사이트 오픈 클릭 이벤트
   $(window).on(" load resize" , function (){
     const width =$(document).width();
-    console.log(width);
+ 
+
     if(width <= 1140){
-      $(".design-list-area li").eq(0).click(function(){
+      $(".design-list-area li").eq(0).click(function(e){
+        e.stopPropagation();
         window.open("link/innisfree_re/mobile/index.html", "a", "width=400, height=600, left=200, top=50");
         });
-      $(".design-list-area li").eq(1).click(function(){
+      $(".design-list-area li").eq(1).click(function(e){
+        e.stopPropagation();
         window.open("link/audi_re/index.html", "a", "width=400, height=600, left=200, top=50");
+      });
+      $(".design-list-area li").eq(2).click(function(e){
+        e.stopPropagation();
+        window.open("link/MyPlant/index.html", "a", "width=375, height=650, left=200, top=50");
       });
     } else {
       $(".design-list-area li").eq(0).off("click");
       $(".design-list-area li").eq(1).off("click");
+      $(".design-list-area li").eq(3).off("click");
     }
   });
 
