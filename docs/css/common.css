@@ -48,8 +48,10 @@ table {
     border-collapse:collapse;
     border-spacing:0;
 }
-input, select {
+input, select , textarea {
     vertical-align:middle;
+    font-family: 'Pretendard', Arial, sans-serif;
+    font-size: 15px;;
 }
 button {background: transparent; border:none; outline: none; cursor: pointer;}
 
@@ -62,17 +64,18 @@ h2{margin:0;}
 h3 {font-size: 24px; font-weight: 600; margin:0; }
 h4 {font-size: 20px; font-weight: 600; margin:0;}
 p {color: #888; font-size: 14px; line-height: 1.02rem;  margin:0;}
-.title {border-bottom: 2px solid #111;}
+.title {border-bottom: 2px solid #111; padding-bottom:3px;}
 
 /* more button */
-.btn-more-area {position:absolute; bottom:0px;}
+.btn-more-area {position:absolute; bottom:0px; }
 .btn-more {width:60px; box-sizing: border-box;padding:7px 36px 7px 0px; color: #111; font-size: 15px;  position:relative; bottom:0;}
 .btn-more:hover {color:#888;}
 .btn-more span{display: block; width: 8px; height: 17px; overflow: hidden; position:absolute; right:0; top:8px;}
 .btn-more span:after {content:""; display: block; width: 12px; height: 12px; border:1px solid #111; transform: rotate(45deg);margin-left:-10px; margin-top:1px;}
 .btn-more:hover span:after{border-color:#888;}
 /*----------------------  header ---------------------- */
-.header {padding: 10px 0px 5px; display: flex;justify-content: space-between; align-items: flex-end;}
+.header-area {position: fixed; width: 100%; top:0; left:0; z-index: 999; background: #fff;}
+.header {padding: 10px 0px 5px; display: flex; justify-content: space-between; align-items: flex-end;}
 h1.logo-area{ font-size: 25px; margin:0; letter-spacing:  -0.04rem; animation: logoAni 7s infinite;}
 .logo-img {width:60px; }
 .varsion {font-size: 14px;}
@@ -87,9 +90,10 @@ h1.logo-area{ font-size: 25px; margin:0; letter-spacing:  -0.04rem; animation: l
 .nav {border-top:3px solid #111; border-bottom:1px solid #111; padding: 12px 0; overflow: auto; }
 .nav::-webkit-scrollbar {display: none;}
 .gnb-area {width:663px; margin:0 auto; padding-left:0;}
-.gnb-area li {float: left; padding:0 40px; border-right:1px solid #ddd; font-weight: 600; cursor: pointer; font-size: 16px;}
+.gnb-area li {float: left; border-right:1px solid #ddd; font-weight: 600; cursor: pointer; font-size: 16px;}
 .gnb-area li:last-child {border-right:0;}
-.gnb-area li:hover {color:#777; text-decoration: underline;}
+.gnb-area li:hover ,.gnb-area li.active  {color:#777; text-decoration: underline;}
+.gnb-area li a {padding:0 40px;}
 /*----------------------  main ---------------------- */
 .main-img-area .left-img {width: 745px; position:relative; float: left;}
 .main-img-area .left-img h2 { color:#e7ad9e; font-size: 67px; font-weight: 900; position:absolute; top:50px; left:40px; z-index: 10;}

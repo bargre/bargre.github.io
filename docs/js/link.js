@@ -3,7 +3,7 @@ $(document).ready(function(){
 //1140 미만일때 사이트 오픈 클릭 이벤트
   $(window).on(" load resize" , function (){
     const width =$(document).width();
- 
+
 
     if(width <= 1140){
       $(".design-list-area li").eq(0).click(function(e){
@@ -23,8 +23,21 @@ $(document).ready(function(){
       $(".design-list-area li").eq(1).off("click");
       $(".design-list-area li").eq(3).off("click");
     }
+
+
   });
 
+  //web 스크롤 애니메이션
+ $(".gnb-area li a").click(function(){
+   const width =$(document).width();
+   var target= $(this).attr("href");
+   var targetPos=$(target).offset().top;
+   $("html,body").stop().animate({scrollTop:targetPos-140},700);
+     if(width <= 500){
+         $("html,body").stop().animate({scrollTop:targetPos-120},700);
+     }
+   return false;
+  });
 
 //이니스프리 사이트 오픈
   $("#inniPcOpen").click(function(){
@@ -46,4 +59,7 @@ $(document).ready(function(){
     $("#plantMobileOpen").click(function(){
       window.open("link/MyPlant/index.html", "a", "width=375, height=650, left=200, top=50");
     });
-});
+
+
+
+}); //end

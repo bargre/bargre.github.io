@@ -2,194 +2,199 @@
 <html lang="ko" dir="ltr">
 
 <head>
-   <meta charset="utf-8">
-   <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width">
-   <title>JINA SPACE</title>
-   <link rel="stylesheet" href="font/pretendard.css">
-   <link rel="stylesheet" href="css/common.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width">
+  <title>JINA SPACE</title>
+  <link rel="stylesheet" href="font/pretendard.css">
+  <link rel="stylesheet" href="css/common.css">
   <link rel="stylesheet" href="css/main.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
 </head>
+
 <body>
-   <div class="wrap">
+  <div class="header-area">
+    <div class="wrap">
       <header class="header">
-         <h1 class="logo-area">
-            <a href="index.html">
-               <img src="images/header.png" class="logo-img" alt="logo image">
-               JINA SPACE
-            </a>
-         </h1>
-         <span class="varsion">2022</span>
+        <h1 class="logo-area">
+          <a href="index.html">
+            <img src="images/header.png" class="logo-img" alt="logo image">
+            JINA SPACE
+          </a>
+        </h1>
+        <span class="varsion">2022</span>
       </header>
 
       <nav class="nav">
-         <ul class="gnb-area clear">
-            <li>Home</li>
-            <li>Publishing</li>
-            <li>Design</li>
-            <li>Illustration</li>
-            <li>Jina</li>
-         </ul>
+        <ul class="gnb-area clear">
+          <li class=""><a href="index.html">Home</a></li>
+          <li><a href="Publishing.html">Publishing</a></li>
+          <li><a href="#Design">Design</a></li>
+          <li><a href="#Illustration">Illustration</a></li>
+          <li><a href="jina.html">Jina</a></li>
+        </ul>
       </nav>
+    </div>
+  </div>
 
-      <main class="content">
-         <section class="p-container">
-            <div class="main-img-area clear">
-               <div class="left-img">
-                  <h2>JINA SPACE</h2>
-                  <picture>
-                      <source srcset="images/mainImg.gif" media="(min-width:500px)">
-                    <img src="images/mainImg_m.gif" alt="jina space main image">
-                  </picture>
-               </div>
-               <div class="right-img">
-                  <div class="right-top">
-                     <h3 >Responsive Web</h3>
-                     <p>
-                        Bootstrap을 사용하여<br />
-                        다양한 기업의 홈페이지를<br />
-                        제작했습니다.
-                     </p>
-                     <div class="btn-more-area">
-                        <button type="button" class="btn-more">More<span></span></button>
-                     </div>
-                  </div>
-                  <div class="right-bottom">
-                     <h3>Mobile Web</h3>
-                     <p>
-                        - 로봇설계매니저<br />
-                        - 자동차 로봇설계<br />
-                        - LK보험중개<br />
-                        - Plasma
-                     </p>
-                     <div class="btn-more-area">
-                        <button type="button" class="btn-more">More<span></span></button>
-                     </div>
-                  </div>
-               </div>
+  <div class="wrap ptop">
+    <main class="content">
+      <section class="p-container">
+        <div class="main-img-area clear">
+          <div class="left-img">
+            <h2>JINA SPACE</h2>
+            <picture>
+              <source srcset="images/mainImg.gif" media="(min-width:500px)">
+              <img src="images/mainImg_m.gif" alt="jina space main image">
+            </picture>
+          </div>
+          <div class="right-img">
+            <div class="right-top">
+              <h3>Responsive Web</h3>
+              <p>
+                Bootstrap을 사용하여<br />
+                다양한 기업의 홈페이지를<br />
+                제작했습니다.
+              </p>
+              <div class="btn-more-area">
+                <button type="button" class="btn-more">More<span></span></button>
+              </div>
             </div>
-         </section>
-
-         <section class="p-container m-container">
-            <div class="title">
-               <h3>WEB DESIGN & PUBLISHING</h3>
+            <div class="right-bottom">
+              <h3>Mobile Web</h3>
+              <p>
+                - 로봇설계매니저<br />
+                - 자동차 로봇설계<br />
+                - LK보험중개<br />
+                - Plasma
+              </p>
+              <div class="btn-more-area">
+                <button type="button" class="btn-more">More<span></span></button>
+              </div>
             </div>
-            <ul class="design-list-area clear">
-               <li>
-                  <div class="left-box">
-                     <img src="images/inni.jpg" alt="이니스프리 홈페인 리디자인 이미지">
-                  </div>
-                  <div class="right-text">
-                    <h4>리디자인<br>이니스프리 홈페이지</h4>
-                    <p>publishing / design 100%</p>
-                    <div class="btn-more-area">
-                       <button type="button" class="btn-more" id="inniPcOpen">Web<span></span></button>
-                        <button type="button" class="btn-more" id="inniMobileOpen">Mobile<span></span></button>
-                    </div>
-                  </div>
-               </li>
-               <li>
-                  <div class="left-box">
-                     <img src="images/audi.jpg" alt="아우디 홈페이지 리디자인 이미지">
-                  </div>
-                  <div class="right-text">
-                    <h4>리디자인<br>아우디 홈페이지</h4>
-                    <p>publishing / design 100%</p>
-                    <div class="btn-more-area">
-                       <button type="button" class="btn-more" id="audiPcOpen">Web<span></span></button>
-                        <button type="button" class="btn-more" id="audiMobileOpen">Mobile<span></span></button>
-                    </div>
-                  </div>
-               </li>
-               <li>
-                  <div class="left-box">
-                     <img src="images/plant.jpg" alt="반려식물키우기 앱 디자인 이미지">
-                  </div>
-                  <div class="right-text">
-                    <h4>디자인<br>반려식물키우기 앱</h4>
-                    <p>publishing / design 100%</p>
-                    <div class="btn-more-area">
-                      <button type="button" class="btn-more" id="audiPcOpen" style="display:none">Web<span></span></button>
-                        <button type="button" class="btn-more" id="plantMobileOpen">Mobile<span></span></button>
-                    </div>
-                  </div>
-               </li>
-            </ul>
-         </section>
+          </div>
+        </div>
+      </section>
 
-         <section class="p-container m-container">
-           <div class="title">
-              <h3>ILLUST DESIGN & DIGITAL PAINTING</h3>
-           </div>
-          <ul class="painting-list-area clear">
-            <li>
-              <div class="top-img">
-                <img src="images/max.png" alt="로보티즈 엔지니어 키트">
+      <section class="p-container m-container" id="Design">
+        <div class="title">
+          <h3>WEB DESIGN & PUBLISHING</h3>
+        </div>
+        <ul class="design-list-area clear">
+          <li>
+            <div class="left-box">
+              <img src="images/inni.jpg" alt="이니스프리 홈페인 리디자인 이미지">
+            </div>
+            <div class="right-text">
+              <h4>리디자인<br>이니스프리 홈페이지</h4>
+              <p>publishing / design 100%</p>
+              <div class="btn-more-area">
+                <button type="button" class="btn-more" id="inniPcOpen">Web<span></span></button>
+                <button type="button" class="btn-more" id="inniMobileOpen">Mobile<span></span></button>
               </div>
-              <div class="bottom-text">
-                <h4>로보티즈 엔지니어 키트</h4>
-                <p>AI기술 기반의 스마트 로봇.<br>로봇의 얼굴, 컨트롤러, AR스티커 등 디자인</p>
-                <div class="btn-more-area">
-                 <button type="button" class="btn-more" id="detail_1">Detail<span></span></button>
-                </div>
+            </div>
+          </li>
+          <li>
+            <div class="left-box">
+              <img src="images/audi.jpg" alt="아우디 홈페이지 리디자인 이미지">
+            </div>
+            <div class="right-text">
+              <h4>리디자인<br>아우디 홈페이지</h4>
+              <p>publishing / design 100%</p>
+              <div class="btn-more-area">
+                <button type="button" class="btn-more" id="audiPcOpen">Web<span></span></button>
+                <button type="button" class="btn-more" id="audiMobileOpen">Mobile<span></span></button>
               </div>
-            </li>
-            <li>
-              <div class="top-img">
-                <img src="images/robot.png" alt="로보티즈 실과로봇 키트">
+            </div>
+          </li>
+          <li>
+            <div class="left-box">
+              <img src="images/plant.jpg" alt="반려식물키우기 앱 디자인 이미지">
+            </div>
+            <div class="right-text">
+              <h4>디자인<br>반려식물키우기 앱</h4>
+              <p>publishing / design 100%</p>
+              <div class="btn-more-area">
+                <button type="button" class="btn-more" id="audiPcOpen" style="display:none">Web<span></span></button>
+                <button type="button" class="btn-more" id="plantMobileOpen">Mobile<span></span></button>
               </div>
-              <div class="bottom-text">
-                <h4>로보티즈 실과로봇 키트</h4>
-                <p>AI기술 기반의 스마트 로봇.<br>로봇의 얼굴, 컨트롤러, AR스티커 등 디자인</p>
-                <div class="btn-more-area">
-                 <button type="button" class="btn-more">Detail<span></span></button>
-                </div>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <section class="p-container m-container" id="Illustration">
+        <div class="title">
+          <h3>ILLUST DESIGN & DIGITAL PAINTING</h3>
+        </div>
+        <ul class="painting-list-area clear">
+          <li>
+            <div class="top-img">
+              <img src="images/max.png" alt="로보티즈 엔지니어 키트">
+            </div>
+            <div class="bottom-text">
+              <h4>로보티즈 엔지니어 키트</h4>
+              <p>AI기술 기반의 스마트 로봇.<br>로봇의 얼굴, 컨트롤러, AR스티커 등 디자인</p>
+              <div class="btn-more-area">
+                <button type="button" class="btn-more" id="detail_1">Detail<span></span></button>
               </div>
-            </li>
-            <li>
-              <div class="top-img">
-                <img src="images/painting.jpg" alt="로보티즈 교육용 만화">
+            </div>
+          </li>
+          <li>
+            <div class="top-img">
+              <img src="images/robot.png" alt="로보티즈 실과로봇 키트">
+            </div>
+            <div class="bottom-text">
+              <h4>로보티즈 실과로봇 키트</h4>
+              <p>AI기술 기반의 스마트 로봇.<br>로봇의 얼굴, 컨트롤러, AR스티커 등 디자인</p>
+              <div class="btn-more-area">
+                <button type="button" class="btn-more">Detail<span></span></button>
               </div>
-              <div class="bottom-text">
-                <h4>로보티즈 교육용 만화</h4>
-                <p>AI기술 기반의 스마트 로봇.<br>로봇의 얼굴, 컨트롤러, AR스티커 등 디자인</p>
-                <div class="btn-more-area">
-                 <button type="button" class="btn-more">Detail<span></span></button>
-                </div>
+            </div>
+          </li>
+          <li>
+            <div class="top-img">
+              <img src="images/painting.jpg" alt="로보티즈 교육용 만화">
+            </div>
+            <div class="bottom-text">
+              <h4>로보티즈 교육용 만화</h4>
+              <p>AI기술 기반의 스마트 로봇.<br>로봇의 얼굴, 컨트롤러, AR스티커 등 디자인</p>
+              <div class="btn-more-area">
+                <button type="button" class="btn-more">Detail<span></span></button>
               </div>
-            </li>
-            <li>
-              <div class="top-img">
-                <img src="images/illust.png" alt="스픽나우키즈 전자동화책">
+            </div>
+          </li>
+          <li>
+            <div class="top-img">
+              <img src="images/illust.png" alt="스픽나우키즈 전자동화책">
+            </div>
+            <div class="bottom-text">
+              <h4>스픽나우키즈 전자동화책</h4>
+              <p>AI기술 기반의 스마트 로봇.<br>로봇의 얼굴, 컨트롤러, AR스티커 등 디자인</p>
+              <div class="btn-more-area">
+                <button type="button" class="btn-more">Detail<span></span></button>
               </div>
-              <div class="bottom-text">
-                <h4>스픽나우키즈 전자동화책</h4>
-                <p>AI기술 기반의 스마트 로봇.<br>로봇의 얼굴, 컨트롤러, AR스티커 등 디자인</p>
-                <div class="btn-more-area">
-                 <button type="button" class="btn-more">Detail<span></span></button>
-                </div>
-              </div>
-            </li>
-          </ul>
-         </section>
-      </main>
+            </div>
+          </li>
+        </ul>
+      </section>
+    </main>
     <footer class="footer clear">
       <h1 class="logo-area">
-         <a href="index.html">
-            JINA SPACE
-         </a>
+        <a href="index.html">
+          JINA SPACE
+        </a>
       </h1>
       <div class="rigt-text">
         <small>
           본사이트는 상업적인 목적인 아닌 개인 포트폴리오 용도로 만들어졌습니다.<br />
           홈페이지의 일부 내용과 이미지 등은 출처가 따로 있음을 밝힙니다.<br />
           Copyright © jin-a kim, All Rights Reserved.
-          </small>
+        </small>
       </div>
     </footer>
-   </div>
-   <!--//wrap-->
+  </div>
+  <!--//wrap-->
 
   <section>
     <div class="popup" id="popup_1">
@@ -202,6 +207,7 @@
   </section>
 
 </body>
-   <script src="js/link.js" charset="utf-8"></script>
-   <script src="js/main.js" charset="utf-8"></script>
+<script src="js/link.js" charset="utf-8"></script>
+<script src="js/main.js" charset="utf-8"></script>
+
 </html>
