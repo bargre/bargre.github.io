@@ -50,5 +50,38 @@ textarea {width : 100%; height:100px; padding:10px; box-sizing:border-box;}
 
 @media screen and (max-width:1140px) {
 /*---------------------- jina top ---------------------- */
-.tools li p {width: 7.2vw; height: 7.2vw; }
+.content.about {width:700px; margin: 0 auto;}
+.about-content { display: block;}
+.about-content > div:nth-child(1) {width: 40%; float: left; }
+.about-content > div:nth-child(2) {width: 40%; float:right; }
+.about-content > div:nth-child(3) {width: 100%; clear:both; padding-top:30px;}
+.tools li:nth-child(3) {margin-right:26px;}
 }
+
+@media screen and (max-width:768px) {
+   
+    .content.about {width:500px; margin: 0 auto;}
+    .about-text {margin-left:10px;}
+    .about-text h2 {font-size: 56px;}
+    .about-text p {font-size: 18px;}
+
+    .about-content > div {width:100% !important; float:none !important;}
+ }
+
+@media screen and (max-width:570px) {
+
+        .content.about {padding: 20px 16px; width:100%; box-sizing:border-box;}
+        .about-img-area { text-align: center;}
+        .about-img {float:none;}
+        .about-text {float:none; margin-left:0;}
+        .about-text h2 {border-bottom:none;}
+        .about-text {margin-left:10px;}
+        .about-text h2 {font-size: 56px;}
+        .about-text p {font-size: 18px;;}
+        .about-content > div {width:100% !important; float:none !important;}
+}    
+
+
+@media screen and (max-width:386px) {
+ 
+}    
