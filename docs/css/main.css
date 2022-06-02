@@ -92,8 +92,8 @@ p {display: none;}
 /*----------------------  header ---------------------- */
 .header {padding-left:16px; padding-right:16px; }
 .ptop {padding-top:90px;} /*header padding*/
-.gnb-area {width:520px;}
-.gnb-area li a {padding: 0 25px;}
+.gnb-area {width:570px;}
+.gnb-area li a {padding: 0 30px;}
 h1.logo-area { font-size: 20px;}
 .logo-img {width:40px; }
 .varsion {font-size: 12px;}
