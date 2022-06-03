@@ -32,6 +32,7 @@ footer,header,hgroup,menu,nav,section {
 ul {
     list-style:none;
     padding:0;
+    margin: 20px 0;
 }
 
 a {
@@ -73,70 +74,3 @@ p {color: #888; font-size: 14px; line-height: 1.02rem;  margin:0;}
 .btn-more span{display: block; width: 8px; height: 17px; overflow: hidden; position:absolute; right:0; top:8px;}
 .btn-more span:after {content:""; display: block; width: 12px; height: 12px; border:1px solid #111; transform: rotate(45deg);margin-left:-10px; margin-top:1px;}
 .btn-more:hover span:after{border-color:#888;}
-/*----------------------  header ---------------------- */
-.header-area {position: fixed; width: 100%; top:0; left:0; z-index: 999; background: #fff;}
-.header {padding: 10px 0px 5px; display: flex; justify-content: space-between; align-items: flex-end;}
-h1.logo-area{ font-size: 25px; margin:0; letter-spacing:  -0.04rem; animation: logoAni 7s infinite;}
-.logo-img {width:60px; }
-.varsion {font-size: 14px;}
-
-@keyframes logoAni {
-  0% {letter-spacing: -0.04rem;}
-  30% {letter-spacing: 0.1rem;}
-  100% {letter-spacing: -0.04rem;}
-}
-
-/*----------------------  nav ---------------------- */
-.nav {border-top:3px solid #111; border-bottom:1px solid #111; padding: 12px 0; overflow: auto; }
-.nav::-webkit-scrollbar {display: none;}
-.gnb-area {width:663px; margin:0 auto; padding-left:0;}
-.gnb-area li {float: left; border-right:1px solid #ddd; font-weight: 600; cursor: pointer; font-size: 16px;}
-.gnb-area li:last-child {border-right:0;}
-.gnb-area li:hover ,.gnb-area li.active  {color:#777; text-decoration: underline;}
-.gnb-area li a {padding:0 40px;}
-/*----------------------  main ---------------------- */
-.main-img-area .left-img {width: 745px; position:relative; float: left;}
-.main-img-area .left-img h2 { color:#e7ad9e; font-size: 67px; font-weight: 900; position:absolute; top:50px; left:40px; z-index: 10;}
-.main-img-area .right-img {float: right; padding-left:18px; border-left:1px solid #ddd;}
-.main-img-area .right-img .btn-more-area  {bottom:20px;}
-.main-img-area .right-top , .main-img-area .right-bottom
-{width: 360px; height:205px; padding:20px; box-sizing: border-box; position: relative;}
-.main-img-area .right-top {background:#ebebeb  url(../images/p_img.png) no-repeat right top; background-size: contain;}
-.main-img-area .right-bottom {margin-top:10px; padding-left:180px; background:#ebebeb url(../images/m_img.png) no-repeat left top; background-size: contain;}
-.right-img h3 {padding-bottom:20px;}
-
-
-/*---------  WEB DESIGN & PUBLISHING  --------------*/
-.design-list-area {margin:0;}
-.design-list-area li {float: left; margin:20px 0px 20px 20px; padding-right: 19px; box-sizing: border-box; position:relative; border-right:1px solid #ddd; }
-.design-list-area li:last-child {border-right:none;}
-.design-list-area li:after {content:""; display: block; clear:both;}
-.design-list-area .left-box {width:160px; height:160px; background: #eaeaea; float: left;}
-.design-list-area .left-box img {width:100%;}
-.design-list-area .right-text {float: left; padding-left:20px; width:160px;  }
-.design-list-area .right-text h4 {padding-bottom:25px;}
-.design-list-area .right-text .btn-more-area .btn-more:first-child {margin-right:20px;}
-/*----- ILLUST DESIGN & DIGITAL PAINTING  ---------*/
-.painting-list-area {margin:0;}
-.painting-list-area li {float: left; margin:20px 0px 20px 19px; padding-right: 19px; box-sizing: border-box;  position:relative; border-right:1px solid #ddd; }
-.painting-list-area li:last-child {border-right:none;}
-.painting-list-area .top-img {width:246px; height:246px; background: #eaeaea; overflow: hidden;}
-.painting-list-area .top-img img {width:100%; display: block;}
-.painting-list-area .top-img img:hover {transition: 0.5s; transform: scale(1.1);}
-.painting-list-area .bottom-text {position: relative; height: 120px; margin-top:20px;}
-.painting-list-area .bottom-text h4 {padding-bottom:20px;}
-
-
-/*----------------------footer----------------------*/
-.footer {padding:20px 0; border-top:3px solid #111; border-bottom:1px solid #111; margin-bottom:30px;}
-.footer .logo-area { width:170px; color:#ccc;  float: left;}
-.footer .rigt-text {font-size: 12px; float: left; border-left:1px solid #888; padding-left:20px; line-height: 1.2;}
-
-
-/*----------------------popup----------------------*/
-.popup { width:100%; display: none;}
-.btn-close {display: block; position: fixed; right:20px; top:20px; width:50px; height:50px; background: red; z-index: 102;}
-.popup-img {min-width: 70%; max-width:1400px; position: absolute; top:0px; left:50%;  transform: translate(-50%); z-index: 101;}
-.popup-img img {width: 100%;}
-.popup-bg {position: fixed; top:0; bottom:0; left:0; right:0; background:#fff; z-index: 100;}
-/*---------------------- end ----------------------*/
