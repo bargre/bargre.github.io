@@ -26,7 +26,7 @@ h1.logo-area{ font-size: 25px; margin:0; letter-spacing:  -0.04rem; animation: l
 .gnb-area li a {padding:0 40px;}
 /*----------------------  main ---------------------- */
 .main-img-area .left-img {width: 745px; position:relative; float: left;}
-.main-img-area .left-img h2 { color:#e7ad9e; font-size: 67px; font-weight: 900; position:absolute; top:50px; left:40px; z-index: 10;}
+.main-img-area .left-img h2 { color:#e7ad9e; font-size: 67px; font-weight: 900; position:absolute; top:50px; left:40px; z-index: 10; animation: titleAni 4s;}
 .main-img-area .right-img {float: right; padding-left:18px; border-left:1px solid #ddd;}
 .main-img-area .right-img .btn-more-area  {bottom:20px;}
 .main-img-area .right-top , .main-img-area .right-bottom
@@ -35,6 +35,10 @@ h1.logo-area{ font-size: 25px; margin:0; letter-spacing:  -0.04rem; animation: l
 .main-img-area .right-bottom {margin-top:10px; padding-left:180px; background:#ebebeb url(../images/m_img.png) no-repeat left top; background-size: contain;}
 .right-img h3 {padding-bottom:20px;}
 
+@keyframes titleAni {
+  0% {opacity:0%;}
+  100% {opacity:100%; }
+}
 
 /*---------  WEB DESIGN & PUBLISHING  --------------*/
 .design-list-area {margin:0;}
@@ -65,7 +69,9 @@ h1.logo-area{ font-size: 25px; margin:0; letter-spacing:  -0.04rem; animation: l
 
 /*----------------------popup----------------------*/
 .popup { width:100%; display: none; position:fixed; top:0; bottom:0; left:0; right:0; z-index: 999; overflow:auto; background:#fff;}
-.btn-close {display: block; position: fixed; right:20px; top:20px; width:50px; height:50px; background: red; z-index: 102;}
+.btn-close {display: block; position: fixed; right:0px; top:0px; width:70px; height:70px; z-index: 102; text-indent:-9999px;}
+.btn-close:before {content:""; display:block; position:absolute; right:9px; top:30px; background:#111; width:50px; height:1px; transform: rotate(45deg);}
+.btn-close:after {content:""; display:block; position:absolute; right:9px; top:30px; background:#111; width:50px; height:1px; transform: rotate(-45deg);}
 .popup-img { width: 100%;}
 .popup-img img {width: 70%; max-width:1400px; margin:0 auto; display:block;}
 
