@@ -23,34 +23,10 @@ $(document).ready(function(){
       $(".design-list-area li").eq(1).off("click");
       $(".design-list-area li").eq(3).off("click");
     }
-
-
-    //퍼블리싱화면 모바일웹 토글
-
-         
+   
 
   }); //resize
 
-
-  $("#menu1").click(function(){      
-    $("#menuList1").toggleClass("on");   
-  });
-
-  $("#menu2").click(function(){      
-    $("#menuList2").toggleClass("on");   
-  });
-
-
-  //web 스크롤 애니메이션
- $(".gnb-area li a").click(function(){
-   var target= $(this).attr("href");
-   var targetPos=$(target).offset().top;
-   $("html,body").stop().animate({scrollTop:targetPos-140},700);
-     if(width <= 500){
-         $("html,body").stop().animate({scrollTop:targetPos-120},700);
-     }
-   return false;
-  });
 
 //이니스프리 사이트 오픈
   $("#inniPcOpen").click(function(){
@@ -95,6 +71,27 @@ $("#detail_3").click(function(){
 $("#detail_4").click(function(){
   $("#popup_4").css({"display":"block"});
   $("body").css({"overflow":"hidden"});
+});
+
+//퍼블리싱 페이지 - 모바일버전 메뉴 토글
+$("#menu1").click(function(){      
+  $("#menuList1").toggleClass("on");   
+});
+
+$("#menu2").click(function(){      
+  $("#menuList2").toggleClass("on");   
+});
+
+
+//web 스크롤 애니메이션
+$(".gnb-area li a").click(function(){
+ var target= $(this).attr("href");
+ var targetPos=$(target).offset().top;
+ $("html,body").stop().animate({scrollTop:targetPos-140},700);
+   if(width <= 500){
+       $("html,body").stop().animate({scrollTop:targetPos-120},700);
+   }
+ return false;
 });
 
 
