@@ -145,7 +145,7 @@ section{padding:150px 0;position: relative;}
 .gallery-wrap {position: relative; width:1168px;  height:360px;}
 .gallery-wrap .mask {position:relative; height:360px; width:100%; overflow:hidden;}
 .gallery .gallery-area {width:4560px; position:absolute; top:0; left:0;}
-.gallery .set {position:absolute; top:0;width:; }
+.gallery .set {position:absolute; top:0;}
 .gallery .set1 {left:0;}
 .gallery .set2 {left:2280px;}
 .gallery .list li{ float:left; margin-right:20px; cursor:pointer;
