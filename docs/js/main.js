@@ -17,36 +17,7 @@ const webTit = document.querySelector("#webTit");
 const webCon = document.querySelector("#webCon");
 const WebDate = document.querySelector("#WebDate");
 const webText = document.querySelector("#webText");
-
-
-// function creatText(text) {
-// const textBox = document.querySelector(".work-img-text");
-// const h6 = document.createElement("h6");
-// const div = document.createElement("div");
-// const con = document.createElement("p");
-// const date = document.createElement("p");
-// const mobileText = document.createElement("p");
-
-// h6.className = "item-title";
-// h6.innerText = m_1;
-
-// div.className = "item-text";
-
-// textBox.appendChild(h6);
-// textBox.appendChild(div);
-
-// con.id = "con";
-// date.id = "date";
-// mobileText.id = "mobileText";
-
-// div.appendChild(con);
-// div.appendChild(date);
-// div.appendChild(mobileText);
-
-// return h6;
-// }
-
-
+const webSite = document.querySelector("#siteGo");
 
 
 
@@ -57,7 +28,6 @@ function textChange1() {
   mobileText.innerHTML = `보험 가입설계와 모바일 청약 업무 지원 앱`;
   mobileImg.src = "images/m_1.jpg";
   mobileImg.alt ="로봇설계매니저앱 이미지" ;
-  
 }
 
 function textChange2() {
@@ -94,6 +64,7 @@ function webTextChange1() {
   webText.innerHTML = `KB라이프파트너스 홈페이지`;
   webImg.src = "images/w_1.jpg";
   webImg.alt ="KB라이프파트너스 홈페이지";
+  webSite.href = "#"
 }
 
 function webTextChange2() {
@@ -103,6 +74,7 @@ function webTextChange2() {
   webText.innerHTML = `이스퀘어 홈페이지`;
   webImg.src = "images/w_2.jpg";
   webImg.alt ="이스퀘어 홈페이지";
+  webSite.href = "http://e-2.co.kr/index.go"
 }
 
 function webTextChange3() {
@@ -112,4 +84,26 @@ function webTextChange3() {
   webText.innerHTML = `인슈플래닛 홈페이지`;
   webImg.src = "images/w_3.jpg";
   webImg.alt ="인슈플래닛 홈페이지";
+  webSite.href = "#"
 }
+
+const windowWidth = window.innerWidth;
+const navItem1 = document.querySelector("#menuList1").childNodes;
+const navItem2 = document.querySelector("#menuList2").childNodes;
+
+
+//모바일화면에서 퍼블리싱 메뉴 클릭시 닫힘
+if(windowWidth <= 768){
+  navItem1.forEach(function (item) {
+    item.addEventListener("click", navClose);
+    //console.log(item);
+  });
+  navItem2.forEach(function (item) {
+    item.addEventListener("click", navClose);
+  });
+}
+
+function navClose(ev){
+  target = ev.target.parentNode;
+  target.classList.remove("on");
+};

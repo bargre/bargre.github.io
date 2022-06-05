@@ -73,6 +73,8 @@ $("#detail_4").click(function(){
   $("body").css({"overflow":"hidden"});
 });
 
+
+
 //퍼블리싱 페이지 - 모바일버전 메뉴 토글
 $("#menu1").click(function(){      
   $("#menuList1").toggleClass("on");   

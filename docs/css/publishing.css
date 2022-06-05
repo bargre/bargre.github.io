@@ -8,8 +8,9 @@
 .item-text p{line-height: 1.6;}
 .work-img-area {float:left; width:calc(100% - 250px);margin: 20px 0;}
 .work-img img {width: 100%;}
-.work-list-area {float:right; width:230px;}
+.work-list-area {float:right; width:230px; }
 
+.site-go {display : block ; padding:12px 20px; margin-top: 30px;  background:#111; color:#fff; text-align: center; }
 
 @media screen and (max-width:768px) {
 .title {position:relative;}
@@ -25,6 +26,8 @@
 .item-title { font-size: 20px; padding-bottom:10px; }
 .work-list-area {float:none; width:100%;}
 .work-img-text {position:relative; left:0; bottom:0;}
+
+
 
 }/*768*/
 
