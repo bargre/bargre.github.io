@@ -34,5 +34,5 @@
 
 @media screen and (max-width: 500px){
 .content.publishing {padding-top:20px;}
-p {display: block;}
+.content.publishing p {display: block;}
 }/*500*/
