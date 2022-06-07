@@ -65,6 +65,8 @@ function webTextChange1() {
   webImg.src = "images/w_1.jpg";
   webImg.alt ="KB라이프파트너스 홈페이지";
   webSite.href = "#"
+  webSite.innerText = "사이트 (개발중)"
+  webSite.style.display =  "block";
 }
 
 function webTextChange2() {
@@ -75,6 +77,8 @@ function webTextChange2() {
   webImg.src = "images/w_2.jpg";
   webImg.alt ="이스퀘어 홈페이지";
   webSite.href = "http://e-2.co.kr/index.go"
+    webSite.innerText = "사이트 바로가기"
+  webSite.style.display =  "block";
 }
 
 function webTextChange3() {
@@ -84,7 +88,8 @@ function webTextChange3() {
   webText.innerHTML = `인슈플래닛 홈페이지`;
   webImg.src = "images/w_3.jpg";
   webImg.alt ="인슈플래닛 홈페이지";
-  webSite.href = "#"
+  webSite.style.display =  "none";
+
 }
 
 const windowWidth = window.innerWidth;
