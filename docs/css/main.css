@@ -19,11 +19,11 @@ h1.logo-area{ font-size: 25px; margin:0; letter-spacing:  -0.04rem; animation: l
 /*----------------------  nav ---------------------- */
 .nav {border-top:3px solid #111; border-bottom:1px solid #111; padding: 12px 0; overflow: auto; }
 .nav::-webkit-scrollbar {display: none;}
-.gnb-area {width:663px; margin:0 auto; padding-left:0;}
+.gnb-area {width:622px; margin:0 auto; padding-left:0;}
 .gnb-area li {float: left; border-right:1px solid #ddd; font-weight: 600; cursor: pointer; font-size: 16px;}
 .gnb-area li:last-child {border-right:0;}
 .gnb-area li:hover ,.gnb-area li.active  {color:#777; text-decoration: underline;}
-.gnb-area li a {padding:0 40px;}
+.gnb-area li a {padding:0 40px; margin: 0 40px;}
 /*----------------------  main ---------------------- */
 .main-img-area .left-img {width: 745px; position:relative; float: left;}
 .main-img-area .left-img h2 { color:#e7ad9e; font-size: 67px; font-weight: 900; position:absolute; top:50px; left:40px; z-index: 10; animation: titleAni 4s;}
@@ -144,7 +144,9 @@ h1.logo-area{ font-size: 25px; margin:0; letter-spacing:  -0.04rem; animation: l
 
 /* ---------------------common---------------------- */
 .p-container {padding-bottom:50px;}
-
+/*---------------------- header ---------------------- */
+.gnb-area {width: 442px;}
+.gnb-area li a {padding:0 30px; margin:0 20px;}
 
 /*----------------------  main ---------------------- */
 .main-img-area .left-img {width: 100%; height:auto; float: none;}
@@ -189,8 +191,6 @@ p {display: none;}
 /*----------------------  header ---------------------- */
 .header {padding-left:16px; padding-right:16px; }
 .ptop {padding-top:90px;} /*header padding*/
-.gnb-area {width:570px;}
-.gnb-area li a {padding: 0 30px;}
 h1.logo-area { font-size: 20px;}
 .logo-img {width:40px; }
 .varsion {font-size: 12px;}
