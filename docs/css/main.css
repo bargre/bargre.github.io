@@ -26,7 +26,9 @@ h1.logo-area{ font-size: 25px; margin:0; letter-spacing:  -0.04rem; animation: l
 .gnb-area li a {padding:0 40px; margin: 0 40px;}
 /*----------------------  main ---------------------- */
 .main-img-area .left-img {width: 745px; position:relative; float: left;}
-.main-img-area .left-img h2 { color:#e7ad9e; font-size: 67px; font-weight: 900; position:absolute; top:50px; left:40px; z-index: 10; animation: titleAni 4s;}
+.main-img-area .left-img .left-img-text {  position:absolute; top:50px; left:40px; z-index: 10;}
+.main-img-area .left-img .left-img-text h2{ color:#e7ad9e; font-size: 62px; font-weight: 900;  animation: titleAni 13s infinite;}
+.main-img-area .left-img .left-img-text p{ color:#c98b7b; font-size: 16px; letter-spacing: 0.13rem; padding-top: 5px;   animation: titleSubAni 13s infinite;}
 .main-img-area .right-img {float: right; padding-left:18px; border-left:1px solid #ddd;}
 .main-img-area .right-img .btn-more-area  {bottom:20px;}
 .main-img-area .right-top , .main-img-area .right-bottom
@@ -37,9 +39,17 @@ h1.logo-area{ font-size: 25px; margin:0; letter-spacing:  -0.04rem; animation: l
 
 @keyframes titleAni {
   0% {opacity:0%;}
-  100% {opacity:100%; }
+  20% {opacity:100%;}
+  60% {opacity:100%; }
+  100% {opacity:0%; }
 }
-
+@keyframes titleSubAni {
+  0% {opacity:0%; }
+  20% {opacity:0%; }
+  30% {opacity:100%;}
+  60% {opacity:100%;}
+  100% {opacity:0%; }
+}
 /*---------  WEB DESIGN & PUBLISHING  --------------*/
 .design-list-area {margin:0;}
 .design-list-area li {float: left; margin:20px 0px 20px 20px; padding-right: 19px; box-sizing: border-box; position:relative; border-right:1px solid #ddd; }
@@ -195,7 +205,9 @@ h1.logo-area { font-size: 20px;}
 .logo-img {width:40px; }
 .varsion {font-size: 12px;}
 /*----------------------  main ---------------------- */
-.main-img-area .left-img h2 {width:70vw; font-size: 12vw;  top:24vw; left:50%; transform: translateX(-50%);}
+.main-img-area .left-img .left-img-text {width:70vw; top:24vw; left:50%; transform: translateX(-50%);}
+.main-img-area .left-img .left-img-text h2 {font-size: 12vw; }
+.main-img-area .left-img .left-img-text p {font-size: 3.1vw; letter-spacing: 0.4vw;}
 .main-img-area .right-top , .main-img-area .right-bottom{margin-top: 5px; width: 100%;}
 .main-img-area .right-top {float: none;}
 .main-img-area .right-bottom {float: none; }
