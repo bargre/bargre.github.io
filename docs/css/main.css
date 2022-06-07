@@ -97,10 +97,10 @@ h1.logo-area{ font-size: 25px; margin:0; letter-spacing:  -0.04rem; animation: l
 
 
 /*----------------------popup----------------------*/
-.popup { width:100%; display: none; position:fixed; top:0; bottom:0; left:0; right:0; z-index: 999; overflow:auto; background:#fff;}
-.btn-close {display: block; position: fixed; right:0px; top:0px; width:70px; height:70px; z-index: 102; text-indent:-9999px;}
-.btn-close:before {content:""; display:block; position:absolute; right:9px; top:30px; background:#111; width:50px; height:1px; transform: rotate(45deg);}
-.btn-close:after {content:""; display:block; position:absolute; right:9px; top:30px; background:#111; width:50px; height:1px; transform: rotate(-45deg);}
+.popup { width:100%; display: none; position:fixed; top:0; bottom:0; left:0; right:0; z-index: 999; overflow:auto; background:rgba(0,0,0,0.6);}
+.btn-close {display: block; position: fixed; right:20px; top:10px; width:70px; height:70px; z-index: 102; text-indent:-9999px;}
+.btn-close:before {content:""; display:block; position:absolute; right:9px; top:30px; background:#fff; width:50px; height:2px; transform: rotate(45deg);}
+.btn-close:after {content:""; display:block; position:absolute; right:9px; top:30px; background:#fff; width:50px; height:2px; transform: rotate(-45deg);}
 .popup-img { width: 100%;}
 .popup-img img {width: 70%; max-width:1400px; margin:0 auto; display:block;}
 
