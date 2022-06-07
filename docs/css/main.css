@@ -19,7 +19,7 @@ h1.logo-area{ font-size: 25px; margin:0; letter-spacing:  -0.04rem; animation: l
 /*----------------------  nav ---------------------- */
 .nav {border-top:3px solid #111; border-bottom:1px solid #111; padding: 12px 0; overflow: auto; }
 .nav::-webkit-scrollbar {display: none;}
-.gnb-area {width:622px; margin:0 auto; padding-left:0;}
+.gnb-area {width:623px; margin:0 auto; padding-left:0;}
 .gnb-area li {float: left; border-right:1px solid #ddd; font-weight: 600; cursor: pointer; font-size: 16px;}
 .gnb-area li:last-child {border-right:0;}
 .gnb-area li:hover ,.gnb-area li.active  {color:#777; text-decoration: underline;}
@@ -145,7 +145,7 @@ h1.logo-area{ font-size: 25px; margin:0; letter-spacing:  -0.04rem; animation: l
 /* ---------------------common---------------------- */
 .p-container {padding-bottom:50px;}
 /*---------------------- header ---------------------- */
-.gnb-area {width: 442px;}
+.gnb-area {width: 443px;}
 .gnb-area li a {padding:0 30px; margin:0 20px;}
 
 /*----------------------  main ---------------------- */

@@ -6,11 +6,13 @@
   <meta name="viewport"
     content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width">
   <title>JINA SPACE</title>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="font/pretendard.css">
   <link rel="stylesheet" href="css/common.css">
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/jina.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
 </head>
 
@@ -30,9 +32,9 @@
       <nav class="nav">
         <ul class="gnb-area clear">
           <li class=""><a href="index.html">Home</a></li>
-          <!-- <li><a href="publishing.html">Publishing</a></li>
-          <li><a href="index.html#Design">Design</a></li> -->
-          <li><a href="index.html#Illustration">Illustration</a></li>
+          <li><a href="publishing.html">Publishing</a></li>
+          <!-- <li><a href="index.html#Design">Design</a></li>
+          <li><a href="index.html#Illustration">Illustration</a></li> -->
           <li><a href="jina.html">Jina</a></li>
         </ul>
       </nav>
@@ -53,7 +55,7 @@
             </div>
           </div>
           <div class="about-content">
-            <div class="about-me-area">
+            <div class="about-me-area" data-aos="fade-up" data-aos-duration="1000">
               <div class="title">
                 <h3>About Me</h3>
               </div>
@@ -86,7 +88,7 @@
             </div>
             <!--about me-->
 
-            <div>
+            <div data-aos="fade-up" data-aos-duration="1000">
               <div class="title">
                 <h3>Skills</h3>
               </div>
@@ -120,7 +122,7 @@
             <!--skill-->
 
 
-            <div>
+            <div data-aos="fade-up" data-aos-duration="1000">
               <div class="title">
                 <h3>Tools</h3>
               </div>
@@ -150,7 +152,7 @@
         </div>
       </section>
 
-      <section class="p-container">
+      <section class="p-container" data-aos="fade-up" data-aos-duration="1000">
         <div class="title"><h3>소통해요!</h3></div>
           <form action="">
             <div class="memo-area">
@@ -165,7 +167,7 @@
           </form>
        </section>
 
-       <section class="p-container">
+       <section class="p-container" data-aos="fade-up" data-aos-duration="1000">
         <div class="title"><h3>소중한 댓글!</h3></div>
         <dl class="board">
           <dt class="board-head">
@@ -215,5 +217,7 @@
 </body>
 <script src="js/link.js" charset="utf-8"></script>
 <script src="js/main.js" charset="utf-8"></script>
-
+<script>
+  AOS.init();
+</script>
 </html>

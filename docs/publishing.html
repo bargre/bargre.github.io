@@ -6,11 +6,13 @@
   <meta name="viewport"
     content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width">
   <title>JINA SPACE</title>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="font/pretendard.css">
   <link rel="stylesheet" href="css/common.css">
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/publishing.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
 </head>
 
@@ -30,9 +32,9 @@
       <nav class="nav">
         <ul class="gnb-area clear">
           <li><a href="index.html">Home</a></li>
-          <!-- <li><a href="publishing.html">Publishing</a></li>
-          <li><a href="index.html#Design">Design</a></li> -->
-          <li><a href="index.html#Illustration">Illustration</a></li>
+          <li><a href="publishing.html">Publishing</a></li>
+          <!-- <li><a href="index.html#Design">Design</a></li>
+          <li><a href="index.html#Illustration">Illustration</a></li> -->
           <li><a href="jina.html">Jina</a></li>
         </ul>
       </nav>
@@ -41,7 +43,7 @@
 
   <div class="wrap ptop">
     <main class="content publishing">
-      <section class="p-container m-container" id="mobile">
+      <section class="p-container m-container" id="mobile" data-aos="fade-up" data-aos-duration="1000">
         <div class="title">
           <h3>Mobile Web</h3><span class="m-menu" id="menu1"></span>
         </div>
@@ -72,7 +74,7 @@
         </div>
       </section>
 
-      <section class="p-container m-container" id="web">
+      <section class="p-container m-container" id="web" data-aos="fade-up" data-aos-duration="1000">
         <div class="title">
           <h3>Responsive Web</h3><span class="m-menu" id="menu2"></span>
         </div>
@@ -130,9 +132,8 @@
 </body>
 <script src="js/link.js" charset="utf-8"></script>
 <script src="js/main.js" charset="utf-8"></script>
-
-
-
-
+<script>
+  AOS.init();
+</script>
 
 </html>
