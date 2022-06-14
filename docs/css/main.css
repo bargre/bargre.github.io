@@ -50,14 +50,30 @@ h1.logo-area{ font-size: 25px; margin:0; letter-spacing:  -0.04rem; animation: l
   60% {opacity:100%;}
   100% {opacity:0%; }
 }
+
+/*--------- PUBLISHING  --------------*/
+.publishing-list-area {margin:0;}
+.publishing-list-area li {width:49%; margin-top:20px;padding: 20px; box-sizing: border-box; position:relative; border:1px solid #ddd; }
+.publishing-list-area li:nth-child(2n-1) {float:left;}
+.publishing-list-area li:nth-child(2n){float:right; margin-right:0;}
+
+.publishing-list-area .left-box {width:260px; background: #fff; float: left; cursor:pointer;}
+.publishing-list-area .left-box a {display: block; }
+.publishing-list-area .left-box img {width:100%;opacity: 0.7;display: block; transition: 0.3s;}
+.publishing-list-area .left-box img:hover {opacity: 1;  transition: 0.3s;}
+.publishing-list-area .right-text {float: left; padding-left:20px; width:234px; word-break: keep-all;}
+.publishing-list-area  h4 {padding-bottom:15px; line-height: 1.3;}
+.publishing-list-area .btn-more-area {bottom:20px;}
+.publishing-list-area .site-go {padding: 12px 70px}
+
 /*---------  WEB DESIGN & PUBLISHING  --------------*/
 .design-list-area {margin:0;}
 .design-list-area li {float: left; margin:20px 0px 20px 20px; padding-right: 19px; box-sizing: border-box; position:relative; border-right:1px solid #ddd; }
 .design-list-area li:last-child {border-right:none;}
 .design-list-area li:after {content:""; display: block; clear:both;}
-.design-list-area .left-box {width:160px; height:160px; background: #eaeaea; float: left;}
+.design-list-area .left-box {width:126px; height:126px; background: #eaeaea; float: left;}
 .design-list-area .left-box img {width:100%;}
-.design-list-area .right-text {float: left; padding-left:20px; width:160px;  }
+.design-list-area .right-text {float: left; padding-left:20px; width:194px;  }
 .design-list-area .right-text h4 {padding-bottom:25px;}
 .design-list-area .right-text .btn-more-area .btn-more:first-child {margin-right:20px;}
 /*----- ILLUST DESIGN & DIGITAL PAINTING  ---------*/
@@ -120,6 +136,12 @@ h1.logo-area{ font-size: 25px; margin:0; letter-spacing:  -0.04rem; animation: l
 .main-img-area .right-img {width:34%; padding-left:1%;}
 .main-img-area .right-top, .main-img-area .right-bottom {width:100%;}
 .main-img-area .right-bottom {padding-left: 47%;}
+
+/*--------- PUBLISHING  --------------*/
+
+.publishing-list-area li {width:100%;display: inline-block; }
+.publishing-list-area li:nth-child(2n-1) {float:none;}
+.publishing-list-area li:nth-child(2n){float:none;}
 /*---------  WEB DESIGN & PUBLISHING  --------------*/
 
 .design-list-area li { width:100%; margin:0px; padding:20px 0px; float:none; border-right:none; border-bottom:1px solid #ddd; cursor: pointer;}
@@ -147,7 +169,6 @@ h1.logo-area{ font-size: 25px; margin:0; letter-spacing:  -0.04rem; animation: l
   /*----------------------  main ---------------------- */
   .main-img-area .left-img img {margin-left: -100px;}
 }/* 850px end */
-
 
 
 @media screen and (max-width:768px) {
@@ -188,6 +209,19 @@ h1.logo-area{ font-size: 25px; margin:0; letter-spacing:  -0.04rem; animation: l
 /*----------------------popup----------------------*/
 .popup-img img {width: 100%;}
 }/* 768px end */
+
+@media screen and (max-width:620px) {
+  /*--------- PUBLISHING  --------------*/
+
+  .publishing-list-area .left-box {width:100%;  float: none; }
+  .publishing-list-area .left-box img {width:100%; opacity: 1;}
+  .publishing-list-area .right-text {float: none; padding-left:0px; width:100%; padding-top:10px;}
+  .publishing-list-area  h4 {padding-bottom:10px; }
+  .publishing-list-area .site-go {text-align: center;}
+  .publishing-list-area .btn-more-area {position:static;}
+  .publishing-list-area p {display: block;}
+}/* 620px end */
+
 
 @media screen and (max-width:500px) {
 /* ---------------------common---------------------- */
