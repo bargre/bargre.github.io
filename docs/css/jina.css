@@ -9,17 +9,17 @@
 .about-content {padding-top:50px; display: flex; justify-content: space-between;}
 .about-content > div {width: 29%; }
 .about-content  li {padding-bottom: 20px;}
-.about-content .sub-t { display:inline-block; font-weight:600; width:60px; padding-right: 20px;  }
+.about-content .sub-t { display:inline-block; font-weight:600; width:80px; padding-right: 20px;  }
 .about-content p {color:#111; display: inline-block;  font-size:15px;}
 
-.skill-bar { display:inline-block; width: calc(100% - 84px); height:10px; border: 1px solid #111; box-sizing: border-box;}
+.skill-bar { display:inline-block; width: calc(100% - 104px); height:10px; border: 1px solid #111; box-sizing: border-box;}
 .skills li .skill-bar span {display: block; background-color: #111; height:100%;}
 .skills li:nth-child(1) .skill-bar span {width:90%;}
-.skills li:nth-child(2) .skill-bar span {width:93%;}
-.skills li:nth-child(3) .skill-bar span {width:70%;}
-.skills li:nth-child(4) .skill-bar span {width:85%;}
-.skills li:nth-child(5) .skill-bar span {width:60%;}
-.skills li:nth-child(6) .skill-bar span {width:50%;}
+.skills li:nth-child(2) .skill-bar span {width:65%;}
+.skills li:nth-child(3) .skill-bar span {width:80%;}
+.skills li:nth-child(4) .skill-bar span {width:65%;}
+.skills li:nth-child(5) .skill-bar span {width:50%;}
+.skills li:nth-child(6) .skill-bar span {width:60%;}
 
 .tools li {float:left; margin-right:26px;}
 .tools li:nth-child(3n) {margin-right:0px;}
