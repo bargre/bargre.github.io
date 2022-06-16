@@ -4,7 +4,7 @@ $(document).ready(function(){
 
 //1140 미만일때 사이트 오픈 클릭 이벤트
   $(window).on(" load resize" , function (){
- 
+
     if(width <= 1140){
       $(".design-list-area li").eq(0).click(function(e){
         e.stopPropagation();
@@ -23,7 +23,7 @@ $(document).ready(function(){
       $(".design-list-area li").eq(1).off("click");
       $(".design-list-area li").eq(3).off("click");
     }
-   
+
 
   }); //resize
 
@@ -50,7 +50,7 @@ $(document).ready(function(){
     });
 
 
-  //일러스트 팝업  
+  //일러스트 팝업
 $(".btn-close").click(function(){
  $(".popup").css({"display":"none"});
  $("body").css({"overflow":"auto"});
@@ -76,12 +76,12 @@ $("#detail_4").click(function(){
 
 
 //퍼블리싱 페이지 - 모바일버전 메뉴 토글
-$("#menu1").click(function(){      
-  $("#menuList1").toggleClass("on");   
+$("#menu1").click(function(){
+  $("#menuList1").toggleClass("on");
 });
 
-$("#menu2").click(function(){      
-  $("#menuList2").toggleClass("on");   
+$("#menu2").click(function(){
+  $("#menuList2").toggleClass("on");
 });
 
 
@@ -110,7 +110,7 @@ $(".prev").click(function(){//이전 이미지가 슬라이드된후 마지막 �
              return false;
              }
    $(target).animate({left:"+=752px"},"slow");
-    
+
 });
 
 $(".next").click(function(){//다음 이미지가 슬라이드된후 젤앞의 이미지를 갤러리안의 젤 마지막으로 배치
@@ -124,5 +124,6 @@ $(".next").click(function(){//다음 이미지가 슬라이드된후 젤앞의 �
    $(target).animate({left:"-=752px"},"slow");
 
 });
+
 
 }); //end
