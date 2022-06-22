@@ -21,7 +21,7 @@
 .mobile-area .content-box img:nth-child(4) {opacity: 0.4;}
 
 /*========== design-area ==========*/
-.design-area li {float:left; background: #fff; box-shadow: 0px 0px 20px 5px rgba(0,0,0,0.1); border-radius: 40px; width:28%; text-align: center; padding: 40px; box-sizing: border-box;}
+.design-area li {float:left; background: #fff; box-shadow: 0px 0px 20px 5px rgba(0,0,0,0.1); border-radius: 40px; width:28%; text-align: center; padding: 40px; box-sizing: border-box; cursor: pointer;}
 .design-area li:nth-child(2) {margin-top:200px; margin-left: 7%;}
 .design-area li:nth-child(3) {margin-top:400px;  margin-left: 7%; }
 .design-area .logo-box {width: 120px; height: 120px; border-radius: 50%; overflow: hidden; margin:0 auto; position:relative; animation: circle linear 0.5s infinite alternate;}
@@ -69,3 +69,17 @@
 .btn-close:after {content:""; display:block; position:absolute; right:9px; top:30px; background:#fff; width:50px; height:2px; transform: rotate(-45deg);}
 .popup-img { width: 100%;}
 .popup-img img {width: 70%; max-width:1400px; margin:0 auto; display:block;}
+
+
+/*========== project-page ==========*/
+.responsive-area .number {font-weight: 600; font-size: 5rem; color:#eaeaea; margin-left:-15px;}
+.responsive-area.mobile .number {color:#c8dfe3;}
+.responsive-area {padding-top:50px;}
+.responsive-area  li {display: flex; justify-content: space-around; align-items: center; padding-bottom:120px;}
+.responsive-area .img-box {width:900px; height:auto !important; }
+.responsive-area.mobile .img-box {width:400px;}
+.responsive-area .img-box img {width:100%; display: block;}
+.responsive-area h2 {padding-bottom:20px;}
+.responsive-area .btn-go {margin-top:30px;}
+.bg-green .btn-go {color:#fff;}
+.bg-green .btn-go:after {background: #fff;}
