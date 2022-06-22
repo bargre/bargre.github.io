@@ -68,8 +68,9 @@ button {
 
 /*========== layout ==========*/
 .container { width: 1440px; margin:0 auto;}
-.main {margin-top:800px; border-radius: 150px 150px 0px 0px; overflow: hidden; background: #fff; box-shadow: 0px 0px 43px 0px rgb(0 0 0 / 20%); }
+.main {margin-top:800px; border-radius: 150px 150px 0px 0px; overflow: hidden; background: #fff; box-shadow: 0px 0px 43px 0px rgb(0 0 0 / 20%);  transition: 0.5s;}
 .main.sub {margin-top:400px; }
+.main.scroll {border-radius: 0px; transition: 0.5s;}
 section {padding: 150px 0; position:relative;}
 .d-flex { display: flex; justify-content: space-between;}
 .deco {width:36px; height: 5px; background: #111; display: block; margin-top: 2rem; margin-bottom: 4rem;}
@@ -107,8 +108,9 @@ p { line-height: 1.4;}
   100%{right:-44px;}
 }
 /*========== header ==========*/
-.header {width:100%; position: fixed; top:0; z-index: 100; color:#fff; border-bottom:1px solid #fff; }
-.header.on {background: #fff; color:#111; box-shadow: 0px 0px 20px 5px rgba(0,0,0,0.1);}
+.header {width:100%; position: fixed; top:0; z-index: 100; color:#fff; border-bottom:1px solid #fff; transition: 0.5s;}
+.header.on {background: #fff; color:#111; box-shadow: 0px 0px 20px 5px rgba(0,0,0,0.1); transition: 0.5s;}
+.header.scroll {top:-80px; transition: 0.5s;}
 .nav {display: flex; justify-content: center;  }
 .nav a {margin:0 30px;}
 .nav li {float:left; padding: 30px 40px; font-weight: 500;}
@@ -132,5 +134,8 @@ p { line-height: 1.4;}
 .footer p {font-size: 1rem;padding-bottom: 20px;}
 .footer small {font-size: 0.9rem;}
 
-
+/*==================== 1440px ====================*/
+@media screen and (min-width:1140px){
+  .container { width: 100%;}
+}
 /*========== end ==========*/
