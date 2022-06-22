@@ -67,10 +67,10 @@ button {
 }
 
 /*========== layout ==========*/
-.container { width: 1440px; margin:0 auto; position: relative;}
+.container { width: 1440px; margin:0 auto;}
 .main {margin-top:800px; border-radius: 150px 150px 0px 0px; overflow: hidden; background: #fff; box-shadow: 0px 0px 43px 0px rgb(0 0 0 / 20%); }
 .main.sub {margin-top:400px; }
-section {padding: 150px 0;}
+section {padding: 150px 0; position:relative;}
 .d-flex { display: flex; justify-content: space-between;}
 .deco {width:36px; height: 5px; background: #111; display: block; margin-top: 2rem; margin-bottom: 4rem;}
 .clear:after {content:""; display: block; clear:both;}
@@ -79,14 +79,14 @@ section {padding: 150px 0;}
 .dark {color: #111;}
 .blue {color:#3870ff;}
 .green {color:#00b0c6;}
-.lavendaer {color:#8e4fc9;}
+.lavender {color:#8e4fc9;}
 .bg-skyblue {background: #f0f2ff;}
 .bg-blue {background: #687ef8; color:#fff;}
 .bg-lightGreen {background: #e7f3f5; }
 .bg-green {background: #45c2da; color:#fff; }
 .bg-lightLavender {background: #f0ebff;}
 .bg-lavender {background: #a188e8; color:#fff;}
-.bg-yellow {background: #fffa7c;}
+
 /*========== font ==========*/
 .t-left {text-align: left;}
 .t-center {text-align: center;}
@@ -123,6 +123,10 @@ p { line-height: 1.4;}
 .top-title-area.project-page {padding-top:170px; background: #4ecfdf url(../images/main_02.jpg) no-repeat center top; background-size: revert;}
 .project-page .title {padding-top:250px}
 .project-page span {padding: 0 45px;}
+
+.top-title-area.about-page {padding-top:170px; background: #4ecfdf url(../images/main_03.jpg) no-repeat center top; background-size: revert;}
+.about-page .title {padding-top:250px}
+.about-page span {padding: 0 45px;}
 /*========== footer ==========*/
 .footer { background: #777; padding: 30px 0 50px; text-align: center; color:#fff;}
 .footer p {font-size: 1rem;padding-bottom: 20px;}
