@@ -115,9 +115,25 @@ p { line-height: 1.4;}
 .nav a {margin:0 30px;}
 .nav li {float:left; padding: 30px 40px; font-weight: 500;}
 .nav li:hover {color:#3870ff;}
-.version {position:absolute; top:30px; right:0; font-size: 12px;}
+.version {position:absolute; top:30px; right:20px; font-size: 12px;}
+
+/*========== circle-box ==========*/
+/* .circle-box {position: fixed; top:0; left:0;} */
+.circle-box > div {border-radius: 50%; position:fixed; z-index: -1;}
+
+.circle1 {background: #fffa7c; opacity: 0; width: 30px; height: 30px; top:20%; left:8%; animation: circleAni 0.8s ease-in-out 1s ;}
+.circle2 { background: #fff; opacity: 0; width: 40px; height: 40px; top:73%; left:16%;  animation: circleAni 0.8s ease-in-out 0.8s ;}
+.circle3 { background: #4a65ff; opacity: 0; width: 30px; height: 30px;  top:32%; right:28%;  animation: circleAni 0.8s ease-in-out 1.2s ;}
+.circle4 { background: #ad4aff; opacity: 0; width: 50px; height: 50px;  top:85%; right:13%; animation: circleAni 0.8s ease-in-out 0.9s ;}
+
+@keyframes circleAni {
+  0%{transform: scale(0); opacity: 0;}
+  60%{ opacity: 0.1;}
+  100%{transform: scale(30); opacity: 0;}
+}
+
 /*========== top-title-area ==========*/
-.top-title-area {position:fixed; top:0; left:0; z-index: -1; width: 100%; height: 700px; color:#fff; text-align: center; text-shadow: 0px 0px 11px rgb(0 0 0 / 50%) }
+.top-title-area {position:fixed; top:0; left:0; z-index: -1; width: 100%; height: 700px; color:#fff; text-align: center; text-shadow: 0px 0px 11px rgb(0 0 0 / 50%); animation: titleAni 1.5s;}
 .top-title-area.main-page {padding-top:350px; background: url(../images/main_01.jpg) no-repeat center top; background-size: cover;}
 .main-page .title {padding-top:250px}
 .main-page span {padding: 0 45px;}
@@ -129,6 +145,13 @@ p { line-height: 1.4;}
 .top-title-area.about-page {padding-top:170px; background: #4ecfdf url(../images/main_03.jpg) no-repeat center top; background-size: revert;}
 .about-page .title {padding-top:250px}
 .about-page span {padding: 0 45px;}
+
+@keyframes titleAni {
+  0%{color: #334cda; text-shadow: 0px 0px 0px rgb(0 0 0 / 0%); }
+  90%{color:#334cda; text-shadow: 0px 0px 0px rgb(0 0 0 / 0%); }
+  100%{color: #fff; text-shadow: 0px 0px 30px rgb(0 0 0/ 30%);}
+
+}
 /*========== footer ==========*/
 .footer { background: #777; padding: 30px 0 50px; text-align: center; color:#fff;}
 .footer p {font-size: 1rem;padding-bottom: 20px;}
