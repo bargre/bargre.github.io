@@ -21,9 +21,8 @@
 .mobile-area .content-box img:nth-child(4) {opacity: 0.4;}
 
 /*========== design-area ==========*/
-.design-area li {float:left; background: #fff; box-shadow: 0px 0px 20px 5px rgba(0,0,0,0.1); border-radius: 40px; width:28%; text-align: center; padding: 40px; box-sizing: border-box; cursor: pointer;}
-.design-area li:nth-child(2) {margin-top:200px; margin-left: 7%;}
-.design-area li:nth-child(3) {margin-top:400px;  margin-left: 7%; }
+.design-area li {float:left;margin-right: 7%; background: #fff; box-shadow: 0px 0px 20px 5px rgba(0,0,0,0.1); border-radius: 40px; width:28%; text-align: center; padding: 40px; box-sizing: border-box; cursor: pointer;}
+.design-area li:last-child {margin-right: 0%; }
 .design-area .logo-box {width: 120px; height: 120px; border-radius: 50%; overflow: hidden; margin:0 auto; position:relative; animation: circle linear 0.5s infinite alternate;}
 .design-area li:nth-child(2) .logo-box {animation-delay: 1.7s;}
 .design-area li:nth-child(3) .logo-box {animation-delay: 2.7s;}
