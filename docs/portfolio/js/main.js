@@ -50,13 +50,5 @@ $(".btn-go-img").click(function(ev){
   console.log(index);
 $("#popup-2 li").eq(index).addClass("on");
 });
-// $(".btn-go-img").eq(1).click(function(){
-//   $("#popup-2 li").eq(1).addClass("on");
-//   });
-//   $(".btn-go-img").eq(2).click(function(){
-//     $("#popup-2 li").eq(2).addClass("on");
-//     });
-//     $(".btn-go-img").eq(3).click(function(){
-//       $("#popup-2 li").eq(3).addClass("on");
-//       });
+
 }); //end
