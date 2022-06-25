@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport"
+    content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width">
+  <title>JINA SPACE</title>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="font/pretendard.css">
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/publishing.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+</head>
+
+<body>
+  <div class="header-area">
+    <div class="wrap">
+      <header class="header">
+        <h1 class="logo-area">
+          <a href="index.html">
+            <img src="images/header.png" class="logo-img" alt="logo image">
+            JINA SPACE
+          </a>
+        </h1>
+        <span class="varsion">2022</span>
+      </header>
+
+      <nav class="nav">
+        <ul class="gnb-area clear">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="publishing.html">Publishing</a></li>
+          <!-- <li><a href="index.html#Design">Design</a></li>
+          <li><a href="index.html#Illustration">Illustration</a></li> -->
+          <li><a href="jina.html">Jina</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+
+  <div class="wrap ptop">
+    <main class="content publishing">
+      <section class="p-container m-container" id="web"  data-aos="fade-up" data-aos-duration="1500">
+        <div class="title">
+          <h3>Responsive Web</h3><span class="m-menu" id="menu2"></span>
+        </div>
+        <div class="work-area clear">
+          <div class="work-img-area">
+            <div class="work-img">
+              <img src="images/w_2.jpg" alt="이스퀘어 홈페이지"  id="webImg">
+            </div>
+          </div>
+
+          <div class="work-list-area">
+            <ul class="work-list" id="menuList2">
+              <li id="web_1" onclick="webTextChange1()">KB라이프파트너스</li>
+              <li id="web_2" onclick="webTextChange2()">이스퀘어</li>
+              <li id="web_3" onclick="webTextChange3()">인슈플래닛</li>
+            </ul>
+
+            <div class="work-img-text">
+              <h6 class="item-title" id="webTit">이스퀘어</h6>
+              <div class="item-text">
+                <p id="webCon">기여도 : 퍼블리싱 100% (bootstrap)</p>
+                <p id="WebDate">작업기간 : 10일</p>
+                <p id="webText">이스퀘어 홈페이지</p>
+              </div>
+              <a href="http://e-2.co.kr/index.go" target="_blank" class="site-go" id="siteGo">사이트 바로가기</a>
+
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="p-container m-container" id="mobile" data-aos="fade-up" data-aos-duration="1500">
+        <div class="title">
+          <h3>Mobile Web</h3><span class="m-menu" id="menu1"></span>
+        </div>
+        <div class="work-area clear">
+          <div class="work-img-area">
+            <div class="work-img">
+              <img src="images/m_4.jpg" alt="Plasma 앱 이미지"  id="mobileImg">
+            </div>
+          </div>
+
+          <div class="work-list-area">
+            <ul class="work-list" id="menuList1">
+              <li id="mobile_1" onclick="textChange1()">로봇설계매니저</li>
+              <li id="mobile_2" onclick="textChange2()">자동차비교견적</li>
+              <li id="mobile_3" onclick="textChange3()">LK보험금청구</li>
+              <li id="mobile_4" onclick="textChange4()">Plasma</li>
+            </ul>
+
+            <div class="work-img-text">
+              <h6 class="item-title" id="mobileTit">Plasma</h6>
+              <div class="item-text">
+                <p id="con">기여도 : 퍼블리싱 100%</p>
+                <p id="date">작업기간 : 3주</p>
+                <p id="mobileText">음악 스트리밍 및 SNS 지원 앱</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+
+
+
+    </main>
+    <footer class="footer clear">
+      <h1 class="logo-area">
+        <a href="index.html">
+          JINA SPACE
+        </a>
+      </h1>
+      <div class="rigt-text">
+        <small>
+          본사이트는 상업적인 목적인 아닌 개인 포트폴리오 용도로 만들어졌습니다.<br />
+          홈페이지의 일부 내용과 이미지 등은 출처가 따로 있음을 밝힙니다.<br />
+          Copyright © jin-a kim, All Rights Reserved.
+        </small>
+      </div>
+    </footer>
+  </div>
+  <!--//wrap-->
+
+
+
+</body>
+<script src="js/link.js" charset="utf-8"></script>
+<script src="js/main.js" charset="utf-8"></script>
+<script>
+  AOS.init();
+</script>
+
+</html>

@@ -8,15 +8,15 @@ $(document).ready(function(){
     if(width <= 1140){
       $(".design-list-area li").eq(0).click(function(e){
         e.stopPropagation();
-        window.open("link/innisfree_re/mobile/index.html", "a", "width=400, height=600, left=200, top=50");
+        window.open("./var_2022/link/innisfree_re/mobile/index.html", "a", "width=400, height=600, left=200, top=50");
         });
       $(".design-list-area li").eq(1).click(function(e){
         e.stopPropagation();
-        window.open("link/audi_re/index.html", "a", "width=400, height=600, left=200, top=50");
+        window.open("./var_2022/link/audi_re/index.html", "a", "width=400, height=600, left=200, top=50");
       });
       $(".design-list-area li").eq(2).click(function(e){
         e.stopPropagation();
-        window.open("link/MyPlant/index.html", "a", "width=375, height=650, left=200, top=50");
+        window.open("./var_2022/link/MyPlant/index.html", "a", "width=375, height=650, left=200, top=50");
       });
     } else {
       $(".design-list-area li").eq(0).off("click");
@@ -30,48 +30,28 @@ $(document).ready(function(){
 
 //이니스프리 사이트 오픈
   $("#inniPcOpen").click(function(){
-    window.open("link/innisfree_re/index.html");
+    window.open("./var_2022/link/innisfree_re/index.html");
   });
 //이니스프리 모바일 사이트 오픈
   $("#inniMobileOpen").click(function(){
-    window.open("link/innisfree_re/mobile/index.html", "a", "width=375, height=650, left=200, top=50");
+    window.open("./var_2022/link/innisfree_re/mobile/index.html", "a", "width=375, height=650, left=200, top=50");
   });
 //아우디 사이트 오픈
   $("#audiPcOpen").click(function(){
-    window.open("link/audi_re/index.html");
+    window.open("./var_2022/link/audi_re/index.html");
   });
 //아우디 모바일 사이트 오픈
   $("#audiMobileOpen").click(function(){
-    window.open("link/audi_re/index.html", "a", "width=375, height=650, left=200, top=50");
+    window.open("./var_2022/link/audi_re/index.html", "a", "width=375, height=650, left=200, top=50");
   });
   //반려식물 모바일 사이트 오픈
     $("#plantMobileOpen").click(function(){
-      window.open("link/MyPlant/index.html", "a", "width=375, height=650, left=200, top=50");
+      window.open("./var_2022/link/MyPlant/index.html", "a", "width=375, height=650, left=200, top=50");
     });
 
 
-  //일러스트 팝업
-$(".btn-close").click(function(){
- $(".popup").css({"display":"none"});
- $("body").css({"overflow":"auto"});
-});
 
-$("#detail_1").click(function(){
-  $("#popup_1").css({"display":"block"});
-  $("body").css({"overflow":"hidden"});
-});
-$("#detail_2").click(function(){
-  $("#popup_2").css({"display":"block"});
-  $("body").css({"overflow":"hidden"});
-});
-$("#detail_3").click(function(){
-  $("#popup_3").css({"display":"block"});
-  $("body").css({"overflow":"hidden"});
-});
-$("#detail_4").click(function(){
-  $("#popup_4").css({"display":"block"});
-  $("body").css({"overflow":"hidden"});
-});
+
 
 
 

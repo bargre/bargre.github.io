@@ -1,92 +1,48 @@
 @charset "UTF-8";
 
+/*====================  main-page ====================*/
+/*========== intro-area ==========*/
+.intro-list img {width:80px; margin-bottom:30px;}
+.intro-list {padding-top: 2rem;}
+.intro-list li {width: 370px;text-align: center;}
+/*========== web-area ==========*/
+.web-area .text-box {padding-left:130px;}
+.img-box {position: relative; width: 740px; height: 470px;}
+.img-box .img-pc {position:absolute; top:0; left:0px;}
+.img-box .img-mobile {position:absolute; top:93px; right:0px;}
+/*========== mobile-area ==========*/
+.mobile-area {text-align: center;}
+.mobile-area .deco {background: #fff; margin-left:auto; margin-right:auto; margin-top:0;}
+.mobile-area .btn-go {color:#fff; margin-left:-36px;}
+.mobile-area .btn-go:after {background: #fff;}
+.mobile-area .content-box {padding-top:50px; display: flex; justify-content: flex-end; align-items: center;}
+.mobile-area .content-box img {padding-left: 20px;}
+.mobile-area .content-box img:nth-child(3) {opacity: 0.9;}
+.mobile-area .content-box img:nth-child(4) {opacity: 0.4;}
 
-/*----------------------  header ---------------------- */
-.header-area {position: fixed; width: 100%; top:0; left:0; z-index: 999; background: #fff;}
-.header {padding: 10px 0px 5px; display: flex; justify-content: space-between; align-items: flex-end;}
-h1.logo-area{ font-size: 25px; margin:0; letter-spacing:  -0.04rem; animation: logoAni 7s infinite;}
-.logo-img {width:60px; }
-.varsion {font-size: 14px;}
-
-.ptop {padding-top:100px;} /*header padding*/
-
-@keyframes logoAni {
-  0% {letter-spacing: -0.04rem;}
-  30% {letter-spacing: 0.1rem;}
-  100% {letter-spacing: -0.04rem;}
+/*========== design-area ==========*/
+.design-area li {float:left;margin-right: 7%; background: #fff; box-shadow: 0px 0px 20px 5px rgba(0,0,0,0.1); border-radius: 40px; width:28%; text-align: center; padding: 40px; box-sizing: border-box; cursor: pointer;}
+.design-area li:last-child {margin-right: 0%; }
+.design-area .logo-box {width: 120px; height: 120px; border-radius: 50%; overflow: hidden; margin:0 auto; position:relative; animation: circle linear 0.5s infinite alternate;}
+.design-area li:nth-child(2) .logo-box {animation-delay: 1.7s;}
+.design-area li:nth-child(3) .logo-box {animation-delay: 2.7s;}
+.design-area .logo-box img {width: 100%;}
+.design-area span {display: block; padding: 30px 0px;}
+.design-area .btn-site {font-size:1.2rem; margin-top: 40px; background: #687ef8; color:#fff; border-radius: 30px; width:100%; padding: 15px; }
+.design-area .btn-site:hover {background:#4a65ff; }
+@keyframes circle {
+  0%{top:-5px;}
+  100%{top:5px;}
 }
+/*========== illust-list ==========*/
+.illust-list li {width: 23%; height: auto; position: relative; overflow: hidden; cursor: pointer;}
+.illust-box img {width: 100%; display: block;}
+.mask-box {width:100%; height: 100%; background:rgba(104,126,248,0.9); position: absolute; top:0; left:0; transition:0.5s; color:#fff; font-size:1.3rem; text-align: center; padding-top:150px;}
+.illust-list li:hover .mask-box {background:rgba(104,126,248,0); transition:0.5s; color:transparent;}
+.illust-list li:hover .illust-box img  {transform: scale(1.1); transition:0.5s;}
 
-/*----------------------  nav ---------------------- */
-.nav {border-top:3px solid #111; border-bottom:1px solid #111; padding: 12px 0; overflow: auto; }
-.nav::-webkit-scrollbar {display: none;}
-.gnb-area {width:623px; margin:0 auto; padding-left:0;}
-.gnb-area li {float: left; border-right:1px solid #ddd; font-weight: 600; cursor: pointer; font-size: 16px;}
-.gnb-area li:last-child {border-right:0;}
-.gnb-area li:hover ,.gnb-area li.active  {color:#777; text-decoration: underline;}
-.gnb-area li a {padding:0 40px; margin: 0 40px;}
-/*----------------------  main ---------------------- */
-.main-img-area .left-img {width: 745px; position:relative; float: left;}
-.main-img-area .left-img .left-img-text {  position:absolute; top:50px; left:40px; z-index: 10;}
-.main-img-area .left-img .left-img-text h2{ color:#e7ad9e; font-size: 62px; font-weight: 900;  animation: titleAni 13s infinite;}
-.main-img-area .left-img .left-img-text p{ color:#c98b7b; font-size: 16px; letter-spacing: 0.13rem; padding-top: 5px;   animation: titleSubAni 13s infinite;}
-.main-img-area .right-img {float: right; padding-left:18px; border-left:1px solid #ddd;}
-.main-img-area .right-img .btn-more-area  {bottom:20px;}
-.main-img-area .right-top , .main-img-area .right-bottom
-{width: 360px; height:205px; padding:20px; box-sizing: border-box; position: relative;}
-.main-img-area .right-top {background:#ebebeb  url(../images/p_img.png) no-repeat right top; background-size: contain;}
-.main-img-area .right-bottom {margin-top:10px; padding-left:180px; background:#ebebeb url(../images/m_img.png) no-repeat left top; background-size: contain;}
-.right-img h3 {padding-bottom:20px;}
 
-@keyframes titleAni {
-  0% {opacity:0%;}
-  20% {opacity:100%;}
-  60% {opacity:100%; }
-  100% {opacity:0%; }
-}
-@keyframes titleSubAni {
-  0% {opacity:0%; }
-  20% {opacity:0%; }
-  30% {opacity:100%;}
-  60% {opacity:100%;}
-  100% {opacity:0%; }
-}
-
-/*--------- PUBLISHING  --------------*/
-.publishing-list-area {margin:0;}
-.publishing-list-area li {width:49%; margin-top:20px;padding: 20px; box-sizing: border-box; position:relative; border:1px solid #ddd; }
-.publishing-list-area li:nth-child(2n-1) {float:left;}
-.publishing-list-area li:nth-child(2n){float:right; margin-right:0;}
-
-.publishing-list-area .left-box {width:260px; background: #fff; float: left; cursor:pointer;}
-.publishing-list-area .left-box a {display: block; }
-.publishing-list-area .left-box img {width:100%;opacity: 0.7;display: block; transition: 0.3s;}
-.publishing-list-area .left-box img:hover {opacity: 1;  transition: 0.3s;}
-.publishing-list-area .right-text {float: left; padding-left:20px; width:234px; word-break: keep-all;}
-.publishing-list-area  h4 {padding-bottom:15px; line-height: 1.3;}
-.publishing-list-area .btn-more-area {bottom:20px;}
-.publishing-list-area .site-go {padding: 12px 0px; width:234px;}
-
-/*---------  WEB DESIGN & PUBLISHING  --------------*/
-.design-list-area {margin:0;}
-.design-list-area li {float: left; margin:20px 0px 20px 20px; padding-right: 19px; box-sizing: border-box; position:relative; border-right:1px solid #ddd; }
-.design-list-area li:last-child {border-right:none;}
-.design-list-area li:after {content:""; display: block; clear:both;}
-.design-list-area .left-box {width:126px; height:126px; background: #eaeaea; float: left;}
-.design-list-area .left-box img {width:100%;}
-.design-list-area .right-text {float: left; padding-left:20px; width:194px;  }
-.design-list-area .right-text h4 {padding-bottom:25px;}
-.design-list-area .right-text .btn-more-area .btn-more:first-child {margin-right:20px;}
-/*----- ILLUST DESIGN & DIGITAL PAINTING  ---------*/
-.painting-list-area {margin:0;}
-.painting-list-area li {float: left; margin:20px 0px 20px 19px; padding-right: 19px; box-sizing: border-box;  position:relative; border-right:1px solid #ddd; }
-.painting-list-area li:last-child {border-right:none;}
-.painting-list-area .top-img {width:246px; height:246px; background: #eaeaea; overflow: hidden;}
-.painting-list-area .top-img img {width:100%; display: block;}
-.painting-list-area .top-img img:hover {transition: 0.5s; transform: scale(1.1);}
-.painting-list-area .bottom-text {position: relative; height: 120px; margin-top:20px;}
-.painting-list-area .bottom-text h4 {padding-bottom:20px;}
-
-/* project - pop */
+/*========== popup ==========*/
 .over-pop {padding-top:30px;}
 .pop-img img{ display: block; margin:0 auto; width:60%;}
 .over-pop .close {position:fixed; top:50px; right:50px;}
@@ -96,167 +52,53 @@ h1.logo-area{ font-size: 25px; margin:0; letter-spacing:  -0.04rem; animation: l
 .tablet-area {width:1168px; margin:0 auto; position:relative; padding-bottom:50px;}
 .tablet-area .tablet-img {display: block; width:800px; height: 534px; margin:0 auto;}
 .tablet-area .illust-mask {width:752px; height:485px;  border-radius: 10px; overflow: hidden;
-                   position: absolute; left:50%; transform: translateX(-50%); top:4px;}
+                   position: absolute; left:50%; transform: translateX(-50%); top:19px;}
 .tablet-area .illust {width:4512px; position:relative; left:0;}
 .tablet-area .illust li{ float:left;  }
 .tablet-area .illust li img {width:752px;  height:100%; display: block; }
 .over-pop .button .prev,
-.over-pop .button .next {position:absolute; top:50%;
-                  transform:translateY(-50%); cursor:pointer;}
+.over-pop .button .next
+{position:absolute; top:50%; transform:translateY(-50%); cursor:pointer;}
 .over-pop .button .prev {left:120px;}
 .over-pop .button .next {right:120px;}
 
-/*----------------------footer----------------------*/
-.footer {padding:20px 0; border-top:3px solid #111; border-bottom:1px solid #111; margin-bottom:30px;}
-.footer .logo-area { width:170px; color:#ccc;  float: left;}
-.footer .rigt-text {font-size: 12px; float: left; border-left:1px solid #888; padding-left:20px; line-height: 1.2;}
-
-
-/*----------------------popup----------------------*/
-.popup { width:100%; display: none; position:fixed; top:0; bottom:0; left:0; right:0; z-index: 999; overflow:auto; background:rgba(0,0,0,0.6);}
+.popup { opacity:0; width:0px; height:0px; position:fixed; top:40%; bottom:0; left:40%; right:0; z-index: 999; overflow:auto; background:rgba(0,0,0,0.6); transition:0.8s;}
+.popup.on {opacity:1; width:100%; height:auto; top:0; left:0;}
 .btn-close {display: block; position: fixed; right:20px; top:10px; width:70px; height:70px; z-index: 102; text-indent:-9999px;}
 .btn-close:before {content:""; display:block; position:absolute; right:9px; top:30px; background:#fff; width:50px; height:2px; transform: rotate(45deg);}
 .btn-close:after {content:""; display:block; position:absolute; right:9px; top:30px; background:#fff; width:50px; height:2px; transform: rotate(-45deg);}
 .popup-img { width: 100%;}
 .popup-img img {width: 70%; max-width:1400px; margin:0 auto; display:block;}
 
-/*---------------------- end ----------------------*/
+#popup-2 .popup-img  {position:absolute; top:50%; margin-top:-350px;}
 
+/*========== project-page ==========*/
+.responsive-area .number {font-weight: 600; font-size: 5rem; color:#eaeaea; margin-left:-15px;}
+.responsive-area.mobile .number {color:#c8dfe3;}
+.responsive-area {padding-top:50px;}
+.responsive-area  li {display: flex; justify-content: space-around; align-items: center; padding-bottom:120px;}
+.responsive-area .img-box {width:900px; height:auto !important; }
+.responsive-area.mobile .img-box {width:400px;}
+.responsive-area .img-box img {width:100%; display: block;}
+.responsive-area h2 {padding-bottom:20px;}
+.responsive-area .btn-go {margin-top:30px;}
+.bg-green .btn-go {color:#fff;}
+.bg-green .btn-go:after {background: #fff;}
 
-@media screen and (max-width:1140px) {
-/* ---------------------common---------------------- */
-.wrap { width: 100%;}
-.content {padding:20px 20px 0px 20px;}
-/*----------------------  header ---------------------- */
-.header {padding-left:20px; padding-right:20px;}
-/*----------------------  main ---------------------- */
-.main-img-area {width: 100%; }
-.main-img-area .left-img {width: 64%; height: 422px; overflow: hidden; }
-.main-img-area .left-img img {height:100%; display: block;}
-.main-img-area .right-img {width:34%; padding-left:1%;}
-.main-img-area .right-top, .main-img-area .right-bottom {width:100%;}
-.main-img-area .right-bottom {padding-left: 47%;}
+/*========== about-page ==========*/
+.jina-img-box {width:300px; position:absolute; top:-150px; left:50%; margin-left:-150px; }
+.jina-img-box img {width: 100%;}
+.contact {text-align: center;}
+.contact strong { font-size: 2rem; padding-top:30px; display:inline-block;}
+.contact p {font-size: 1.8rem; padding-top:10px;display:inline-block;}
+/* .contact strong:before , .contact p:before {content:""; display: block; width:100%; height:15px; background:#fffa7c; position: absolute; bottom:3px; left:0;} */
+.tag-list {padding-top:100px; text-align: center;}
+.tag-list li {font-size: 1rem; color:#fff; background: #a188e8; display: inline-block; padding:10px 20px; border-radius: 20px; margin-left:10px; margin-bottom:10px;}
 
-/*--------- PUBLISHING  --------------*/
-
-.publishing-list-area li {width:100%;display: inline-block; }
-.publishing-list-area li:nth-child(2n-1) {float:none;}
-.publishing-list-area li:nth-child(2n){float:none;}
-/*---------  WEB DESIGN & PUBLISHING  --------------*/
-
-.design-list-area li { width:100%; margin:0px; padding:20px 0px; float:none; border-right:none; border-bottom:1px solid #ddd; cursor: pointer;}
-.design-list-area li:after {content:""; display: block; clear:both;}
-.design-list-area .left-box {width:80px; height:80px;  float: left;}
-.design-list-area .right-text h4 {padding-top:8px; padding-bottom:10px;}
-.design-list-area .right-text .btn-more-area {right: 0px; top:30px; }
-.design-list-area .right-text .btn-more-area .btn-more { border-bottom:none; padding: 20px 36px 20px 0px; text-indent: -99999px;}
-.design-list-area .right-text .btn-more-area .btn-more span {width:20px; height:40px; }
-.design-list-area .right-text .btn-more-area .btn-more span:after {width:25px; height:25px;margin-left: -13px;
-  margin-top: 6px;}
-.design-list-area .right-text .btn-more-area .btn-more:first-child {display: none;}
-
-/*----- ILLUST DESIGN & DIGITAL PAINTING  ---------*/
-.painting-list-area li { width: 24%;margin:10px 0px 10px 1%; padding-right: 1%; border-right:1px solid #ddd; }
-.painting-list-area .top-img {width:100%; height:100%;}
-.painting-list-area .top-img img {width:100%; display: block;}
-.painting-list-area .bottom-text {position: relative; height: 120px; margin-top:20px;;}
-.painting-list-area .bottom-text h4 {padding-bottom:20px;  overflow: hidden;text-overflow: ellipsis;  white-space: nowrap}
-
-}
-/* 1140px end */
-
-@media screen and (max-width:850px) {
-  /*----------------------  main ---------------------- */
-  .main-img-area .left-img img {margin-left: -100px;}
-}/* 850px end */
-
-
-@media screen and (max-width:768px) {
-
-/* ---------------------common---------------------- */
-.p-container {padding-bottom:50px;}
-/*---------------------- header ---------------------- */
-.gnb-area {width: 443px;}
-.gnb-area li a {padding:0 30px; margin:0 20px;}
-
-/*----------------------  main ---------------------- */
-.main-img-area .left-img {width: 100%; height:auto; float: none;}
-.main-img-area .left-img img { width:100%; height: auto; margin-left: 0px;}
-.main-img-area .left-img h2 {font-size: 54px;}
-.main-img-area .right-img {float:none; padding-left:0px; border-left:none; width: 100%;}
-.main-img-area .right-img .btn-more-area  {bottom:20px;}
-.main-img-area .right-top , .main-img-area .right-bottom
-{width: 49%;  height:120px; cursor: pointer;}
-.main-img-area .right-top {float: left; margin-top:10px; padding-right: 140px;}
-.main-img-area .right-bottom {float: right;padding-left:140px;}
-.right-img h3 {padding-bottom:20px;}
-.right-img p {display: none;}
-
-/*---------  WEB DESIGN & PUBLISHING  --------------*/
-
-/*----- ILLUST DESIGN & DIGITAL PAINTING  ---------*/
-.painting-list-area li { margin:0px; padding:20px 0px;  border-right:none; width:48%; cursor: pointer;}
-.painting-list-area li:nth-child(2n) {float: right;}
-.painting-list-area .top-img {width:100%; height:100%; background: #eaeaea;}
-
-.painting-list-area .bottom-text {position: relative; height: 120px; margin-top:20px;}
-.painting-list-area .bottom-text h4 {padding-bottom:20px;}
-.painting-list-area .bottom-text .btn-more-area {width:100%;}
-.painting-list-area .bottom-text .btn-more {width: 100%; display: block; text-align: left;}
-
-/*----------------------footer----------------------*/
-.footer .logo-area {padding-left:20px;}
-/*----------------------popup----------------------*/
-.popup-img img {width: 100%;}
-}/* 768px end */
-
-@media screen and (max-width:620px) {
-  /*--------- PUBLISHING  --------------*/
-
-  .publishing-list-area .left-box {width:100%;  float: none; }
-  .publishing-list-area .left-box img {width:100%; opacity: 1;}
-  .publishing-list-area .right-text {float: none; padding-left:0px; width:100%; padding-top:10px;}
-  .publishing-list-area  h4 {padding-bottom:10px; }
-  .publishing-list-area .site-go {text-align: center; width:100%;}
-  .publishing-list-area .btn-more-area {position:static;}
-  .publishing-list-area p {display: block;}
-}/* 620px end */
-
-
-@media screen and (max-width:500px) {
-/* ---------------------common---------------------- */
-body {overflow-x:hidden; margin:0;}
-.content {padding:0;}
-h3 {font-size: 20px; }
-h4 {font-size: 16px; }
-p {display: none;}
-.m-container {margin:0 14px;}
-.p-container {padding-bottom:30px;}
-/*----------------------  header ---------------------- */
-.header {padding-left:16px; padding-right:16px; }
-.ptop {padding-top:90px;} /*header padding*/
-h1.logo-area { font-size: 20px;}
-.logo-img {width:40px; }
-.varsion {font-size: 12px;}
-/*----------------------  main ---------------------- */
-.main-img-area .left-img .left-img-text {width:70vw; top:24vw; left:50%; transform: translateX(-50%);}
-.main-img-area .left-img .left-img-text h2 {font-size: 12vw; }
-.main-img-area .left-img .left-img-text p {font-size: 3.1vw; letter-spacing: 0.4vw;}
-.main-img-area .right-top , .main-img-area .right-bottom{margin-top: 5px; width: 100%;}
-.main-img-area .right-top {float: none;}
-.main-img-area .right-bottom {float: none; }
-.right-img h3 {padding-bottom:20px;}
-
-/*---------  WEB DESIGN & PUBLISHING  --------------*/
-.design-list-area .right-text h4 {padding-top:18px; line-height: 1.3;}
-
-/*----- ILLUST DESIGN & DIGITAL PAINTING  ---------*/
-.painting-list-area .bottom-text {height: 66px;}
-
-/*----------------------footer----------------------*/
-.footer {padding:14px 0; margin-bottom:0px;}
-.footer .logo-area {padding-left:14px;}
-.footer .rigt-text { border-left:none; padding-left:14px; padding-top:10px;}
-}
-
-/* end */
+.skill-area {padding-top:200px; display: flex; justify-content: space-around; width: 100%; }
+.skill-area .left-box {padding-top:50px; width: 40%;}
+.skill-area .left-box h3 {text-align: center; line-height: 1.3;}
+.skill-area .right-box {width: 40%;}
+.skill-area .right-box li {padding-bottom:50px;}
+.skill-area .right-box h4 {padding-bottom:10px; position: relative;}
+.skill-area .right-box h4::before {content:""; display: block; width:7px; height: 7px; background: #a188e8; position:absolute; left:-20px; top:5px; }

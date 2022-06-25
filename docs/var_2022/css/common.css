@@ -1,0 +1,76 @@
+@charset "UTF-8";
+
+html, body, div, span, object, iframe,
+h1, , h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+body {
+    line-height:1;
+    letter-spacing: -0.04rem;
+    font-family: 'Pretendard', Arial, sans-serif;
+}
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+ul {
+    list-style:none;
+    padding:0;
+    margin: 20px 0;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+    display:inline-block;
+    text-decoration: none;
+    color:inherit;
+}
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+input, select , textarea {
+    vertical-align:middle;
+    font-family: 'Pretendard', Arial, sans-serif;
+    font-size: 15px;;
+}
+button {background: transparent; border:none; outline: none; cursor: pointer;}
+
+/* ---------------------common---------------------- */
+.clear:after {content:""; display: block; clear:both;}
+.wrap { width: 1140px; margin: 0 auto;}
+.content {padding-top:30px;}
+.p-container {padding-bottom:70px;}
+h2{margin:0;}
+h3 {font-size: 24px; font-weight: 600; margin:0; }
+h4 {font-size: 20px; font-weight: 600; margin:0;}
+p {color: #888; font-size: 14px; line-height: 1.02rem;  margin:0;}
+.title {border-bottom: 2px solid #111; padding-bottom:3px;}
+
+/* more button */
+.btn-more-area {position:absolute; bottom:0px; }
+.btn-more {width:60px; box-sizing: border-box;padding:7px 36px 7px 0px; color: #111; font-size: 15px;  position:relative; bottom:0;}
+.btn-more:hover {color:#888;}
+.btn-more span{display: block; width: 8px; height: 17px; overflow: hidden; position:absolute; right:0; top:8px;}
+.btn-more span:after {content:""; display: block; width: 12px; height: 12px; border:1px solid #111; transform: rotate(45deg);margin-left:-10px; margin-top:1px;}
+.btn-more:hover span:after{border-color:#888;}
