@@ -50,28 +50,8 @@ $(document).ready(function(){
     });
 
 
-  //일러스트 팝업
-$(".btn-close").click(function(){
- $(".popup").css({"display":"none"});
- $("body").css({"overflow":"auto"});
-});
 
-$("#detail_1").click(function(){
-  $("#popup_1").css({"display":"block"});
-  $("body").css({"overflow":"hidden"});
-});
-$("#detail_2").click(function(){
-  $("#popup_2").css({"display":"block"});
-  $("body").css({"overflow":"hidden"});
-});
-$("#detail_3").click(function(){
-  $("#popup_3").css({"display":"block"});
-  $("body").css({"overflow":"hidden"});
-});
-$("#detail_4").click(function(){
-  $("#popup_4").css({"display":"block"});
-  $("body").css({"overflow":"hidden"});
-});
+
 
 
 

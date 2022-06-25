@@ -32,4 +32,31 @@ var lastScrollTop = 0;
   }); //scroll event
 
 
+    //일러스트 팝업
+$(".btn-close").click(function(){
+  $(".popup").removeClass("on");
+  $("body").css({"overflow":"auto"});
+ });
+
+ $(".illust-list li").click(function(ev){
+  var i = $(this).index();  
+  console.log(i); 
+  $("#popup-1 li").eq(i).addClass("on");
+ });
+
+
+$(".btn-go-img").click(function(ev){
+  var index = $(this).parents("li").index();  
+  console.log(index);
+$("#popup-2 li").eq(index).addClass("on");
+});
+// $(".btn-go-img").eq(1).click(function(){
+//   $("#popup-2 li").eq(1).addClass("on");
+//   });
+//   $(".btn-go-img").eq(2).click(function(){
+//     $("#popup-2 li").eq(2).addClass("on");
+//     });
+//     $(".btn-go-img").eq(3).click(function(){
+//       $("#popup-2 li").eq(3).addClass("on");
+//       });
 }); //end

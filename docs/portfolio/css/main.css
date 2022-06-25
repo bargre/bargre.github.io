@@ -62,13 +62,15 @@
 .over-pop .button .prev {left:120px;}
 .over-pop .button .next {right:120px;}
 
-.popup { width:100%; display: none; position:fixed; top:0; bottom:0; left:0; right:0; z-index: 999; overflow:auto; background:rgba(0,0,0,0.6);}
+.popup { opacity:0; width:0px; height:0px; position:fixed; top:40%; bottom:0; left:40%; right:0; z-index: 999; overflow:auto; background:rgba(0,0,0,0.6); transition:0.8s;}
+.popup.on {opacity:1; width:100%; height:auto; top:0; left:0;}
 .btn-close {display: block; position: fixed; right:20px; top:10px; width:70px; height:70px; z-index: 102; text-indent:-9999px;}
 .btn-close:before {content:""; display:block; position:absolute; right:9px; top:30px; background:#fff; width:50px; height:2px; transform: rotate(45deg);}
 .btn-close:after {content:""; display:block; position:absolute; right:9px; top:30px; background:#fff; width:50px; height:2px; transform: rotate(-45deg);}
 .popup-img { width: 100%;}
 .popup-img img {width: 70%; max-width:1400px; margin:0 auto; display:block;}
 
+#popup-2 .popup-img  {position:absolute; top:50%; margin-top:-350px;}
 
 /*========== project-page ==========*/
 .responsive-area .number {font-weight: 600; font-size: 5rem; color:#eaeaea; margin-left:-15px;}
