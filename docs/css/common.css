@@ -167,4 +167,14 @@ p { line-height: 1.4;}
 @media screen and (max-width:1440px){
   .container { width: 100%;}
 }
+
+/*==================== 1024px ====================*/
+@media screen and (max-width:1024px){
+body {font-size: 16px;}
+.img-box .img-pc {width: 100%;}
+.mobile-area .content-box {justify-content: space-around;}
+.content-box img:nth-child(2) {display: none;}
+.content-box img:nth-child(3) {display: none;}
+.content-box img:nth-child(4) {display: none;}
+}
 /*========== end ==========*/

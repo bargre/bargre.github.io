@@ -6,6 +6,7 @@
 .intro-list {padding-top: 2rem;}
 .intro-list li {width: 370px;text-align: center;}
 /*========== web-area ==========*/
+.web-area {display: flex; justify-content: space-between;align-items: center; }
 .web-area .text-box {padding-left:130px;}
 .img-box {position: relative; width: 740px; height: 470px;}
 .img-box .img-pc {position:absolute; top:0; left:0px;}
@@ -103,3 +104,21 @@
 .skill-area .right-box li {padding-bottom:50px;}
 .skill-area .right-box h4 {padding-bottom:10px; position: relative;}
 .skill-area .right-box h4::before {content:""; display: block; width:7px; height: 7px; background: #a188e8; position:absolute; left:-20px; top:5px; }
+
+
+/*==================== 1440px ====================*/
+@media screen and (max-width:1440px){
+  .container { width: 100%;}
+}
+
+/*==================== 1024px ====================*/
+@media screen and (max-width:1024px){
+body {font-size: 16px;}
+.web-area {justify-content: space-between; flex-direction: column; align-items: center;}
+.img-box .img-pc {width: 100%;}
+.img-box .img-mobile {top:160px; right:-50px;}
+.mobile-area .content-box {justify-content: space-around;}
+.content-box img:nth-child(2) {display: none;}
+.content-box img:nth-child(3) {display: none;}
+.content-box img:nth-child(4) {display: none;}
+}
