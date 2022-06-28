@@ -69,7 +69,7 @@
 .btn-close:after {content:""; display:block; position:absolute; right:9px; top:30px; background:#fff; width:50px; height:2px; transform: rotate(-45deg);}
 .btn-close.on {display:block; opacity: 1;}
 .popup-img { width: 100%;}
-.popup-img img {width: 70%; max-width:1400px; margin:0 auto; display:block;}
+.popup-img img { margin:0 auto; display:block;}
 
 #popup-2 .popup-img  {position:absolute; top:50%; margin-top:-350px;}
 
