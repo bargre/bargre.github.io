@@ -35,6 +35,7 @@ var lastScrollTop = 0;
     //일러스트 팝업
 $(".btn-close").click(function(){
   $(".popup").removeClass("on");
+  $(".btn-close").removeClass("on");
   $("body").css({"overflow":"auto"});
  });
 
@@ -42,6 +43,8 @@ $(".btn-close").click(function(){
   var i = $(this).index();  
   console.log(i); 
   $("#popup-1 li").eq(i).addClass("on");
+  $(".btn-close").addClass("on");
+  $("body").css({"overflow":"hidden"});
  });
 
 
@@ -49,6 +52,8 @@ $(".btn-go-img").click(function(ev){
   var index = $(this).parents("li").index();  
   console.log(index);
 $("#popup-2 li").eq(index).addClass("on");
+$(".btn-close").addClass("on");
+$("body").css({"overflow":"hidden"});
 });
 
 }); //end

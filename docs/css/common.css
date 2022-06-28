@@ -66,6 +66,10 @@ button {
   cursor: pointer;
 }
 
+p {
+  word-break: keep-all;
+}
+
 /*========== layout ==========*/
 .container { width: 1440px; margin:0 auto;}
 .main {margin-top:800px; border-radius: 150px 150px 0px 0px; overflow: hidden; background: #fff; box-shadow: 0px 0px 43px 0px rgb(0 0 0 / 20%);  transition: 0.5s;}
@@ -115,9 +119,9 @@ p { line-height: 1.4;}
 .header.scroll {top:-80px; transition: 0.5s;}
 .nav {display: flex; justify-content: center;  }
 .nav a {margin:0 30px;}
-.nav li {float:left; padding: 30px 40px; font-weight: 500;}
+.nav li {float:left; padding: 24px 40px; font-weight: 500;}
 .nav li:hover {color:#3870ff;}
-.version {position:absolute; top:30px; right:20px; font-size: 12px;}
+.version {position:absolute; top:30px; right:20px; font-size: 14px;}
 
 /*========== circle-box ==========*/
 /* .circle-box {position: fixed; top:0; left:0;} */
@@ -160,7 +164,7 @@ p { line-height: 1.4;}
 .footer small {font-size: 0.9rem;}
 
 /*==================== 1440px ====================*/
-@media screen and (min-width:1140px){
+@media screen and (max-width:1440px){
   .container { width: 100%;}
 }
 /*========== end ==========*/
