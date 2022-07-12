@@ -78,9 +78,9 @@
 .responsive-area .number {font-weight: 600; font-size: 5rem; color:#eaeaea; margin-left:-15px;}
 .responsive-area.mobile .number {color:#c8dfe3;}
 .responsive-area {padding-top:50px;}
-.responsive-area  li {display: flex; justify-content: space-around; align-items: center; padding-bottom:120px;}
+.responsive-area  li {display: flex; justify-content: space-evenly; align-items: center; padding-bottom:120px;}
 .responsive-area .img-box {width:900px; height:auto !important; }
-.responsive-area.mobile .img-box {width:400px;}
+.responsive-area.mobile .img-box {width:360px;}
 .responsive-area .img-box img {width:100%; display: block;}
 .responsive-area h2 {padding-bottom:20px;}
 .responsive-area .btn-go {margin-top:30px;}

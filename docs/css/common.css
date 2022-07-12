@@ -76,7 +76,7 @@ p {
 .main.sub {margin-top:400px; }
 .main.scroll {border-radius: 0px; transition: 0.5s;}
 section {padding: 150px 0; position:relative;}
-.d-flex { display: flex; justify-content: space-between;}
+.d-flex { display: flex; justify-content: space-evenly;}
 .deco {width:36px; height: 5px; background: #111; display: block; margin-top: 2rem; margin-bottom: 4rem;}
 .clear:after {content:""; display: block; clear:both;}
 /*========== color ==========*/
