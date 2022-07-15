@@ -56,7 +56,7 @@ section::after {content:""; display: block; width: 100%; height: 132px; backgrou
 .title-box p {font-size: 14px; line-height: 1.3; width: 140px;}
 
 /* 제품 리스트 */
-.product-list {overflow-x: auto; padding-left:20px; padding-right:12px;}
+.product-list {overflow-x: auto; padding-left:20px; padding-right:12px; justify-content:normal;}
 .product-list::-webkit-scrollbar {display: none;}
 .product-list li {width:120px; margin-right:8px;}
 .product-list .product-img {width:120px; height:120px; border-radius: 15px;}
