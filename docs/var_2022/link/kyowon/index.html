@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+
+<head>
+   <meta charset="utf-8">
+   <title>MARKET85</title>
+   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+   <!-- Link Swiper's CSS -->
+   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+   <!-- Link FONT CSS -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Noto+Sans+KR:wght@400;700&family=Roboto&display=swap" rel="stylesheet">
+   <!--CSS -->
+   <link rel="stylesheet" href="css/common.css">
+   <link rel="stylesheet" href="css/main.css">
+   <link rel="stylesheet" href="css/mobile.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+   <script src="js/main.js" charset="utf-8"></script>
+</head>
+
+<body>
+   <!--스킵네이게이션 영역-->
+   <div id="skipNav">
+      <a href="#header">검색영역 및 사용자정보, 배송현황, 장바구니 바로가기</a>
+      <a href="#nav">네이게이션 바로가기</a>
+      <a href="#banner">이벤트 배너 바로가기</a>
+      <a href="#contents">본문 바로가기</a>
+      <a href="#footer">기업정보 바로가기</a>
+   </div>
+
+   <header id="header">
+      <div class="container">
+         <div class="header-area">
+            <div class="logo-area">
+               <a href="index.html">
+                 <picture>
+                 <source media="(max-width: 560px)" srcset="images/logo_m.png">
+                 <img src="images/logo.png" alt="마켓85 로고">
+                 </picture>
+               </a>
+            </div>
+            <div class="search-area">
+               <div class="search-box">
+                  <input type="text" placeholder="#힙하게 신학기 준비">
+                  <button type="button" class="search-icon">
+                     <div class="blind">찾기버튼</div>
+                  </button>
+               </div>
+            </div>
+            <div class="icon-area">
+               <button type="button" class="icon-user">
+                  <div class="blind">사용자 정보</div>
+               </button>
+               <button type="button" class="icon-del">
+                  <div class="blind">배송현황</div>
+               </button>
+               <button type="button" class="icon-basket">
+                  <div class="blind">장바구니</div>
+               </button>
+            </div>
+         </div>
+      </div>
+   </header>
+   <nav id="nav">
+      <div class="container">
+         <ul class="gnb-list">
+            <li class="active">베스트</li>
+            <li>기획전</li>
+            <li>이벤트</li>
+         </ul>
+      </div>
+   </nav>
+   <div id="banner">
+      <!-- Swiper -->
+      <div class="swiper mySwiper">
+         <div class="swiper-wrapper">
+            <div class="swiper-slide">
+               <div class="blind">제로웨이스트 챌린지-1월에만 VVIP 쿠폰 5종</div>
+            </div>
+            <div class="swiper-slide">
+               <div class="blind">제로웨이스트 챌린지-1월에만 VVIP 쿠폰 5종</div>
+            </div>
+            <div class="swiper-slide">
+               <div class="blind">제로웨이스트 챌린지-1월에만 VVIP 쿠폰 5종</div>
+            </div>
+         </div>
+         <div class="page-container">
+            <div class="swiper-pagination"></div>
+            <div class="play-area">
+               <button type="button" class="btn-stop">
+                  <div class="blind">일시정지/재생</div>
+               </button>
+            </div>
+         </div>
+
+      </div>
+      <main id="contents">
+         <div class="container">
+            <section class="kiz-area">
+               <div class="content-wrap">
+                  <div class="title-box">
+                     <h3>키즈85</h3>
+                     <p>아이도 엄마도 웃게 하는 문구/장난감/교육완구</p>
+                  </div>
+                  <ul class="product-list">
+                     <li>
+                        <div class="product-img">
+                           <img src="images/kiz_1.png" alt="3D D.I.Y Kit 티라노사우르스">
+                        </div>
+                        <div class="text-box">
+                           <p class="pro-name">3D D.I.Y Kit 티라노사우르스</p>
+                           <span class="price"><b>1,500</b>원</span>
+                        </div>
+                     </li>
+                     <li>
+                        <div class="product-img">
+                           <img src="images/kiz_2.png" alt="도너랜드 천사점토 800g">
+                        </div>
+                        <div class="text-box">
+                           <p class="pro-name">도너랜드 천사점토<br>800g</p>
+                           <span class="price"><b>60,000</b>원</span>
+                        </div>
+                     </li>
+                     <li>
+                        <div class="product-img">
+                           <img src="images/kiz_3.png" alt="자석글자 놀이통(택1)">
+                        </div>
+                        <div class="text-box">
+                           <p class="pro-name">자석글자 놀이통<br>(택1)</p>
+                           <span class="price"><b>20,000</b>원</span>
+                        </div>
+                     </li>
+                     <li>
+                        <div class="product-img">
+                           <img src="images/kiz_4.png" alt="3D D.I.Y Kit 티라노사우르스">
+                        </div>
+                        <div class="text-box">
+                           <p class="pro-name">만공세계사 24종 세트</p>
+                           <span class="price"><b>132,000</b>원</span>
+                        </div>
+                     </li>
+                     <li class="mobile-list">
+                        <div class="product-img">
+                          <div class="text-box">
+                             <p>더 많은<br><b>키즈85</b><br>상품 보러가가기</p>
+                             <button type="button" class="btn-more">
+                               <div class="blind">상품 보러가기 버튼</div>
+                             </button>
+                          </div>
+                        </div>
+                     </li>
+                  </ul>
+                  <div class="btn-go-area">
+                     <a href="#">
+                        <button type="button" class="btn-go"><span>키즈85</span>&nbsp바로가기</button>
+                     </a>
+                  </div>
+               </div>
+            </section>
+
+            <section class="care-area">
+               <div class="content-wrap">
+                  <div class="title-box">
+                     <h3>케어85</h3>
+                     <p>우리 가족 건강을 위한 모든 것</p>
+                  </div>
+                  <ul class="product-list">
+                     <li>
+                        <div class="product-img">
+                           <img src="images/care_1.png" alt="녹십자 포스트바이오틱스 맥스 락토모션 (30포)">
+                        </div>
+                        <div class="text-box">
+                           <p class="pro-name">녹십자 포스트바이오틱스 맥스 락토모션 (30포)</p>
+                           <span class="price"><b>24,000</b>원</span>
+                        </div>
+                     </li>
+                     <li>
+                        <div class="product-img">
+                           <img src="images/care_2.png" alt="데일리 파워스틱 10ml X 30포 (쇼핑백포함)">
+                        </div>
+                        <div class="text-box">
+                           <p class="pro-name">데일리 파워스틱<br>10ml X 30포 (쇼핑백포함)</p>
+                           <span class="price"><b>69,000</b>원</span>
+                        </div>
+                     </li>
+                     <li>
+                        <div class="product-img">
+                           <img src="images/care_3.png" alt="정관장 화애락진(70ml*30포)">
+                        </div>
+                        <div class="text-box">
+                           <p class="pro-name">정관장 화애락진<br>(70ml*30포)</p>
+                           <span class="price"><b>160,000</b>원</span>
+                        </div>
+                     </li>
+                     <li>
+                        <div class="product-img">
+                           <img src="images/care_4.png" alt="녹십자 건강한가 루테인">
+                        </div>
+                        <div class="text-box">
+                           <p class="pro-name">녹십자 건강한가<br>루테인</p>
+                           <span class="price"><b>15,000</b>원</span>
+                        </div>
+                     </li>
+                     <li class="mobile-list">
+                        <div class="product-img">
+                          <div class="text-box">
+                             <p>더 많은<br><b>케어85</b><br>상품 보러가가기</p>
+                             <button type="button" class="btn-more">
+                               <div class="blind">상품 보러가기 버튼</div>
+                             </button>
+                          </div>
+                        </div>
+                     </li>
+                  </ul>
+                  <div class="btn-go-area">
+                     <a href="#">
+                        <button type="button" class="btn-go"><span>케어85</span>&nbsp바로가기</button>
+                     </a>
+                  </div>
+               </div>
+
+
+            </section>
+
+            <section class="living-area">
+               <div class="content-wrap">
+                  <div class="title-box">
+                     <h3>리빙85</h3>
+                     <p>꼭 필요한 생필품부터 인기 생활가전/용품까지</p>
+                  </div>
+                  <ul class="product-list">
+                     <li>
+                        <div class="product-img">
+                           <img src="images/liv_1.png" alt="LG전자 듀얼 인버터 20L 제습기">
+                        </div>
+                        <div class="text-box">
+                           <p class="pro-name">LG전자 듀얼 인버터 20L 제습기</p>
+                           <span class="price"><b>520,000</b>원</span>
+                        </div>
+                     </li>
+                     <li>
+                        <div class="product-img">
+                           <img src="images/liv_2.png" alt="벅703 캠핑용 국내산 고품질 에어베드">
+                        </div>
+                        <div class="text-box">
+                           <p class="pro-name">벅703 캠핑용 국내산 고품질 에어베드</p>
+                           <span class="price"><b>20,000</b>원</span>
+                        </div>
+                     </li>
+                     <li>
+                        <div class="product-img">
+                           <img src="images/liv_3.png" alt="노티독 쿨조끼(블루)">
+                        </div>
+                        <div class="text-box">
+                           <p class="pro-name">노티독 쿨조끼(블루) M</p>
+                           <span class="price"><b>9,900</b>원</span>
+                        </div>
+                     </li>
+                     <li>
+                        <div class="product-img">
+                           <img src="images/liv_4.png" alt="동구밭 올바른 설거지 워싱바">
+                        </div>
+                        <div class="text-box">
+                           <p class="pro-name">동구밭 올바른 설거지 워싱바</p>
+                           <span class="price"><b>6,000</b>원</span>
+                        </div>
+                     </li>
+                     <li class="mobile-list">
+                        <div class="product-img">
+                          <div class="text-box">
+                             <p>더 많은<br><b>리빙85</b><br>상품 보러가가기</p>
+                             <button type="button" class="btn-more">
+                               <div class="blind">상품 보러가기 버튼</div>
+                             </button>
+                          </div>
+                        </div>
+                     </li>
+                  </ul>
+                  <div class="btn-go-area">
+                     <a href="#">
+                        <button type="button" class="btn-go"><span>리빙85</span>&nbsp바로가기</button>
+                     </a>
+                  </div>
+               </div>
+            </section>
+         </div>
+      </main>
+      <footer id="footer">
+         <div class="top-footer">
+            <div class="container">
+               <ul class="footer-info-area">
+                  <li><a href="#">이용약관</a></li>
+                  <li><a href="#"><b>개인정보취급방침</b></a></li>
+                  <li><a href="#">고객센터</a></li>
+                  <li><a href="#">공지사항</a></li>
+               </ul>
+               <ul class="footer-icon-area">
+                  <li><a href="#">
+                        <div class="blind">유튜브</div>
+                     </a></li>
+                  <li><a href="#">
+                        <div class="blind">인스타그램</div>
+                     </a></li>
+                  <li><a href="#">
+                        <div class="blind">CH</div>
+                     </a></li>
+                  <li><a href="#">
+                        <div class="blind">페이스북</div>
+                     </a></li>
+               </ul>
+            </div>
+         </div>
+         <div class="bottom-footer">
+            <div class="container">
+              <ul class="footer-list">
+                <li><a href="index.html"><img src="images/logo.png" alt="마켓85 로고" class="logo"></a></li>
+                <li>
+                  <div class="left-tit">마켓85</div>
+                  <ol class="right-text">
+                    <li>대표이사 : 복의순, 신영욱</li>
+                    <li>주소 : <span class="m-text">(주)교원크리에이티브,</span> 서울특별시 중구 을지로55(을지로 2가 9번지)</li>
+                    <li>사업자등록번호 : 150-85-01863  <a href="#" class="a-1">사업자 정보확인</a></li>
+                    <li>통신판매업신고 : 2021-서울중구-2501</li>
+                    <li>E-mail : market85@market85.com</li>
+                    <li>(주)교원크리에이티브 IT센터</li>
+                    <li>개인정보 보호책임자 : 이광열</li>
+                  </ol>
+                </li>
+                <li>
+                  <div class="left-tit">고객센터</div>
+                  <ol class="right-text">
+                    <li>전화번호 : 1899-8855</li>
+                    <li>운영시간 : 평일 09:00 ~ 18:00</li>
+                    <li>※ 고객센터(콜센터) 이용 시 통신요금이 부과 됩니다. </li>
+                  </ol>
+                </li>
+              </ul>
+
+              <div class="footer-last-area">
+                <p>소비자피해보상보험 고객님은 안전거래를 위해 현금 결제 시 저희 쇼핑몰에서 가입한 소비자피해 보상보험 서비스를 이용하실 수 있습니다.<a href="#">[서비스 가입사실확인]</a></p>
+                <strong>(주)교원 IT센터는 통신판매중개자로서 통신판매의 당사자가 아니므로 판매자가 등록한 상품정보 및 거래에 대해 (주)교원 IT센터는 일체 책임을 지지 않습니다.</strong>
+                <small>Copyright © KYOWON CREATIVE all rights reserved.</small>
+              </div>
+            </div>
+         </div>
+      </footer>
+
+
+      <!-- Swiper JS -->
+      <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+      <!-- Initialize Swiper -->
+      
+      <script>
+         var swiper = new Swiper(".mySwiper", {
+            centeredSlides: true,
+            autoplay: {
+               delay: 2000,
+               disableOnInteraction: false,
+            },
+            pagination: {
+               el: ".swiper-pagination",
+               type: "fraction",
+            },
+         });
+
+         //슬라이드 재생여부
+         const btnStop = document.querySelector(".btn-stop");
+         btnStop.addEventListener("click", playHandler);
+
+         function playHandler() {
+            btnStop.classList.toggle("on");
+            if (btnStop.classList.contains("on")) {
+               swiper.autoplay.stop();
+            } else {
+               swiper.autoplay.start();
+            }
+         }
+
+      // 스크롤 이벤트
+      window.addEventListener("scroll" , scrollHandler);
+
+      function scrollHandler(){
+        const nav = document.querySelector("#nav");
+         const navTop = nav.offsetTop;
+         const header = document.querySelector("#header").offsetHeight;
+      //   console.log(navTop);
+        if(navTop > header) {
+          nav.classList.add("scroll");
+        } else {
+          nav.classList.remove("scroll");
+        }
+      }
+
+      </script>
+</body>
+
+</html>
