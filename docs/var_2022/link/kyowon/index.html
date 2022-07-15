@@ -14,9 +14,18 @@
    <link rel="stylesheet" href="css/main.css">
    <link rel="stylesheet" href="css/mobile.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-   <script src="js/main.js" charset="utf-8"></script>
+   <script src="js/event.js" charset="utf-8"></script>
 </head>
+<script>
 
+$(function(){
+  //네비 클릭 이벤트
+  $(".gnb-list li").click(function(){
+      $(".gnb-list li").removeClass("active");
+      $(this).addClass("active");
+  });
+});
+</script>
 <body>
    <!--스킵네이게이션 영역-->
    <div id="skipNav">
@@ -348,7 +357,7 @@
       <!-- Swiper JS -->
       <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
       <!-- Initialize Swiper -->
-      
+
       <script>
          var swiper = new Swiper(".mySwiper", {
             centeredSlides: true,
