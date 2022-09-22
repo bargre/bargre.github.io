@@ -308,8 +308,9 @@ input[name="tab_item"] {
 
 .right-text-box	.info {display: flex; align-items: center;}
 .type-1 {font-size: 15px; font-weight: 700; color: #00A097; border: 1px solid rgba(0, 160, 151, 0.2); border-radius: 20px; padding:1px 7px; line-height: 20px;}
-.type-2 {font-size: 15px; font-weight: 700; color: #FF9900; border: 1px solid rgba(255, 122, 0, 0.2); border-radius: 20px; padding:1px 7px; line-height: 20px;}
+.type-2 {font-size: 15px; font-weight: 700; color: #FF7A00; border: 1px solid rgba(255, 122, 0, 0.2); border-radius: 20px; padding:1px 7px; line-height: 20px;}
 .type-3 {font-size: 15px; font-weight: 700; color: #4997FB; border: 1px solid rgba(81, 157, 255, 0.2); border-radius: 20px; padding:1px 7px; line-height: 20px;}
+.type-4 {font-size: 15px; font-weight: 700; color: #EC11FF; border: 1px solid rgba(236, 17, 255, 0.2); border-radius: 20px; padding:1px 7px; line-height: 20px;}
 .play-time {padding-left:17px; font-size: 13px;  font-weight: 700; line-height:16px; color:#5B5B5B;  background: url(../images/play.svg) no-repeat left top/13.5px; margin-left:12px; padding-top:2px;}
 
 /* =========== 오디오 플레이어 =========== */
