@@ -12,18 +12,6 @@ const windowTop = window.pageYOffset;
    }
 });
 
-  //팝업 닫기 이벤트
-   const popup = document.querySelector("#popup");
-  const popClose = document.querySelector(".btn-close");
-  const popStop = document.querySelector(".btn-stop");
-
-  popClose.addEventListener("click" , popCloseHandler);
-  popStop.addEventListener("click" , popCloseHandler);
-
-  function popCloseHandler(){
-    popup.style.display = "none";
-  }
-
 
 //video player
 const btnPlay = document.querySelector(".btn-play");
@@ -51,3 +39,15 @@ function playToggle() {
     cover.classList.add("recordPlay");
   }
 }
+
+  //팝업 닫기 이벤트
+   const popup = document.querySelector("#popup");
+  const popClose = document.querySelector(".btn-close");
+  const popStop = document.querySelector(".btn-stop");
+
+  popClose.addEventListener("click" , popCloseHandler);
+  popStop.addEventListener("click" , popCloseHandler);
+
+  function popCloseHandler(){
+    popup.style.display = "none";
+  }
