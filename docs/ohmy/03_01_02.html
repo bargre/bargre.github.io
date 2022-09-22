@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OH! MY 감정 그림책</title>
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+  <header id="header" class="header">
+    <div class="wrap">
+      <h1 class="logo-area"><img src="images/logo.png" alt="오 마이 감정그림책 로고" class="logo"></h1>
+    </div>
+    <nav class="nav">
+      <div class="ex"><a href="#">이야기 오디오북</a></div>
+    </nav>
+    <ol class="circle-motion">
+      <li class="c_1"></li>
+      <li class="c_2"></li>
+      <li class="c_3"></li>
+    </ol>
+  </header>
+  <main class="contents">
+    <section class="audio-player-area">
+      <div class="p-relative">
+        <div class="book-cover">
+          <div class="record-img">
+            <img src="images/record.png" alt="책 표지">
+          </div>
+          <div class="cover-img">
+            <img src="images/book.jpg" alt="책 표지">
+          </div>
+          <button type="button" class="btn-play" onclick="playPause();"></button>
+        </div>
+        <!-- audio-player -->
+        <div class="audio-player">
+          <div class="progress-bar">
+            <div class="percent"></div>
+          </div>
+          <div class="audio-box">
+            <button type="button" class="btn-stop"></button>
+            <button type="button" class="btn-sound"></button>
+            <span class="m-color">00:20</span><span class="dash">/</span><span>01:00</span>
+            <button type="button" class="btn-frame"></button>
+          </div>
+        </div>
+        <!--// audio-player -->
+      </div>
+
+      <div class="t-center">
+        <div class="edition-type">
+          <span class="edit">1차 Edition</span><span class="type-1">동화</span>
+        </div>
+        <div class="tit-box">
+          <div class="box">
+            <span class="num">01.</span>
+            <h2 class="tit text-overflow">기쁨 할머니</h2>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="rel-content-area mt30">
+      <div class="wrap">
+        <div class="top-title">
+          <h3>연관 콘텐츠</h3>
+        </div>
+      </div>
+      <div class="rel-content-box">
+        <ul class="rel-content-list">
+          <li>
+            <div class="img-box">
+              <div class="select"></div>
+              <img src="images/book.jpg" alt="책 표지">
+            </div>
+            <p class="book-tit select">01. 기쁨 할머니</p>
+          </li>
+          <li>
+            <div class="img-box">
+              <img src="images/book.jpg" alt="책 표지">
+            </div>
+            <p class="book-tit">02. 제목 2줄 이상이면 말줄임합니다. </p>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <script src="js/main.js" charset="utf-8"></script>
+</body>
+
+</html>
