@@ -1,0 +1,55 @@
+d[주간업무]
+
+https://docs.google.com/presentation/d/1UzgKuf50pS1HLBiziEmf4EYgjsavTfehxuYulfCYs6s/edit#slide=id.g13ebe3a10d3_0_24
+
+[일일업무일지]
+
+https://docs.google.com/spreadsheets/d/18ippBkO0A3P6kU_EHL5CdWBNx5nYqCacRvSBN9Bvni0/edit#gid=1355736408
+
+[연차]
+
+https://docs.google.com/spreadsheets/d/1b2lIpgqkfzOkRuS5wdWYQxMYxx1edg9WdpBiWPvHKO0/edit#gid=1494156228
+
+[부서공통업무분장]
+
+https://docs.google.com/spreadsheets/d/1Yv6xOGCHaRT3lRrwwafEeQXdjXK5qFMkKewmcyZAcas/edit#gid=1024701652
+
+[업무분장]
+
+https://docs.google.com/spreadsheets/d/1kgLGC_IM8ykezHV2LLKOKGW3_E3A2Z3hMGdJXEp55IA/edit#gid=871865402
+
+[인력투입현황]
+
+https://docs.google.com/spreadsheets/d/1SChTYm1O-YIyr17UXpmoG_lCm6oxKpotH-Z4Mx_KOwQ/edit#gid=71079453
+
+
+[Wifi]
+
+- 외부망
+kyowon_tech4 / techdev@1234
+
+- 내부망
+KYOWON / 본인 kworks 비번
+
+ ID : kyowon\39527
+PW : kworks 비번
+=====================================================================================
+
+[업무관련] 자사 운영 사이트 및 퍼블경로
+
+https://docs.google.com/spreadsheets/d/1sEdijeLC-C8_NlJnYtUT7bnWSkIO8zfATdlrNngfeoY/edit#gid=0
+
+
+[공유폴더]
+
+- 웹UI 파트 : \\10.6.20.220\uiux
+- 스마트디자인팀 : \\10.1.1.227\smart
+
+
+=====================================================================================
+
+포트폴리오 사이트 업로드
+http://dev.allng.com/c2/index.php/s/CR6CJrRqFUcCUFc
+
+포트폴리오 사이트 주소
+http://dev.allng.com/c2/design/index.html
