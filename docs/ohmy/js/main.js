@@ -1,5 +1,4 @@
 
-
 //해더 스크롤 이벤트
 const header = document.querySelector(".header");
 const bg = document.querySelector(".bg-trans");
@@ -18,6 +17,14 @@ const windowTop = window.pageYOffset;
    }
 });
 
+//로그아웃 팝업
+
+const btnLog = document.querySelector(".btn-log");
+const logout = document.querySelector("#logout");
+
+btnLog.addEventListener ("click" , function(){
+  logout.classList.toggle("control");
+});
 
 
 
@@ -48,19 +55,7 @@ function playToggle() {
   }
 }
 
-const btnLog = document.querySelector(".btn-log");
-const logout = document.querySelector("#logout");
 
-btnLog.addEventListener ("click" , logControl);
-
-function logControl(){
-if(logout.classList.contains("control")){
-  logout.classList.remove("control");
-} else {
-  logout.classList.add("control");
-}
-}
-//로그아웃
 
 
 
