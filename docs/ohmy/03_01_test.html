@@ -4,24 +4,11 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <title>OH! MY 감정 그림책</title>
   <link rel="stylesheet" href="css/main.css">
 </head>
-<script>
-$( document ).ready( function() {
-//tabs
-$(".tab_item.right span").click(function() {
-$("#con_1").css({"display":"none"});
-$("#con_2").css({"display":"block"});
-});
-$(".tab_item.left span").click(function() {
-$("#con_2").css({"display":"none"});
-$("#con_1").css({"display":"block"});
-});
 
-});
-</script>
 <body>
   <header id="header" class="header">
     <div class="wrap">
@@ -50,14 +37,16 @@ $("#con_1").css({"display":"block"});
     <!-- tab -->
     <div class="tabs">
       <!-- 상단 tab -->
-    <div class="tab-button">
-      <input id="edition_1" type="radio" name="tab_item" checked>
+      <!-- <input id="edition_1" type="radio" name="tab_item" checked>
       <label class="tab_item left" for="edition_1"><span>1차 Edition</span></label>
       <input id="edition_2" type="radio" name="tab_item">
-      <label class="tab_item right" for="edition_2"><span>2차 Edition</span></label>
-    </div>
+      <label class="tab_item right" for="edition_2"><span>2차 Edition</span></label> -->
+      <div class="tab-button">
+        <button type="button" class="content_1 select">1차 Edition</button>
+        <button type="button" class="content_2">2차 Edition</button>
+      </div>
       <!-- 1차 Edition -->
-      <div class="tab_content" id="con_1">
+      <div class="tab_content" id="content_1">
         <div class="wrap">
           <ul class="content-list">
             <li>
@@ -109,7 +98,7 @@ $("#con_1").css({"display":"block"});
       </div>
 
       <!-- 2차 Edition -->
-      <div class="tab_content"  id="con_2">
+      <div class="tab_content" id="content_2">
         <div class="ready">준비중 입니다.</div>
       </div>
     </div>
@@ -117,7 +106,6 @@ $("#con_1").css({"display":"block"});
   </main>
 
   <script src="js/main.js" charset="utf-8"></script>
-
 </body>
 
 </html>
