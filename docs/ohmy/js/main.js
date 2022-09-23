@@ -1,16 +1,24 @@
-//해더 스크롤 이벤트
 
+
+//해더 스크롤 이벤트
+const header = document.querySelector(".header");
 const bg = document.querySelector(".bg-trans");
+
 window.addEventListener('scroll', function(){
 
 const windowTop = window.pageYOffset;
 
    if(windowTop > 100) {
+        header.classList.add("shadow");
      bg.classList.add("scroll");
+
    } else {
+     header.classList.remove("shadow");
      bg.classList.remove("scroll");
    }
 });
+
+
 
 
 //video player
@@ -39,15 +47,3 @@ function playToggle() {
     cover.classList.add("recordPlay");
   }
 }
-
-  //팝업 닫기 이벤트
-   const popup = document.querySelector("#popup");
-  const popClose = document.querySelector(".btn-close");
-  const popStop = document.querySelector(".btn-stop");
-
-  popClose.addEventListener("click" , popCloseHandler);
-  popStop.addEventListener("click" , popCloseHandler);
-
-  function popCloseHandler(){
-    popup.style.display = "none";
-  }
