@@ -47,3 +47,22 @@ function playToggle() {
     cover.classList.add("recordPlay");
   }
 }
+
+const btnLog = document.querySelector(".btn-log");
+const logout = document.querySelector("#logout");
+
+btnLog.addEventListener ("click" , logControl);
+
+function logControl(){
+if(logout.classList.contains("control")){
+  logout.classList.remove("control");
+} else {
+  logout.classList.add("control");
+}
+}
+//로그아웃
+
+
+
+
+//end
