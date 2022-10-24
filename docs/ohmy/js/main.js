@@ -2,29 +2,56 @@
 //해더 스크롤 이벤트
 const header = document.querySelector(".header");
 const bg = document.querySelector(".bg-trans");
+const header_2 = document.querySelector(".header_2");
 
-window.addEventListener('scroll', function(){
+// window.addEventListener('scroll', function(){
 
-const windowTop = window.pageYOffset;
+// const windowTop = window.pageYOffset;
 
-   if(windowTop > 100) {
-        header.classList.add("shadow");
-     bg.classList.add("scroll");
+//    if(windowTop > 100) {
+//     header.classList.add("shadow");
+//     header_2.classList.add("display");
+//     if (bg != null){
+//      bg.classList.add("scroll");
+//     }
+//    } else {
+//      header.classList.remove("shadow");
+//      header_2.classList.remove("display");
+//      if (bg != null){
+//      bg.classList.remove("scroll");
+//     }
+//    }
+// });
 
+var lastScrollTop = 0;
+$(window).scroll(function(event){
+   var st = $(this).scrollTop();
+   if (st > lastScrollTop){
+    header.classList.add("shadow");
+
+    if (bg != null){
+           bg.classList.add("scroll");
+          }
    } else {
-     header.classList.remove("shadow");
-     bg.classList.remove("scroll");
+    header.classList.remove("shadow");
+
+    if (bg != null){
+           bg.classList.remove("scroll");
+          }
    }
-});
+   lastScrollTop = st;
+   console.log(st);
+})
 
 //로그아웃 팝업
 
 const btnLog = document.querySelector(".btn-log");
 const logout = document.querySelector("#logout");
-
-btnLog.addEventListener ("click" , function(){
-  logout.classList.toggle("control");
-});
+if (btnLog != null){
+  btnLog.addEventListener ("click" , function(){
+    logout.classList.toggle("control");
+  });
+}
 
 
 
@@ -36,6 +63,7 @@ const audioPlayer = document.querySelector(".audio-player");
 
 
 function playPause() {
+  if (btnPlay != null){
   if (btnPlay.style.display = "block") {
     btnPlay.style.display = "none"; //재생버튼 없애기
     audioPlayer.style.display = "block"; // 오디오 플레이어 보여주기
@@ -43,7 +71,9 @@ function playPause() {
     cover.classList.add("recordPlay"); // 레코드판 모션
   }
 }
+}
 
+if (btnStop != null){
 btnStop.addEventListener("click", playToggle);
 
 function playToggle() {
@@ -53,6 +83,7 @@ function playToggle() {
   } else {
     cover.classList.add("recordPlay");
   }
+}
 }
 
 
