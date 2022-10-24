@@ -73,7 +73,8 @@ span {display: inline-block;}
 /* layout */
 .wrap {width:100%; padding: 0 20px; box-sizing: border-box;}
 .main-contents {padding-top: 115px; width: 100%; overflow:hidden; box-sizing: border-box;}
-.contents {padding-top: 179px;}
+.contents {padding-top: 127px; width: 100%; overflow:hidden; box-sizing: border-box; }
+.tab-contents {padding-top: 179px; width: 100%; overflow:hidden; box-sizing: border-box;}
 .contents.flex-column {height: calc(100% - 147px); display: flex; flex-direction: column; justify-content: space-between;}
 .p-relative {position: relative;}
 
@@ -305,9 +306,11 @@ h4 {font-size: 16px; line-height: 19px; font-weight: 700; padding-bottom:4px; }
 .label-img {position: absolute; right:9px; top:-32px; width: 59px;}
 /* 탭 스타일 */
 .tabs {width: 100%; margin: 0 auto;}
-.tab-button {position:fixed; z-index: 1; top:123px; left:50%;  margin-left:-106px; width: 230px; height: 38px; border: 1px solid #FFD7E5; border-radius: 22px; margin-bottom:14px;}
+.tab-button {position:fixed; z-index: 1; top:123px; left:50%;  margin-left:-106px; width: 230px; height: 38px; border: 1px solid #FFD7E5; border-radius: 22px; margin-bottom:14px; background-color: #fff; }
 .tab-button.sticky {top:15px;z-index: 1;}
-.tab-button.sticky::before {content:""; display: block;width:100%; height:70px; background-color: #fff; box-shadow: 0px -1px 9px 2px rgb(0 0 0 / 20%); position:fixed; top:0; left:0; right:0; z-index: -999;}
+.w-box {width:100%; height:70px;  position:fixed; top:108px; left:0; right:0; z-index:1; background-color:#fff; box-shadow: 0px -1px 9px 2px rgb(0 0 0 / 20%);}
+.w-box.sticky { top:0; }
+.w-box.shadow {  box-shadow: none;}
 /* .tab-button button ,  */
 .tab-button label span{ position:absolute; width: 120px; height: 38px; font-size: 17px; font-weight:700; color:#FFD9E9; text-align: center; padding-bottom:3px; line-height: 36px; border-radius: 22px; box-sizing: border-box;}
 .tab-button label.left span {left:0; top:0;}
