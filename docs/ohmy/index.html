@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OH! MY 감정 그림책</title>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/jquery.simplyscroll.css" media="all" type="text/css"> <!--20221020  추가 -->
+  <link rel="stylesheet" href="css/main.css">  
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script><!--20221020  추가 -->
+  <script type="text/javascript" src="js/jquery.simplyscroll.min.js"></script><!--20221020  추가 -->
+
+  <!--20221020  스크립트 추가 -->
+  <script type="text/javascript">
+    (function($) {
+      $(function() {
+        $("#scroller").simplyScroll();
+      });
+    })(jQuery);
+  </script>
+</head>
+
+<body>
+  <header id="header" class="header">
+    <div class="wrap">
+      <h1 class="logo-area">
+        <a href="index.html"><img src="images/logo.png" alt="오 마이 감정그림책 로고" class="logo"></a>
+      </h1>
+      <div class="log-area">
+        <button type="button" class="btn-log">설정 아이콘</button>
+      </div>
+    </div>
+    <nav class="nav">
+      <ul class="menu">
+        <li class="on"><a href="#">이야기 오디오북</a></li>
+        <li><a href="#">감정 오디오북</a></li>
+        <li><a href="#">교구 놀이 영상</a></li>
+        <li><a href="#">오은영 박사 강연</a></li>
+      </ul>
+    </nav>
+    <ol class="circle-motion">
+      <li class="c_1"></li>
+      <li class="c_2"></li>
+      <li class="c_3"></li>
+    </ol>
+  </header>
+
+  <section id="logout">
+    <ul class="log-box">
+     <li class="item-1">정품 인증</li>
+     <li class="item-2">로그아웃</li>
+    </ul>
+  </section>
+  <main class="main-contents">
+    <div class="main-img">
+      <img src="images/main.png" alt="감정 그림책 오은영 이미지">
+    </div>
+    <img src="images/pack.png" alt="감정 그림책 모음 이미지" data-aos="fade-up" data-aos-duration="1000">
+    <div class="t-center">
+      <p class="b-text" data-aos="fade-up" data-aos-duration="1000"><span class="p-color">페어런팅 클래스</span>에서<br />다양한 콘텐츠를 만나 보세요.</p>
+    </div>
+
+    <div class="rel-content-box pt20 swiper mySwiper" data-aos="fade-left" data-aos-duration="1000">
+      <ul class="rel-content-list main swiper-wrapper"  id="scroller"> <!--20221020 class = main 추가   id="scroller" 추가 -->
+        <li>
+          <div class="swiper-slide img-box">
+            <img src="images/book.jpg" alt="뷱커버">
+          </div>
+        </li>
+        <li>
+          <div class="swiper-slide img-box">
+            <img src="images/book2.jpg" alt="뷱커버">
+          </div>
+        </li>
+        <li>
+          <div class="swiper-slide img-box">
+            <img src="images/book3.jpg" alt="뷱커버">
+          </div>
+        </li>
+        <li>
+          <div class="swiper-slide img-box">
+            <img src="images/book4.jpg" alt="뷱커버">
+          </div>
+        </li>
+        <li><!--20221020 class 삭제-->
+          <div class="swiper-slide img-box">
+            <img src="images/book5.jpg" alt="뷱커버">
+          </div>
+        </li>
+      </ul>
+    </div>
+      <div class="ribbon-box" data-aos="fade-up" data-aos-duration="1000">
+        <img src="images/box.svg" alt="텍스트 박스" class="ribbon-box">
+      </div>
+
+      <div class="t-center">
+        <p class="b-text pt40" data-aos="fade-up" data-aos-duration="1000" ><span class="p-color">페어런팅 클래스</span>에서는<br />다음과 같은 <span class="m-color">프리미엄 서비스</span>를<br />즐길 수 있어요.</p>
+      </div>
+
+    <div class="wrap pt40">
+      <ul class="service-list">
+        <li data-aos="fade-up" data-aos-duration="1000">
+          <h6>이야기 오디오북</h6>
+          <p>깊이 있는 감정 그림책을<br />언제든 즐길 수 있는 동화 음원</p>
+          <button type="button" class="btn-more">더보기</button>
+        </li>
+        <li data-aos="fade-up" data-aos-duration="1000"> 
+          <h6>감정 오디오북</h6>
+          <p>부모의 마음이 편안해지는, <br />
+            부모를 위한 감정 코칭 가이드 음원</p>
+          <button type="button" class="btn-more">더보기</button>
+        </li>
+        <li data-aos="fade-up" data-aos-duration="1000">
+          <h6>교구 놀이 영상</h6>
+          <p>교구를 지속적으로 재미있게<br /> 
+            활용할 수 있는 다양한 놀이 방법 수록</p>
+          <button type="button" class="btn-more">더보기</button>
+        </li>
+        <li data-aos="fade-up" data-aos-duration="1000">
+          <h6>오은영 박사 강연</h6>
+          <p>오직 여기서만!<br />
+            오은영 박사의 프리미엄 감정 코칭 강연</p>
+          <button type="button" class="btn-more">더보기</button>
+          <img src="images/label.svg" alt="" class="label-img">
+        </li>
+      </ul>
+  </div>
+  </main>
+  <ol class="circle-motion3">
+    <li class="c_1"></li>
+    <li class="c_2"></li>
+    <li class="c_3"></li>
+    <li class="c_4"></li>
+    <li class="c_5"></li>
+    <li class="c_6"></li>
+    <li class="c_7"></li>
+    <li class="c_8"></li>
+  </ol>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="js/main.js" charset="utf-8"></script>
+  <script>
+    AOS.init();
+
+  </script>
+
+
+
+</body>
+
+</html>
