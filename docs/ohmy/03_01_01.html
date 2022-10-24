@@ -42,34 +42,41 @@
 
   <main class="contents">
     <section class="audio-player-area">
-      <div class="p-relative">
+      <div class="audio-player-wrap"><!--20221012 클래스명 변경(기존 : p-relative) -->
         <div class="book-cover">
           <div class="record-img">
             <img src="images/record.png" alt="책 표지">
           </div>
           <div class="cover-img">
-            <img src="images/book.jpg" alt="책 표지">
+            <img src="images/book.jpg" alt="책 표지"> 
           </div>
           <button type="button" class="btn-play" onclick="playPause();"></button>
         </div>
         <!-- audio-player -->
-        <div class="audio-player">
-          <div class="progress-bar">
-            <div class="percent"></div>
+
+          <div class="audiobox audio-player"> <!--20221012 active 추가시 플레이어 사라짐 -->
+            <audio preload="auto" controls>
+              <source src="audio/BlueDucks_FourFlossFiveSix.mp3">
+              <source src="audio/BlueDucks_FourFlossFiveSix.ogg">
+              <source src="audio/BlueDucks_FourFlossFiveSix.wav">
+            </audio>
+            <script src="js/jquery.js"></script>
+            <script src="js/audioplayer.js"></script>
+            <script>$( function() { $( 'audio' ).audioPlayer(); } );</script>
+  
+             <!-- replay버튼은 .audioplayer-playing .audioplayer-playpause a 클래스에 .replay 붙여줍니다.-->
+            <a class="btn_sound">소리 켜기</a>
+            <!-- <a class="btn_sound .btn_sound_off">소리 끄기</a> -->
+            <a class="btn_frame">확대 버튼</a>
           </div>
-          <div class="audio-box">
-            <button type="button" class="btn-stop"></button>
-            <button type="button" class="btn-sound"></button>
-            <span>00:20</span><span class="dash">/</span><span>01:00</span>
-            <button type="button" class="btn-frame"></button>
-          </div>
-        </div>
+
+
         <!--// audio-player -->
       </div>
 
       <div class="t-center">
         <div class="edition-type">
-          <span class="edit">1차 Edition</span><span class="type-1">동화</span>
+          <span class="edit">에디션<b class="item">1</b></span><span class="type-1">동화</span> <!--20221012 - 에디션 텍스트 수정 및 클래스 추가-->
         </div>
         <div class="tit-box">
           <div class="box">
@@ -78,8 +85,6 @@
           </div>
         </div>
       </div>
-
-
     </section>
 
     <section class="rel-content-area mt30">
@@ -132,7 +137,6 @@
 
 
   <script src="js/main.js" charset="utf-8"></script>
-
 </body>
 
 </html>
