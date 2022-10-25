@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OH! MY 감정 그림책</title>
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+  <header id="header" class="header">
+    <div class="wrap">
+      <h1 class="logo-area">
+        <a href="index.html"><img src="images/logo.png" alt="오 마이 감정그림책 로고" class="logo"></a>
+      </h1>
+      <div class="log-area">
+        <button type="button" class="btn-log">설정 아이콘</button>
+      </div>
+    </div>
+    <nav class="nav">
+      <ul class="menu">
+        <li><a href="#">이야기 오디오북</a></li>
+        <li class="on"><a href="#">감정 오디오북</a></li>
+        <li><a href="#">교구 놀이 영상</a></li>
+        <li><a href="#">오은영 박사 강연</a></li>
+      </ul>
+    </nav>
+    <ol class="circle-motion">
+      <li class="c_1"></li>
+      <li class="c_2"></li>
+      <li class="c_3"></li>
+    </ol>
+  </header>
+
+  <section id="logout">
+    <ul class="log-box">
+     <li class="item-1">정품 인증</li>
+     <li class="item-2">로그아웃</li>
+    </ul>
+  </section>
+
+  <main class="contents">
+    <section class="audio-player-area">
+      <div class="audio-player-wrap"><!--20221012 클래스명 변경(기존 : p-relative) -->
+        <div class="book-cover play recordPlay">
+          <div class="record-img">
+            <img src="images/record.png" alt="책 표지">
+          </div>
+          <div class="cover-img">
+            <img src="images/book.jpg" alt="책 표지">
+          </div>
+          <!-- <button type="button" class="btn-play" onclick="playPause();"></button> -->
+        </div>
+      </div>
+
+      <div class="t-center">
+        <div class="edition-type">
+          <span class="edit">에디션<b class="item">1</b></span><span class="type-2">감정 코칭</span><!--20221012 - 에디션 텍스트 수정 및 클래스 추가-->
+        </div>
+        <div class="tit-box">
+          <div class="box">
+            <span class="num">02.</span>
+            <h2 class="tit text-overflow">제목이 2줄 넘어갈 경우 말줄입표 해줍니다. 제목이 2</h2>
+          </div>
+        </div>
+      </div>
+
+
+    </section>
+
+    <section class="rel-content-area mt30">
+      <div class="wrap">
+        <div class="top-title">
+          <h3>연관 콘텐츠</h3>
+          <div class="paly-button">
+            <input type="checkbox" id="play" value="play">
+            <label for="play" class="btn-rel-play">연속 재생</label>
+          </div>
+        </div>
+      </div>
+      <div class="rel-content-box">
+        <ul class="rel-content-list">
+          <li>
+            <div class="img-box">
+              <div class="select"></div>
+              <img src="images/book.jpg" alt="책 표지">
+            </div>
+            <p class="book-tit select">01. 기쁨 할머니</p>
+          </li>
+          <li>
+            <div class="img-box">
+              <img src="images/book.jpg" alt="책 표지">
+            </div>
+            <p class="book-tit">02. 타이틀이 2줄일 경우는 말줄임표로 표시합니디.</p>
+          </li>
+          <li>
+            <div class="img-box">
+              <img src="images/book.jpg" alt="책 표지">
+            </div>
+            <p class="book-tit">기쁨 할머니</p>
+          </li>
+          <li>
+            <div class="img-box">
+              <img src="images/book.jpg" alt="책 표지">
+            </div>
+            <p class="book-tit">기쁨 할머니</p>
+          </li>
+          <li>
+            <div class="img-box">
+              <img src="images/book.jpg" alt="책 표지">
+            </div>
+            <p class="book-tit">기쁨 할머니</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+  </main>
+
+  <script src="js/main.js" charset="utf-8"></script>
+</body>
+
+</html>

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OH! MY 감정 그림책</title>
+  <link href="http://vjs.zencdn.net/7.0/video-js.min.css" rel="stylesheet">
+  <script src="http://vjs.zencdn.net/7.0/video.min.js"></script>
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+  <header id="header" class="header">
+    <div class="wrap">
+      <h1 class="logo-area">
+        <a href="index.html"><img src="images/logo.png" alt="오 마이 감정그림책 로고" class="logo"></a>
+      </h1>
+      <div class="log-area">
+        <button type="button" class="btn-log">설정 아이콘</button>
+      </div>
+    </div>
+    <nav class="nav">
+      <ul class="menu">
+        <li><a href="#">이야기 오디오북</a></li>
+        <li><a href="#">감정 오디오북</a></li>
+        <li><a href="#">교구 놀이 영상</a></li>
+        <li class="on"><a href="#">오은영 박사 강연</a></li>
+      </ul>
+    </nav>
+    <ol class="circle-motion">
+      <li class="c_1"></li>
+      <li class="c_2"></li>
+      <li class="c_3"></li>
+    </ol>
+  </header>
+
+  <section id="logout">
+    <ul class="log-box">
+     <li class="item-1">정품 인증</li>
+     <li class="item-2">로그아웃</li>
+    </ul>
+  </section>
+  
+  <main class="contents">
+    <section class="player-area">
+
+      <div class="p-relative">
+        <!-- video -->
+        <video id="example_video_1" class="video-js vjs-big-play-button vjs-big-play-centered vjs-fluid" controls preload="false"  poster="images/o_3.jpg" data-setup="{}">
+          <source src="audio/test.mp4" type="video/mp4">        
+        </video>
+        <!-- //video -->
+        <!-- audio-player -->
+        <div class="audio-player">
+          <div class="progress-bar">
+            <div class="percent"></div>
+          </div>
+          <div class="audio-box">
+            <button type="button" class="btn-replay"></button>
+            <button type="button" class="btn-sound-off"></button>
+            <span>00:20</span><span class="dash">/</span><span>01:00</span>
+            <button type="button" class="btn-frame"></button>
+          </div>
+        </div>
+        <!--// audio-player -->
+      </div>
+      <div class="wrap"><!--20221020 - 구조 수정-->
+        <div class="t-center pt10">
+          <div class="edition-type">
+            <span class="type-2 mb10">감정 코칭</span> <span class="time"><b>2023-01-10</b>까지 시청 가능</span>
+          </div>
+          <div class="tit-box3">
+            <div class="box">
+              <h2 class="tit text-overflow">제목이 2줄 넘어갈 경우 말줄임 합니다. 제목이 2줄 넘어갈 경우 말줄임 합니다.</h2>
+            </div>
+          </div>
+        </div>
+      </div><!-- // 20221020 - 구조 수정-->
+    </section>
+    <section class="rel-content-area mt30">
+      <div class="wrap">
+        <div class="top-title">
+          <h3>연관 콘텐츠</h3>
+          <div class="paly-button">
+            <input type="checkbox" id="play" value="play">
+            <label for="play" class="btn-rel-play">연속 재생</label>
+          </div>
+        </div>
+      </div>
+      <div class="rel-content-box">
+        <ul class="rel-content-list">
+          <li>
+            
+            <div class="img-box radius10">
+              <div class="select"></div>
+              <img src="images/img01.jpg" alt="뷱커버">
+            </div>
+            <p class="book-tit select">오은영 박사가 말하는 감정 놀이의 중요성! 제목이 길어</p>
+          </li>
+          <li>
+            <div class="img-box radius10">
+              <img src="images/img02.jpg" alt="뷱커버">
+            </div>
+            <p class="book-tit">타이틀이 2줄일 경우는 말줄임표로 표시합니디.</p>
+          </li>
+          <li>
+            <div class="img-box radius10">
+              <img src="images/img01.jpg" alt="뷱커버">
+            </div>
+            <p class="book-tit">오은영 박사가 말하는 감정 놀이의 중요성! 제목이 길어</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <script src="js/main.js" charset="utf-8"></script>
+</body>
+
+</html>
