@@ -25,16 +25,24 @@ const tabButton = document.querySelector(".tab-button");
 //    }
 // });
 
+
 var lastScrollTop = 0;
 $(window).scroll(function (event) {
   var st = $(this).scrollTop();
+
+  // 상단 탭 고정일때 tab-contents 의 패딩값 조절
+  if(wBox.offsetTop < 1) {
+    $(".tab-contents").css({"paddingTop":"60px"});   
+    } else  {   
+      $(".tab-contents").css({"paddingTop":"179px"});   
+    }
+
 
   //100이상일때 그림자 생김
   // 탭 있는 header 영역 그림자 
 if(main.contains(wBox)){
   if (st < 100) {
     wBox.classList.remove("shadow");
-
     
   } else {
     wBox.classList.add("shadow");  
@@ -55,7 +63,7 @@ if(main.contains(wBox)){
   } 
   //스크롤 다운
   else {
-    header.classList.remove("display");
+   header.classList.remove("display");
     if (bg != null) {
       bg.classList.remove("scroll");
     }
@@ -73,15 +81,29 @@ if(main.contains(wBox) != true){
   if (st < 100) {
     header.classList.remove("shadow");  
   } else {
-    header.classList.add("shadow");  
+    header.classList.add("shadow");
+      
+        //스크롤 업 할때
+  if (st > lastScrollTop) {
+    header.classList.add("display");  
+
+  } 
+  //스크롤 다운
+  else {
+    header.classList.remove("display");
+  }
+
   }
 }
 
 
 
   lastScrollTop = st;
-  console.log(st);
+
 });
+
+
+
 
 //로그아웃 팝업
 
