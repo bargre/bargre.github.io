@@ -313,12 +313,12 @@ h4 {font-size: 16px; line-height: 19px; font-weight: 700; padding-bottom:4px; }
 .w-box.sticky { top:0; }
 .w-box.shadow { box-shadow: 0px -1px 9px 2px rgb(0 0 0 / 20%);}
 /* .tab-button button ,  */
-.tab-button label span{ position:absolute; width: 120px; height: 38px; font-size: 17px; font-weight:700; color:#FFD9E9; text-align: center; padding-bottom:3px; line-height: 36px; border-radius: 22px; box-sizing: border-box;}
+.tab-button label span{ position:absolute; width: 120px; height: 38px; font-size: 17px; font-weight:700; color:#FFD9E9; text-align: center; padding-bottom:3px; line-height: 36px; border-radius: 22px; padding-right:20px; box-sizing: border-box;}
 .tab-button label.left span {left:0; top:0;}
 .tab-button label.right span {right:0; top:0;}
 /* .tab-button button.select {background: #FF4387; color:#fff; border-radius: 20px;} */
-.tab_item .item {font-size: 16px; color: #fff; padding-left:8px;}
-.tab_item .item:after {content:""; display: inline-block; width:18px; height: 18px; background-color: #FFD9E9; position: absolute; right: 23px; top:9px;  z-index: -1; border-radius: 50%;} 
+.tab_item .item {display:block; font-size: 16px; color: #fff; position:absolute; right:29px; top:0;}
+.tab_item .item:after {content:""; display: inline-block; width:18px; height: 18px; background-color: #FFD9E9; position: absolute; right: -4px; top:9px;  z-index: -1; border-radius: 50%;} 
 #con_2 {display: none;}
 
 /* 라디오 버튼 UI삭제*/
