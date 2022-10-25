@@ -279,11 +279,11 @@ h4 {font-size: 16px; line-height: 19px; font-weight: 700; padding-bottom:4px; }
 .service-list li:nth-child(2) {background:#8CF1CC url(../images/bg_2.svg) no-repeat center / cover ;}
 .service-list li:nth-child(3) {background:#A3CBFF url(../images/bg_3.svg) no-repeat center / cover ;}
 .service-list li:nth-child(4) {background:#D2BBFF url(../images/bg_4.svg) no-repeat center / cover ;}
-.service-list li::before {content:""; display: block;  width:196px; height:46px; border-radius: 20px 30px 0px 0px; position:absolute; left:0; top:-25px; z-index: -1;}
-.service-list li:nth-child(1)::before {background-color: #ffd074;}
-.service-list li:nth-child(2)::before {background-color: #A8F5D9;}
-.service-list li:nth-child(3)::before {background-color: #b0d3ff;}
-.service-list li:nth-child(4)::before {background-color: #d7c3ff;}
+.service-list li::after {content:""; display: block;  width:196px; height:46px; border-radius: 20px 30px 0px 0px; position:absolute; left:0; top:-25px; z-index: -1;}
+.service-list li:nth-child(1)::after {background-color: #ffd074;}
+.service-list li:nth-child(2)::after {background-color: #A8F5D9;}
+.service-list li:nth-child(3)::after {background-color: #b0d3ff;}
+.service-list li:nth-child(4)::after {background-color: #d7c3ff;}
 .service-list li h6 {font-size: 18px; font-weight: 700; line-height: 1.2; padding:5px 0px; position: absolute;left: 20px; top: -8px; letter-spacing: -0.1rem;}    
 .service-list li:nth-child(1) h6 { color:#F33A00; padding-left:30px;background: url(../images/chat_1.svg) no-repeat center left / 25px;}
 .service-list li:nth-child(2) h6 { color:#008656; padding-left:30px;background: url(../images/chat_2.svg) no-repeat center left / 25px;}
