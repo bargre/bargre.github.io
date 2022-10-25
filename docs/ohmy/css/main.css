@@ -170,8 +170,9 @@ h4 {font-size: 16px; line-height: 19px; font-weight: 700; padding-bottom:4px; }
 
 /* header */
 .header {position: fixed; top:0; left:0;right:0; width:100%; background: #fff; z-index: 9999; padding-top:11px;}
-.header.shadow {box-shadow: 0px -1px 9px 2px rgb(0 0 0 / 20%); display: none;}
-.header_2.display {display: none;}
+.header.shadow {box-shadow: 0px -1px 9px 2px rgb(0 0 0 / 20%);}
+.header.display {display: none;}
+/* .header_2.display {display: none;} */
 .header.bg-trans {background: transparent;}
 .bg-trans.scroll {background: #fff; padding-bottom:10px;}
 .logo-area {position: relative; z-index: 5; width: 166px; margin:0 auto;}
@@ -308,15 +309,15 @@ h4 {font-size: 16px; line-height: 19px; font-weight: 700; padding-bottom:4px; }
 .tabs {width: 100%; margin: 0 auto;}
 .tab-button {position:fixed; z-index: 1; top:123px; left:50%;  margin-left:-106px; width: 230px; height: 38px; border: 1px solid #FFD7E5; border-radius: 22px; margin-bottom:14px; background-color: #fff; }
 .tab-button.sticky {top:15px;z-index: 1;}
-.w-box {width:100%; height:70px;  position:fixed; top:108px; left:0; right:0; z-index:1; background-color:#fff; box-shadow: 0px -1px 9px 2px rgb(0 0 0 / 20%);}
+.w-box {width:100%; height:70px;  position:fixed; top:108px; left:0; right:0; z-index:1; background-color:#fff;}
 .w-box.sticky { top:0; }
-.w-box.shadow {  box-shadow: none;}
+.w-box.shadow { box-shadow: 0px -1px 9px 2px rgb(0 0 0 / 20%);}
 /* .tab-button button ,  */
 .tab-button label span{ position:absolute; width: 120px; height: 38px; font-size: 17px; font-weight:700; color:#FFD9E9; text-align: center; padding-bottom:3px; line-height: 36px; border-radius: 22px; box-sizing: border-box;}
 .tab-button label.left span {left:0; top:0;}
 .tab-button label.right span {right:0; top:0;}
 /* .tab-button button.select {background: #FF4387; color:#fff; border-radius: 20px;} */
-.tab_item .item {font-size: 16px; color: #fff; margin-left:8px;}
+.tab_item .item {font-size: 16px; color: #fff; padding-left:8px;}
 .tab_item .item:after {content:""; display: inline-block; width:18px; height: 18px; background-color: #FFD9E9; position: absolute; right: 23px; top:9px;  z-index: -1; border-radius: 50%;} 
 #con_2 {display: none;}
 
@@ -325,7 +326,7 @@ input[name="tab_item"] {display: none;}
 
 /* 선택된 탭 스타일 */
 .tabs input:checked + .tab_item span { background-color: #FF4387;color: #fff; z-index: 1;}
-.tabs input:checked + .tab_item .item { display:inline-block; font-size: 16px; color: #FF4387; margin-left:8px;}
+.tabs input:checked + .tab_item .item { display:inline-block; font-size: 16px; color: #FF4387; padding-left:8px;}
 .tabs input:checked + .tab_item .item:after {content:""; display: inline-block; width:18px; height: 18px; background-color: #fff; position: absolute; right: 23px; top:9px;  z-index: -1; border-radius: 50%;} 
 .tabs .ready {font-size: 20px; padding:70px; font-weight: 700; text-align: center;}
 
