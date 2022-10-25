@@ -30,17 +30,19 @@ var lastScrollTop = 0;
 $(window).scroll(function (event) {
   var st = $(this).scrollTop();
 
-  // 상단 탭 고정일때 tab-contents 의 패딩값 조절
-  if(wBox.offsetTop < 1) {
-    $(".tab-contents").css({"paddingTop":"60px"});   
-    } else  {   
-      $(".tab-contents").css({"paddingTop":"179px"});   
-    }
 
 
   //100이상일때 그림자 생김
   // 탭 있는 header 영역 그림자 
 if(main.contains(wBox)){
+
+    // 상단 탭 고정일때 tab-contents 의 패딩값 조절
+    if(wBox.offsetTop < 1) {
+      $(".tab-contents").css({"paddingTop":"60px"});   
+      } else  {   
+        $(".tab-contents").css({"paddingTop":"179px"});   
+      }
+  
   if (st < 100) {
     wBox.classList.remove("shadow");
     
@@ -60,6 +62,7 @@ if(main.contains(wBox)){
     if(main.contains(tabButton)){
       tabButton.classList.add("sticky");
     }
+
   } 
   //스크롤 다운
   else {
