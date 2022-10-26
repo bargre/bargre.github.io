@@ -317,8 +317,8 @@ h4 {font-size: 16px; line-height: 19px; font-weight: 700; padding-bottom:4px; }
 .tabs {width: 100%; margin: 0 auto;}
 .tab-button {position:fixed; z-index: 1; top:123px; left:50%;  margin-left:-106px; width: 230px; height: 38px; border: 1px solid #FFD7E5; border-radius: 22px; margin-bottom:14px; background-color: #fff; }
 .tab-button.sticky {top:15px;z-index: 1;}
-.w-box {width:100%; height:70px;  position:fixed; top:108px; left:0; right:0; z-index:1; background-color:#fff;}
-.w-box.sticky { top:0; }
+.w-box {width:100%; height:70px;  position:fixed; top:108px; left:0; right:0; z-index:1; background-color:#fff; transform: translateZ(0); -webkit-transform: translateZ(0);}
+.w-box.sticky { top:0; transform: translateZ(0); -webkit-transform: translateZ(0);}
 .w-box.shadow { box-shadow: 0px -1px 9px 2px rgb(0 0 0 / 20%);}
 /* .tab-button button ,  */
 .tab-button label span{ position:absolute; width: 120px; height: 38px; font-size: 17px; font-weight:700; color:#FFD9E9; text-align: center; padding-bottom:3px; line-height: 36px; border-radius: 22px; padding-right:20px; box-sizing: border-box;}
