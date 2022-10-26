@@ -38,9 +38,9 @@ if(main.contains(wBox)){
 
     // 상단 탭 고정일때 tab-contents 의 패딩값 조절
     if(wBox.offsetTop < 1) {
-      wBox.classList.add("top");  
+      $(".tab-contents").css({"paddingTop":"60px"});   
       } else  {   
-        wBox.classList.remove("top");  
+        $(".tab-contents").css({"paddingTop":"179px"});   
       }
   
   if (st < 100) {
