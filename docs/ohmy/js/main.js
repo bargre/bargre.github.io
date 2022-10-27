@@ -30,18 +30,21 @@ var lastScrollTop = 0;
 $(window).scroll(function (event) {
   var st = $(this).scrollTop();
 
-
-
+  //아이폰 바운딩 현상 제거
+if($(document).outerHeight() - (st + window.outerHeight) < 0){
+  return;
+}
   //100이상일때 그림자 생김
   // 탭 있는 header 영역 그림자 
 if(main.contains(wBox)){
 
     // 상단 탭 고정일때 tab-contents 의 패딩값 조절
-    if(wBox.offsetTop < 1) {
+    if(wBox.getBoundingClientRect().top < 1) {
       $(".tab-contents").css({"paddingTop":"60px"});   
       } else  {   
         $(".tab-contents").css({"paddingTop":"179px"});   
       }
+  console.log(wBox.getBoundingClientRect().top);
   
   if (st < 100) {
     wBox.classList.remove("shadow");
