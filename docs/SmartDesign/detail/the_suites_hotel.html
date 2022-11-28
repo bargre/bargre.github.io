@@ -178,59 +178,8 @@
     </footer>
 
 
-    <script src="js/main.js"></script>
-    <script>
-
-        $(function () {
-            $('.autoplay').slick({
-                slidesToShow: 1,
-                slidesToScroll: 1,
-                dots: true,
-                infinite: true,
-                cssEase: 'linear',
-                autoplay: true,
-                autoplaySpeed: 2000,
-                // fade: true,
-                pauseOnHover: false,
-            });
-            $('.center').slick({
-                infinite: true,
-                slidesToShow: 5,
-                slidesToScroll: 1,
-                // autoplay: true,
-                autoplaySpeed: 1000,
-                centerMode: true,
-                centerPadding: '0px',
-                settings: {
-                    arrows: true,
-                },
-                responsive: [
-                    {
-                        breakpoint: 1000,
-                        settings: {
-                            slidesToShow: 3,
-                            arrows: false,
-                            centerMode: true,
-                            centerPadding: '50px',
-                            slidesToShow: 3
-                        }
-                    },
-                    {
-                        breakpoint: 480,
-                        settings: {
-                            slidesToShow: 1,
-                            arrows: false,
-                            centerMode: true,
-                            centerPadding: '100px',
-                            slidesToShow: 1
-                        }
-                    }
-                ]
-            });
-        });
-
-
-    </script>
+    <script src="../js/main.js"></script>
+ 
 </body>
 
 </html>
