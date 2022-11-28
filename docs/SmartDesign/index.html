@@ -9,14 +9,18 @@
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <link rel="stylesheet" href="css/aos.css" />
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.slick/1.3.15/slick.css" />
+    <link rel="stylesheet" type="text/css" href="css/common.css">
     <link rel="stylesheet" type="text/css" href="css/main.css">
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.6/lottie.min.js"></script>
     <script src="https://cdn.jsdelivr.net/jquery.slick/1.3.15/slick.min.js"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
     <script src="js/aos.js"></script>
+
 </head>
 
-<body>
-    <header class="header">
+<body class="main">
+    <header class="header top">
         <div class="wrap">
             <div class="logo-area">
                 <h1>
@@ -38,7 +42,8 @@
     </header>
     <section class="section-1">
         <div class="character-area">
-            <img src="images/people.png" alt="캐릭터">
+            <div id = "animContainer1"></div>
+            <script src="js/svg/char1.js"></script>      
         </div>
         <div class="autoplay">
             <div class="main main-1">
@@ -47,7 +52,9 @@
                         <b>온라인 커머스 플랫폼</b>
                         <h2 class="main-tit">MARKET 85</h2>
                         <p>2040 엄마들을 위한 맞춤형<br />Kids & life 쇼핑몰!</p>
-                        <button type="button" class="btn-view">view works</button>
+                        <a href="#">
+                            <button type="button" class="btn-view">view works</button>
+                        </a>    
                     </div>
                 </div>
                 <img src="images/main_01.png" alt="" class="main-img-01">
@@ -58,7 +65,9 @@
                         <b>HEAL YOUR STAY</b>
                         <h2 class="main-tit">스위트 호텔 리뉴얼</h2>
                         <p>지점 통합 및 지점 리뉴얼<br />호텔 바우처몰 제작</p>
-                        <button type="button" class="btn-view">view works</button>
+                        <a href="the_suites_hotel.html">
+                            <button type="button" class="btn-view">view works</button>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -68,7 +77,9 @@
                         <b>화상교사를 위한</b>
                         <h2 class="main-tit">교육 플랫펌-allA</h2>
                         <p>화상교사의 업무 증진을 위한<br />강의 플랫폼</p>
-                        <button type="button" class="btn-view">view works</button>
+                        <a href="#">
+                            <button type="button" class="btn-view">view works</button>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -82,7 +93,8 @@
         </div>
         <div class="img-box"></div>
         <div class="character-area">
-            <img src="images/people.png" alt="캐릭터">
+            <div id = "animContainer2"></div>
+            <script src="js/svg/char2.js"></script>      
         </div>
     </section>
 
@@ -94,16 +106,20 @@
             <div class="contents">
                 <ul class="content-list">
                     <li data-aos="fade-up">
-                        <div class="content-box">
-                            <img src="images/work/card_01.jpg" alt="빨간펜 유아 한글">
-                        </div>
-                        <span>REDPEN 유아 한글</span>
+                        <a href="detail/the_suites_hotel.html">
+                            <div class="content-box">
+                                <img src="images/work/card_01.jpg" alt="빨간펜 유아 한글">
+                            </div>
+                            <span>REDPEN 유아 한글</span>
+                        </a>
                     </li>
                     <li data-aos="fade-up">
-                        <div class="content-box">
-                            <img src="images/work/card_02.jpg" alt="Kworks, Kportal BI 제작">
-                        </div>
-                        <span>Kworks, Kportal BI 제작</span>
+                        <a href="the_suites_hotel.html">
+                            <div class="content-box">
+                                <img src="images/work/card_02.jpg" alt="Kworks, Kportal BI 제작">
+                            </div>
+                            <span>Kworks, Kportal BI 제작</span>
+                    </a>
                     </li>
                     <li data-aos="fade-up">
                         <div class="content-box">
@@ -148,10 +164,11 @@
                 </ul>
             </div>
             <div class="more-button">
-                <button type="button" class="btn-more">view more</button>
+                <button type="button" class="btn-more"><a href="work.html">view more</a></button>
             </div>
             <div class="character-area">
-                <img src="images/people.png" alt="캐릭터">
+                <div id = "animContainer3"></div>
+                <script src="js/svg/char3.js"></script>      
             </div>
         </div>
     </section>
@@ -165,57 +182,240 @@
                 <div class="center">
                     <div>
                         <div class="member-box">
-                            <img src="images/test.svg" alt="">
-                            <h4>UI 1파트</h4>
+                            <img src="images/carc/carc01.svg" alt="김헤경 팀장">
+                            <h4>팀장</h4>
                         </div>
-                        <p>Designer 스마트</p>
+                        <p>Team Leader</p>
                     </div>
                     <div>
                         <div class="member-box">
-                            <img src="images/test.svg" alt="">
-                            <h4>UI 1파트</h4>
+                            <img src="images/carc/carc02.svg" alt="김경숙 파트장">
+                            <h4>UI1 파트장</h4>
                         </div>
-                        <p>Designer 스마트</p>
+                        <p>Designer</p>
                     </div>
                     <div>
                         <div class="member-box">
-                            <img src="images/test.svg" alt="">
-                            <h4>UI 1파트</h4>
+                            <img src="images/carc/carc03.svg" alt="백종훈 연구원">
+                            <h4>UI1 파트</h4>
                         </div>
-                        <p>Designer 스마트</p>
+                        <p>Designer</p>
                     </div>
                     <div>
                         <div class="member-box">
-                            <img src="images/test.svg" alt="">
-                            <h4>UI 1파트</h4>
+                            <img src="images/carc/carc34.svg" alt="이한빛 연구원">
+                            <h4>UI1 파트</h4>
                         </div>
-                        <p>Designer 스마트</p>
+                        <p>Designer</p>
                     </div>
                     <div>
                         <div class="member-box">
-                            <img src="images/test.svg" alt="">
-                            <h4>UI 1파트</h4>
+                            <img src="images/carc/carc04.svg" alt="권아영 연구원">
+                            <h4>UI1 파트</h4>
                         </div>
-                        <p>Designer 스마트</p>
+                        <p>Designer</p>
                     </div>
                     <div>
                         <div class="member-box">
-                            <img src="images/test.svg" alt="">
-                            <h4>UI 1파트</h4>
+                            <img src="images/carc/carc05.svg" alt="김수빈 연구원">
+                            <h4>UI1 파트</h4>
                         </div>
-                        <p>Designer 스마트</p>
+                        <p>Designer</p>
                     </div>
                     <div>
                         <div class="member-box">
-                            <img src="images/test.svg" alt="">
-                            <h4>UI 1파트</h4>
+                            <img src="images/carc/carc06.svg" alt="김현진 파트장">
+                            <h4>UI2 파트장</h4>
                         </div>
-                        <p>Designer 스마트</p>
+                        <p>Designer</p>
                     </div>
+                    <div>
+                        <div class="member-box">
+                            <img src="images/carc/carc07.svg" alt="김환태 연구원">
+                            <h4>UI2 파트</h4>
+                        </div>
+                        <p>Designer</p>
+                    </div>
+                    <div>
+                        <div class="member-box">
+                            <img src="images/carc/carc08.svg" alt="김보라 연구원">
+                            <h4>UI2 파트</h4>
+                        </div>
+                        <p>Designer</p>
+                    </div>
+                    <div>
+                        <div class="member-box">
+                            <img src="images/carc/carc09.svg" alt="백소담 연구원">
+                            <h4>UI2 파트</h4>
+                        </div>
+                        <p>Designer</p>
+                    </div>
+                    <div>
+                        <div class="member-box">
+                            <img src="images/carc/carc10.svg" alt="이지은 파트장">
+                            <h4>UI3 파트장</h4>
+                        </div>
+                        <p>Designer</p>
+                    </div>
+                    <div>
+                        <div class="member-box">
+                            <img src="images/carc/carc11.svg" alt="김아영 연구원">
+                            <h4>UI3 파트</h4>
+                        </div>
+                        <p>Designer</p>
+                    </div>
+                    <div>
+                        <div class="member-box">
+                            <img src="images/carc/carc12.svg" alt="오정화 연구원">
+                            <h4>UI3 파트</h4>
+                        </div>
+                        <p>Designer</p>
+                    </div>
+                    <div>
+                        <div class="member-box">
+                            <img src="images/carc/carc13.svg" alt="윤나련 연구원">
+                            <h4>UI3 파트</h4>
+                        </div>
+                        <p>Designer</p>
+                    </div>
+                    <div>
+                        <div class="member-box">
+                            <img src="images/carc/carc14.svg" alt="이성훈 파트장">
+                            <h4>웹연출 파트장</h4>
+                        </div>
+                        <p>Publisher</p>
+                    </div>
+                    <div>
+                        <div class="member-box">
+                            <img src="images/carc/carc15.svg" alt="장유진 연구원">
+                            <h4>웹연출 파트</h4>
+                        </div>
+                        <p>Publisher</p>
+                    </div>
+                    <div>
+                        <div class="member-box">
+                            <img src="images/carc/carc16.svg" alt="김진아 연구원">
+                            <h4>웹연출 파트</h4>
+                        </div>
+                        <p>Publisher</p>
+                    </div>
+                    <div>
+                        <div class="member-box">
+                            <img src="images/carc/carc18.svg" alt="최현준 연구원">
+                            <h4>웹연출 파트</h4>
+                        </div>
+                        <p>Animator</p>
+                    </div>  
+                    <div>
+                        <div class="member-box">
+                            <img src="images/carc/carc19.svg" alt="주영민 연구원">
+                            <h4>웹연출 파트</h4>
+                        </div>
+                        <p>Animator</p>
+                    </div> 
+                    <div>
+                        <div class="member-box">
+                            <img src="images/carc/carc20.svg" alt="박수이 연구원">
+                            <h4>웹연출 파트</h4>
+                        </div>
+                        <p>Publisher</p>
+                    </div>
+                    <div>
+                        <div class="member-box">
+                            <img src="images/carc/carc21.svg" alt="성지원 연구원">
+                            <h4>웹연출 파트</h4>
+                        </div>
+                        <p>Animator</p>
+                    </div>
+                    <div>
+                        <div class="member-box">
+                            <img src="images/carc/carc22.svg" alt="김수정 파트장">
+                            <h4>웹UI 파트</h4>
+                        </div>
+                        <p>Designer</p>
+                    </div>   
+                    <div>
+                        <div class="member-box">
+                            <img src="images/carc/carc23.svg" alt="김영관 연구원">
+                            <h4>웹UI 파트</h4>
+                        </div>
+                        <p>Designer</p>
+                    </div> 
+                    <div>
+                        <div class="member-box">
+                            <img src="images/carc/carc24.svg" alt="전현주 연구원">
+                            <h4>웹UI 파트</h4>
+                        </div>
+                        <p>Designer</p>
+                    </div> 
+                    <div>
+                        <div class="member-box">
+                            <img src="images/carc/carc25.svg" alt="김정원 연구원">
+                            <h4>웹UI 파트</h4>
+                        </div>
+                        <p>Designer</p>
+                    </div> 
+                    <div>
+                        <div class="member-box">
+                            <img src="images/carc/carc26.svg" alt="구민경 연구원">
+                            <h4>웹UI 파트</h4>
+                        </div>
+                        <p>Designer</p>
+                    </div> 
+                    <div>
+                        <div class="member-box">
+                            <img src="images/carc/carc27.svg" alt="박정은 연구원">
+                            <h4>웹UI 파트</h4>
+                        </div>
+                        <p>Designer</p>
+                    </div> 
+                    <div>
+                        <div class="member-box">
+                            <img src="images/carc/carc28.svg" alt="조언필 연구원">
+                            <h4>웹UI 파트</h4>
+                        </div>
+                        <p>Designer</p>
+                    </div>
+                    <div>
+                        <div class="member-box">
+                            <img src="images/carc/carc29.svg" alt="김태연 파트장">
+                            <h4>온자인지원 파트장</h4>
+                        </div>
+                        <p>Designer</p>
+                    </div> 
+                    <div>
+                        <div class="member-box">
+                            <img src="images/carc/carc30.svg" alt="강경희 연구원">
+                            <h4>온자인지원 파트</h4>
+                        </div>
+                        <p>Designer</p>
+                    </div>  
+                    <div>
+                        <div class="member-box">
+                            <img src="images/carc/carc31.svg" alt="정수진 연구원">
+                            <h4>온자인지원 파트</h4>
+                        </div>
+                        <p>Designer</p>
+                    </div>  
+                    <div>
+                        <div class="member-box">
+                            <img src="images/carc/carc32.svg" alt="오유빈 연구원">
+                            <h4>온자인지원 파트</h4>
+                        </div>
+                        <p>Designer</p>
+                    </div>  
+                    <div>
+                        <div class="member-box">
+                            <img src="images/carc/carc33.svg" alt="김채영 연구원">
+                            <h4>온자인지원 파트</h4>
+                        </div>
+                        <p>Designer</p>
+                    </div>  
                 </div>
             </div>
             <div class="character-area">
-                <img src="images/people.png" alt="캐릭터">
+                <div id ="animContainer4"></div>
+                <script src="js/svg/char4.js"></script>      
             </div>
         </div>
     </section>
@@ -250,6 +450,7 @@
                 autoplay: true,
                 autoplaySpeed: 1000,
                 centerMode: true,
+                pauseOnHover: false,
                 centerPadding: '0px',
                 settings: {
                     arrows: true,
