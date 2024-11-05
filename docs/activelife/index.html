@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="UTF-8" />
+    <title>액티브라이프 자가점검 테스트</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <script type="text/javascript" src="js/jquery-latest.js"></script>
+    <!-- <script src="https://code.jquery.com/jquery-latest.min.js"></script> -->
+    <link rel="stylesheet" type="text/css" href="css/active.css" />
+    <script src="js/html2canvas.js"></script>
+    </head>
+
+    <body>
+     <div class="layer"></div><!--2024.10.30 스크롤시 투명레이어 생성 -->
+    <div class="wrap">
+        <!-- 이름 삭제
+        <div class="name">
+            <div class="name_box">
+                <span>이 름</span>
+                <input type="text" placeholder="이름을 넣어 주세요."/>
+            </div>
+        </div>
+        -->
+        <!-- 1번 문제 -->
+        <div id="ac_test_01">
+            <img src="./images/acti_test_01_01.jpg" alt="언어력자극 1번문제"/>
+            <ul>
+                <li id="t01_a01"><img src="./images/t01_a01.png" /></li>
+                <li id="t01_a02"><img src="./images/t01_a02.png" /></li>
+                <li id="t01_a03"><img src="./images/t01_a03.png" /></li>
+                <li id="t01_a04"><img src="./images/t01_a04.png" /></li>
+                <li id="t01_a05"><img src="./images/t01_a05.png" /></li>
+                <li id="t01_a06"><img src="./images/t01_a06.png" /></li>
+                <li id="t01_a07"><img src="./images/t01_a07.png" /></li>
+                <li id="t01_a08"><img src="./images/t01_a08.png" /></li>
+                <li id="t01_a09"><img src="./images/t01_a09.png" /></li>
+                <li id="t01_a10"><img src="./images/t01_a10.png" /></li>
+                <li id="t01_a11"><img src="./images/t01_a11.png" /></li>
+                <li id="t01_a12"><img src="./images/t01_a12.png" /></li>
+                <li id="t01_a13"><img src="./images/t01_a13.png" /></li>
+                <li id="t01_a14"><img src="./images/t01_a14.png" /></li>
+                <li id="t01_a15"><img src="./images/t01_a15.png" /></li>
+                <li id="t01_a16"><img src="./images/t01_a16.png" /></li>
+                <li id="t01_a17"><img src="./images/t01_a17.png" /></li>
+                <li id="t01_a18"><img src="./images/t01_a18.png" /></li>
+                <li id="t01_a19"><img src="./images/t01_a19.png" /></li>
+                <li id="t01_a20"><img src="./images/t01_a20.png" /></li>
+                <li id="t01_a21"><img src="./images/t01_a21.png" /></li>
+                <li id="t01_a22"><img src="./images/t01_a22.png" /></li>
+                <li id="t01_a23"><img src="./images/t01_a23.png" /></li>
+                <li id="t01_a24"><img src="./images/t01_a24.png" /></li>
+                <li id="t01_a25"><img src="./images/t01_a25.png" /></li>
+            </ul>
+            <img src="./images/acti_test_01_02.jpg" alt="가로,세로,대각선 모두 확인해 보세요."/>
+            <div class="btn_box">
+                <button class="restart">처음부터</button>
+                <button class="submit">제출하기</button>
+            </div>
+        </div>
+
+        <!-- 2번 문제 -->
+        <div id="ac_test_02">
+            <img src="./images/acti_test_02_01.jpg" alt="2번문제"/>
+            <ul class="flip">
+                <li id="t02_a01" class="card">
+                    <div class="front"><img src="./images/t02_a01_f.png" /></div>
+                    <div class="back"><img src="./images/t02_a01_b.png" /></div>
+                </li>
+                <li id="t02_a02" class="card">
+                    <div class="front"><img src="./images/t02_a02_f.png" /></div>
+                    <div class="back"><img src="./images/t02_a02_b.png" /></div>
+                </li>
+                <li id="t02_a03" class="card">
+                    <div class="front"><img src="./images/t02_a03_f.png" /></div>
+                    <div class="back"><img src="./images/t02_a03_b.png" /></div>
+                </li>
+                <li id="t02_a04" class="card">
+                    <div class="front"><img src="./images/t02_a04_f.png" /></div>
+                    <div class="back"><img src="./images/t02_a04_b.png" /></div>
+                </li>
+                <li id="t02_a05" class="card">
+                    <div class="front"><img src="./images/t02_a05_f.png" /></div>
+                    <div class="back"><img src="./images/t02_a05_b.png" /></div>
+                </li>
+                <li id="t02_a06" class="card">
+                    <div class="front"><img src="./images/t02_a06_f.png" /></div>
+                    <div class="back"><img src="./images/t02_a06_b.png" /></div>
+                </li>
+                <li id="t02_a07" class="card">
+                    <div class="front"><img src="./images/t02_a07_f.png" /></div>
+                    <div class="back"><img src="./images/t02_a07_b.png" /></div>
+                </li>
+                <li id="t02_a08" class="card">
+                    <div class="front"><img src="./images/t02_a08_f.png" /></div>
+                    <div class="back"><img src="./images/t02_a08_b.png" /></div>
+                </li>
+                <li id="t02_a09" class="card">
+                    <div class="front"><img src="./images/t02_a09_f.png" /></div>
+                    <div class="back"><img src="./images/t02_a09_b.png" /></div>
+                </li>
+                <li id="t02_a11" class="card">
+                    <div class="front"><img src="./images/t02_a10_f.png" /></div>
+                    <div class="back"><img src="./images/t02_a10_b.png" /></div>
+                </li>
+                <li id="t02_a11" class="card">
+                    <div class="front"><img src="./images/t02_a11_f.png" /></div>
+                    <div class="back"><img src="./images/t02_a11_b.png" /></div>
+                </li>
+                <li id="t02_a12" class="card">
+                    <div class="front"><img src="./images/t02_a12_f.png" /></div>
+                    <div class="back"><img src="./images/t02_a12_b.png" /></div>
+                </li>
+                <li id="t02_a13" class="card">
+                    <div class="front"><img src="./images/t02_a13_f.png" /></div>
+                    <div class="back"><img src="./images/t02_a13_b.png" /></div>
+                </li>
+                <li id="t02_a14" class="card">
+                    <div class="front"><img src="./images/t02_a14_f.png" /></div>
+                    <div class="back"><img src="./images/t02_a14_b.png" /></div>
+                </li>
+                <li id="t02_a15" class="card">
+                    <div class="front"><img src="./images/t02_a15_f.png" /></div>
+                    <div class="back"><img src="./images/t02_a15_b.png" /></div>
+                </li>
+                <li id="t02_a16" class="card">
+                    <div class="front"><img src="./images/t02_a16_f.png" /></div>
+                    <div class="back"><img src="./images/t02_a16_b.png" /></div>
+                </li>
+            </ul>
+            <div class="btn_box">
+                <button class="btn_auto_start">자동시작버튼</button>
+                <button class="btn_start">바로시작버튼</button>
+                <button class="restart_02">다시하기</button>
+                <button class="submit_02">제출하기</button>
+            </div>
+        </div>
+
+        <!-- 3번 문제 -->
+        <div id="ac_test_03">
+            <img src="./images/acti_test_03_01.jpg" alt=" 1번문제"/>
+            <ul>
+                <li id="t03_a01">
+                    <img src="./images/t03_a01.jpg" />
+                </li>
+                <li id="t03_a02">
+                    <img src="./images/t03_a02.jpg" />
+                </li>
+                <li id="t03_a03">
+                    <img src="./images/t03_a03.jpg" />
+                </li>
+            </ul>
+            <button class="submit_03">제출하기</button>
+    </div>
+
+    <!-- 4번 문제 -->
+    <div id="ac_test_04">
+        <img src="./images/acti_test_04_01.png" alt=" 4번문제"/>
+        <table>
+            <tr>
+                <th></th>
+                <th><img src="./images/t04_th01.jpg"/></th>
+                <th><img src="./images/t04_th02.jpg"/></th>
+                <th><img src="./images/t04_th03.jpg"/></th>
+            </tr>
+            <tr>
+                <td><img src="./images/t04_a01_n.png"/></td>
+                <td><img src="./images/t04_a01.png"/></td>
+                <td class="yes"><img src="./images/q4_o.png"/></td>
+                <td class="no"><img src="./images/q4_o.png"/></td>
+            </tr>
+            <tr>
+                <td><img src="./images/t04_a02_n.png"/></td>
+                <td><img src="./images/t04_a02.png"/></td>
+                <td class="yes"><img src="./images/q4_o.png"/></td>
+                <td class="no"><img src="./images/q4_o.png"/></td>
+            </tr>
+            <tr>
+                <td><img src="./images/t04_a03_n.png"/></td>
+                <td><img src="./images/t04_a03.png"/></td>
+                <td class="yes"><img src="./images/q4_o.png"/></td>
+                <td class="no"><img src="./images/q4_o.png"/></td>
+            </tr>
+            <tr>
+                <td><img src="./images/t04_a04_n.png"/></td>
+                <td><img src="./images/t04_a04.png"/></td>
+                <td class="yes"><img src="./images/q4_o.png"/></td>
+                <td class="no"><img src="./images/q4_o.png"/></td>
+            </tr>
+            <tr>
+                <td><img src="./images/t04_a05_n.png"/></td>
+                <td><img src="./images/t04_a05.png"/></td>
+                <td class="yes"><img src="./images/q4_o.png"/></td>
+                <td class="no"><img src="./images/q4_o.png"/></td>
+            </tr>
+            <tr>
+                <td><img src="./images/t04_a06_n.png"/></td>
+                <td><img src="./images/t04_a06.png"/></td>
+                <td class="yes"><img src="./images/q4_o.png"/></td>
+                <td class="no"><img src="./images/q4_o.png"/></td>
+            </tr>
+            <tr>
+                <td><img src="./images/t04_a07_n.png"/></td>
+                <td><img src="./images/t04_a07.png"/></td>
+                <td class="yes"><img src="./images/q4_o.png"/></td>
+                <td class="no"><img src="./images/q4_o.png"/></td>
+            </tr>
+            <tr>
+                <td><img src="./images/t04_a08_n.png"/></td>
+                <td><img src="./images/t04_a08.png"/></td>
+                <td class="yes"><img src="./images/q4_o.png"/></td>
+                <td class="no"><img src="./images/q4_o.png"/></td>
+            </tr>
+            <tr>
+                <td><img src="./images/t04_a09_n.png"/></td>
+                <td><img src="./images/t04_a09.png"/></td>
+                <td class="yes"><img src="./images/q4_o.png"/></td>
+                <td class="no"><img src="./images/q4_o.png"/></td>
+            </tr>
+            <tr>
+                <td><img src="./images/t04_a10_n.png"/></td>
+                <td><img src="./images/t04_a10.png"/></td>
+                <td class="yes"><img src="./images/q4_o.png"/></td>
+                <td class="no"><img src="./images/q4_o.png"/></td>
+            </tr>
+            <tr>
+                <td><img src="./images/t04_a11_n.png"/></td>
+                <td><img src="./images/t04_a11.png"/></td>
+                <td class="yes"><img src="./images/q4_o.png"/></td>
+                <td class="no"><img src="./images/q4_o.png"/></td>
+            </tr>
+            <tr>
+                <td><img src="./images/t04_a12_n.png"/></td>
+                <td><img src="./images/t04_a12.png"/></td>
+                <td class="yes"><img src="./images/q4_o.png"/></td>
+                <td class="no"><img src="./images/q4_o.png"/></td>
+            </tr>
+            <tr>
+                <td><img src="./images/t04_a13_n.png"/></td>
+                <td><img src="./images/t04_a13.png"/></td>
+                <td class="yes"><img src="./images/q4_o.png"/></td>
+                <td class="no"><img src="./images/q4_o.png"/></td>
+            </tr>
+            <tr>
+                <td><img src="./images/t04_a14_n.png"/></td>
+                <td><img src="./images/t04_a14.png"/></td>
+                <td class="yes"><img src="./images/q4_o.png"/></td>
+                <td class="no"><img src="./images/q4_o.png"/></td>
+            </tr>
+            <tr>
+                <td><img src="./images/t04_a15_n.png"/></td>
+                <td><img src="./images/t04_a15.png"/></td>
+                <td class="yes"><img src="./images/q4_o.png"/></td>
+                <td class="no"><img src="./images/q4_o.png"/></td>
+            </tr>
+            <tr>
+                <td><img src="./images/t04_a16_n.png"/></td>
+                <td><img src="./images/t04_a16.png"/></td>
+                <td class="yes"><img src="./images/q4_o.png"/></td>
+                <td class="no"><img src="./images/q4_o.png"/></td>
+            </tr>
+            <tr>
+                <td><img src="./images/t04_a17_n.png"/></td>
+                <td><img src="./images/t04_a17.png"/></td>
+                <td class="yes"><img src="./images/q4_o.png"/></td>
+                <td class="no"><img src="./images/q4_o.png"/></td>
+            </tr>
+            <tr>
+                <td><img src="./images/t04_a18_n.png"/></td>
+                <td><img src="./images/t04_a18.png"/></td>
+                <td class="yes"><img src="./images/q4_o.png"/></td>
+                <td class="no"><img src="./images/q4_o.png"/></td>
+            </tr>
+            <tr>
+                <td><img src="./images/t04_a19_n.png"/></td>
+                <td><img src="./images/t04_a19.png"/></td>
+                <td class="yes"><img src="./images/q4_o.png"/></td>
+                <td class="no"><img src="./images/q4_o.png"/></td>
+            </tr>
+            <tr>
+                <td><img src="./images/t04_a20_n.png"/></td>
+                <td><img src="./images/t04_a20.png"/></td>
+                <td class="yes"><img src="./images/q4_o.png"/></td>
+                <td class="no"><img src="./images/q4_o.png"/></td>
+            </tr>
+        </table>
+        <img src="./images/acti_test_04_02.png" alt=" 4번문제"/>
+        <!-- <button class="submit_03">제출하기</button> -->
+    </div>
+    <!-- 분석하기 버튼 -->
+    <button class="analyze">분석하기</button>
+    <button style="width: 200px; height: 50px;" onclick="html2canvas()">캡쳐</button>
+    
+    <!-- 결과를 표시할 div -->
+    <div id="result">
+        <!-- 이름 삭제
+        <div class="name_result">
+            <div class="name_box">
+                <span>이 름</span>
+                <div class="student"></div>
+            </div>
+        </div>
+        -->
+        <h1>기본 인지 활동 검사 결과</h1>
+        <div class="grade">
+            <img src="./images/a.png"/>
+        </div>
+        <ul class="answer-check">
+            <li class="q_01">
+                <div>언어력 자극</div>
+                <span>정답 <span class="color"></span>/3 개</span>
+            </li>
+            <li class="q_02">
+                <div>기억력 점검</div>
+                <span>정답 <span class="color"></span>/11 개</span>
+            </li>
+            <li class="q_03">
+                <div>두뇌 활성화</div>
+                <span>정답 <span class="color"></span>/1 개</span>
+            </li>
+        </ul>
+        <p class="cont">
+            <액티브 시니어 자가 진단표>는 자기 이해 및 자기 관리, 노화에 대한 인식, 사회<br/> 
+            활동, 디지털 기기 활용 능력, 행복감 요소를 중심으로 구성하였습니다.
+        </p>
+        <div class="recommend">
+            <h2>추천 활동</h2>
+            <div>
+                <p class="ten_up"><span class="purple">활동적인 액티브 시니어로 자기 발전을 위한 활동(예 : 외국어 및 한자어 학습)</span>을 추천합니다.</p>
+                <p class="ten_down"><span class="purple">건강한 생활을 영위하기 위한 학습 활동(예 : 계산, 글 읽기, 한자 암기 등)</span>을 추천합니다.</p>
+            </div>
+        </div>
+        <span>* 추천 활동은 참고용으로만 활용해 주세요.</span>
+        <button class="reset">전체 초기화</button>
+        <!-- <button class="screenshot">스샷 찍기</button> -->
+    </div>
+</div>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            // 초기 클릭 이벤트 활성화
+    enableClickEvent();
+       // 1번 문제 스크립트  
+    var correctAnswers = [
+        ["t01_a02", "t01_a07", "t01_a12", "t01_a17"],
+        ["t01_a13", "t01_a19", "t01_a25"],
+        ["t01_a21", "t01_a22", "t01_a23"]
+    ];
+
+    // 초기 클릭 이벤트 활성화
+    enableClickEvent();
+
+    $('.submit').on('click', function() {
+        var selectedIds = [];
+        $('#ac_test_01 ul li.on').each(function() {
+            selectedIds.push(this.id);
+        });
+
+        // 정답 갯수 계산
+        var correctCount = checkCorrectAnswers(selectedIds);
+
+        // 정답 갯수를 q_01의 <span class="color"></span>에 표시
+        $('#result .q_01 .color').text(correctCount);
+
+        // 클릭 이벤트 비활성화
+        $('#ac_test_01 ul li').off('click');
+
+        // 제출 알림
+        document.getElementById("ac_test_02").scrollIntoView({ behavior: 'smooth' });
+    });
+
+    $('.restart').on('click', function() {
+        enableClickEvent();
+        // 모든 li 요소에서 on 클래스 제거
+        $('#ac_test_01 ul li').removeClass('on');
+
+        // 정답 갯수를 표시하는 <span class="color"></span> 초기화
+        $('#result .q_01 .color').text("");
+
+        // 클릭 이벤트 다시 활성화
+        enableClickEvent();
+    });
+
+    function checkCorrectAnswers(selectedIds) {
+        var correctCount = 0;
+
+        correctAnswers.forEach(function(answerGroup) {
+            if (answerGroup.every(id => selectedIds.includes(id)) && answerGroup.length === selectedIds.filter(id => answerGroup.includes(id)).length) {
+                correctCount++;
+            }
+        });
+
+        return correctCount;
+    }
+
+        // 2번 문제
+        // btn_start 클릭 시 바로 turn 클래스 추가
+        $(".btn_start").click(function() {
+                $(".flip").addClass("turn");
+            });
+
+            // btn_auto_start 클릭 시 60초 후 turn 클래스 추가
+            $(".btn_auto_start").click(function() {
+                setTimeout(function() {
+                    $(".flip").addClass("turn");
+                }, 60000);  // 60000ms = 60초
+            });
+            
+                // .back 요소 클릭 시 동작
+            $(".back").click(function() {
+                var $card = $(this).closest(".card");  // 부모 .card 요소 선택
+                var cardId = $card.attr("id");  // 해당 .card 요소의 ID 가져오기
+
+                // 특정 ID에 대해서는 wrong 클래스를 추가
+                if (cardId === "t02_a01" || cardId === "t02_a06" || cardId === "t02_a08" || 
+                    cardId === "t02_a13" || cardId === "t02_a15") {
+                    
+                    // wrong 클래스가 없으면 추가
+                    if (!$card.hasClass("wrong")) {
+                        $card.addClass("wrong");
+                    }
+                } else {
+                    // 그 외의 경우는 check 클래스가 없으면 추가
+                    if (!$card.hasClass("check")) {
+                        $card.addClass("check");
+                    }
+                }
+            });
+
+            // 초기 상태를 저장하기 위해 #ac_test_02의 HTML을 변수에 저장
+            var originalContent = $("#ac_test_02").html();
+
+           // restart_02 버튼 클릭 시 모든 추가된 클래스 제거
+            $(".restart_02").click(function() {
+                // #ac_test_02 안의 모든 태그에서 클래스 제거
+                $("#ac_test_02").find(".check, .wrong, .turn").removeClass("check wrong turn");
+            });
+
+            // submit_02 버튼 클릭 시 동작
+            $(".submit_02").click(function() {
+            // #ac_test_02 내부의 check 클래스가 있는 li 요소들의 갯수 파악
+            var correctCount = $("#ac_test_02").find("li.check").length;
+
+            // 정답 갯수를 q_02의 <span class="color"></span>에 표시
+            $('#result .q_02 .color').text(correctCount);
+
+            // 클릭 이벤트 비활성화
+            $('#ac_test_02 ul li .back').off('click');
+
+            // 제출 알림
+            document.getElementById("ac_test_03").scrollIntoView({ behavior: 'smooth' });
+        });
+      //3번 문제
+            // li 요소 클릭 이벤트
+            $("#ac_test_03 ul li").click(function(){
+                    // 모든 li 요소에서 ok, no 클래스 제거
+                    $("#ac_test_03 ul li").removeClass("ok no");
+        
+                    // 클릭한 요소가 id="t03_a01"일 경우 ok 클래스 추가
+                    if($(this).attr("id") === "t03_a01") {
+                        $(this).addClass("ok");
+        
+                    } else {
+                        // 다른 li 요소를 클릭한 경우 no 클래스 추가
+                        $(this).addClass("no");
+                        
+                        // 1초 후 no 클래스 제거
+                        var clickedElement = $(this);
+                        setTimeout(function(){
+                            clickedElement.removeClass("no");
+                        }, 1000); // 1000ms = 1초
+                    }
+                });
+                $(".submit_03").click(function() {
+                // #ac_test_03 내부의 ok 클래스가 있는 li 요소들의 갯수 파악
+                var correctCount = $("#ac_test_03").find("li.ok").length;
+
+                // 정답 갯수를 q_03의 <span class="color"></span>에 표시
+                $('#result .q_03 .color').text(correctCount);
+
+                // 클릭 이벤트 비활성화
+                $('#ac_test_03 ul li').off('click');
+
+                // 제출 알림
+                document.getElementById("ac_test_04").scrollIntoView({ behavior: 'smooth' });
+            });    
+      //4번문제          
+             // 합계 점수를 표시할 div 추가
+            $('#ac_test_04').append('<div id="score">합계: 0점</div>');
+        
+            $(".yes, .no").click(function(){
+                // 동일 행의 다른 td에서 check 클래스를 제거합니다.
+                $(this).siblings().removeClass("check");
+
+                // 클릭한 요소에 check 클래스가 없는 경우 추가하고, 있는 경우 제거합니다.
+                $(this).toggleClass("check");
+
+                // check 클래스가 추가된 yes 클래스의 개수를 점수로 계산합니다.
+                let score = $(".yes.check").length;
+
+                // 점수를 표시하는 div에 점수 업데이트
+                $('#score').text('합계: ' +  score  + '점');
+            });
+// 결과
+            $(".analyze").click(function() {
+    // result를 보이게 함
+    $("#result").show();
+    
+                     // 페이지 스크롤을 id="result"로 이동
+document.getElementById("result").scrollIntoView({ behavior: 'smooth' });
+    // 각 q_01, q_02, q_03의 color 클래스에 있는 숫자 가져오기
+    var q1Count = parseInt($('.q_01 .color').text()) || 0;
+    var q2Count = parseInt($('.q_02 .color').text()) || 0;
+    var q3Count = parseInt($('.q_03 .color').text()) || 0;
+
+    // 숫자 합산
+    var totalCount = q1Count + q2Count + q3Count;
+
+    // grade 안에 이미지 설정
+    if (totalCount >= 12) {
+        $('.grade img').attr('src', './images/a.png');  // A등급 이미지
+    } else if (totalCount >= 6 && totalCount <= 11) {
+        $('.grade img').attr('src', './images/b.png');  // B등급 이미지
+    } else {
+        $('.grade img').attr('src', './images/c.png');  // C등급 이미지
+    }
+
+    // recommend에서 ten_up 또는 ten_down 보이게 설정
+    if (totalCount >= 10) {
+        $('.ten_up').show();
+        $('.ten_down').hide();
+    } else {
+        $('.ten_up').hide();
+        $('.ten_down').show();
+    }
+
+    // name 안의 input 값을 student 안에 넣어줌
+   /*
+    var studentName = $('.name input').val();
+    $('.student').text(studentName);
+    */
+}); 
+
+    $(".reset").click(function() {
+        // 각 테스트 초기화
+        $('#ac_test_01 ul li').removeClass('on'); // 1번 문제 초기화
+        $('#ac_test_02').find(".check, .wrong, .turn").removeClass("check wrong turn"); // 2번 문제 초기화
+        $('#ac_test_03 ul li').removeClass('ok no'); // 3번 문제 초기화
+        $(".yes, .no").removeClass("check"); // 4번 문제 초기화
+        $('#score').text('합계: 0점'); // 4번 문제 점수 초기화
+        
+        // 결과 섹션 숨기기
+        $("#result").hide();
+        $('#result .q_01 .color').text(""); // 정답 갯수 초기화
+        $('#result .q_02 .color').text(""); // 정답 갯수 초기화
+        $('#result .q_03 .color').text(""); // 정답 갯수 초기화
+        
+        // 입력 필드 초기화
+        $('.name input').val(''); // 이름 입력 초기화
+        $('.student').text(''); // 결과 이름 초기화
+        
+        // 페이지 맨 위로 스크롤 이동
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+
+        $(".back").click(function() {
+            var $card = $(this).closest(".card");
+            var cardId = $card.attr("id");
+
+            if (cardId === "t02_a01" || cardId === "t02_a06" || cardId === "t02_a08" || 
+                cardId === "t02_a13" || cardId === "t02_a15") {
+                if (!$card.hasClass("wrong")) {
+                    $card.addClass("wrong");
+                }
+            } else {
+                if (!$card.hasClass("check")) {
+                    $card.addClass("check");
+                }
+            }
+        });
+
+        // 3번 문제 클릭 이벤트 다시 연결
+        $("#ac_test_03 ul li").click(function(){
+            $("#ac_test_03 ul li").removeClass("ok no");
+
+            if($(this).attr("id") === "t03_a01") {
+                $(this).addClass("ok");
+            } else {
+                $(this).addClass("no");
+                var clickedElement = $(this);
+                setTimeout(function(){
+                    clickedElement.removeClass("no");
+                }, 1000); // 1000ms = 1초
+            }
+        });
+            
+    });
+    // 초기화 후에도 작동하도록 하기 위해 초기 이벤트 연결
+    enableClickEvent();
+});
+
+function enableClickEvent() {
+    // 이벤트 위임 방식으로 변경하여 동적으로 추가된 요소에도 이벤트가 동작하도록 함
+    $('#ac_test_01').on('click', 'ul li', function() {
+        var selectedCount = $('#ac_test_01 ul li.on').length;
+
+        if ($(this).hasClass('on')) {
+            $(this).removeClass('on');
+        } else {
+            if (selectedCount >= 10) {
+                showAlert("선택할 수 있는 개수를 초과하셨습니다.(최대 10개)");
+            } else {
+                $(this).addClass('on');
+            }
+        }
+    });
+}
+
+function showAlert(message) {
+    // 팝업이 이미 존재하는지 확인
+    if ($('.popup-overlay').length === 0) {
+        var popup = $('<div class="popup-overlay"><div class="popup-content"><p>' + message + '</p><button class="close-popup">닫기</button></div></div>');
+        popup.find('.close-popup').on('click', function() {
+            popup.remove();
+        });
+        $('body').append(popup);
+    }    
+}
+
+document.querySelector('.screenshot').addEventListener('click', function() {
+    html2canvas(document.querySelector('.wrap')).then(function(canvas) {
+        var imgData = canvas.toDataURL('image/png');
+        var link = document.createElement('a');
+        link.href = imgData;
+        link.download = 'wrap-screenshot.png';
+        link.click();
+    });
+});
+
+function layerOn(){
+			$(".layer").addClass("on");
+		}
+		function layerOff(){
+			$(".layer").removeClass("on");
+		}
+
+        		//캡쳐 스크립트
+		html2canvas(document.querySelector('.wrap')).then(function(canvas) {
+				var imgData = canvas.toDataURL('image/png');
+				var link = document.createElement('a');
+				link.href = imgData;
+				link.download = 'wrap-screenshot.png';
+				link.click();
+			});
+</script>
+
+</body>
+</html>
